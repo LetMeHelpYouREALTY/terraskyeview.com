@@ -29,9 +29,21 @@ export default function AreaInformation() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">Area Information</h2>
-        <p className="text-gray-600">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Area Information</h2>
+        <p className="text-xl text-gray-700 mb-4">
           Everything you need is right around the corner
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Terra at Skyeview's location in Northwest Las Vegas provides the perfect balance of suburban 
+          tranquility and urban convenience. The Skye Canyon master-planned community is strategically 
+          positioned near major highways, top-rated schools, shopping centers, and dining destinations.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Families will appreciate the proximity to award-winning schools including Divich Elementary, 
+          Escobedo Middle School, and Arbor View High School. Shopping is convenient with Sprouts Farmers 
+          Market, Smith's Food & Drug, and Montecito Marketplace all within minutes. From casual dining 
+          at Buffalo Wild Wings and Baby Stacks Cafe to international flavors at Michocan Mexican and 
+          Thai Spoon, you'll find diverse culinary options nearby.
         </p>
       </div>
 

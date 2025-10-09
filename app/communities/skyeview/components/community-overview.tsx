@@ -50,12 +50,50 @@ export default function CommunityOverview() {
               A recreational playground with inspiring scenery and an emotionally appealing
               setting, Skye Canyon's 1,700 acres are designed for a more engaged community.
               Where work-life balance, a sense of well-being, and a vital active life are the
-              norm.
+              norm. Bland is out. Distinct, memorable, soulful living is in.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed mb-6">
               New schools, parks, trails, splash pads, tot lots, basketball courts, sports
               fields, recreation center and fitness center are all planned inside the
-              masterplan of Skye Canyon.
+              masterplan of Skye Canyon. The community offers a perfect blend of outdoor 
+              recreation and modern convenience, with miles of trails perfect for walking, 
+              jogging, or cycling.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Why Choose Terra at Skyeview?
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Terra at Skyeview represents the pinnacle of modern living in Northwest Las Vegas. 
+              Built by Century Communities, one of America's top 10 homebuilders and voted one of 
+              America's Most Trusted Homebuilders for 3 years running, these homes combine quality 
+              construction with thoughtful design.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Each Terra home features contemporary two-story floor plans with open-concept living 
+              spaces, gourmet kitchens with islands, spacious master suites, and flexible room 
+              configurations. Energy-efficient appliances and sustainable building practices ensure 
+              your home is both environmentally friendly and cost-effective to maintain.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              The location in Northwest Las Vegas provides easy access to the 215 Beltway while 
+              maintaining a peaceful, suburban atmosphere. You're minutes from shopping at 
+              Montecito Marketplace, dining options, and essential services, yet surrounded by 
+              the natural beauty of the Mojave Desert landscape.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Working with Dr. Janet Duffy
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              When you work with Dr. Janet Duffy as your buyer's agent at Terra at Skyeview, you 
+              gain a powerful advocate who will negotiate the best possible price and terms on 
+              your behalf. Unlike the builder's agent who represents Century Communities' interests, 
+              Dr. Janet works exclusively for you. She'll help you navigate upgrade selections, 
+              review contracts thoroughly, access up to $5,000 in closing cost assistance through 
+              preferred lenders, and ensure you're making informed decisions throughout the process. 
+              Best of all, her services are completely FREE to you as the buyer—the seller pays 
+              her commission.
             </p>
           </div>
         </div>

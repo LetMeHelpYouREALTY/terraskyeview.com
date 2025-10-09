@@ -46,10 +46,23 @@ export default function FloorPlans() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">Floor Plans</h2>
-        <p className="text-xl text-gray-600">Inspired home designs</p>
-        <p className="text-gray-600 mt-2">
-          Check out quality layouts that may be available for purchase at this community today!
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Terra Collection Floor Plans</h2>
+        <p className="text-xl text-gray-700 mb-4">Inspired Two-Story Home Designs</p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Terra collection at Skyeview features three carefully designed two-story floor plans, each 
+          offering spacious living areas, modern amenities, and flexible room configurations. Built by 
+          Century Communities, these homes showcase quality craftsmanship and attention to detail throughout.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Whether you're a growing family needing extra bedrooms, a professional seeking a home office space, 
+          or someone who loves entertaining, there's a Terra floor plan perfect for your lifestyle. Each home 
+          includes modern open-concept living areas, gourmet kitchens with islands, spacious master suites with 
+          walk-in closets, and 2-car garages.
+        </p>
+        <p className="text-gray-600 mb-6">
+          <strong>Work with Dr. Janet Duffy</strong> to tour these homes and discuss which floor plan best 
+          fits your needs. She'll help you understand upgrade options, structural modifications available, 
+          and which features add the most value.
         </p>
       </div>
 
