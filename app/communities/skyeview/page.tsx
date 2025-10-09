@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, Phone, Mail, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import MobileMenu from '@/app/components/mobile-menu'
 import HeroCarousel from './components/hero-carousel'
 import AvailableHomes from './components/available-homes'
 import FloorPlans from './components/floor-plans'
@@ -44,11 +45,7 @@ export default function SkyeviewPage() {
                 <a href="tel:702-568-0333">Call Dr. Janet</a>
               </Button>
             </nav>
-            <div className="md:hidden">
-              <Button variant="outline" size="sm">
-                Menu
-              </Button>
-            </div>
+            <MobileMenu />
           </div>
         </div>
       </header>
