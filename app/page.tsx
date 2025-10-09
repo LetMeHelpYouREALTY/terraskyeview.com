@@ -107,8 +107,12 @@ export default function HomePage() {
           <div className="text-sm text-muted-foreground">
             <p className="mb-1"><strong className="text-foreground">Century Communities</strong> - Top 10 National Homebuilder</p>
             <p className="mb-1">📍 Model Home: <span className="font-semibold text-foreground">8592 Vanhoy Creek Street, Las Vegas, NV 89166</span></p>
-            <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Jan Duffy</span></p>
+            <p>Your Preferred Buyer's Agent: <Link href="/about-dr-janet-duffy" className="font-semibold text-blue-600 hover:underline">Dr. Jan Duffy</Link></p>
             <p className="mt-1">Call: <a href="tel:702-919-7292" className="text-blue-600 hover:underline">(702) 919-7292</a></p>
+            <p className="mt-2 text-xs">
+              <Link href="/for-buyers" className="text-blue-600 hover:underline">Why work with a buyer's agent?</Link> | 
+              <Link href="/homebuying-process" className="text-blue-600 hover:underline ml-2">Learn the process</Link>
+            </p>
           </div>
         </div>
       </div>
@@ -144,7 +148,7 @@ export default function HomePage() {
               </div>
               <p className="text-xl font-bold text-gray-900">Call Dr. Jan FIRST</p>
               <p className="text-base text-gray-700 font-semibold">Register with builder before visiting</p>
-              <p className="text-sm text-gray-600">Required to get best price & ensure representation</p>
+              <p className="text-sm text-gray-600">Required to get best price & ensure representation | <Link href="/blog/should-i-use-realtor-planned-community" className="text-blue-600 hover:underline">Learn why</Link></p>
               <Button asChild className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold">
                 <a href="tel:702-919-7292">Call (702) 919-7292</a>
               </Button>

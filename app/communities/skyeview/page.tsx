@@ -91,7 +91,8 @@ export default function SkyeviewPage() {
                 </span>
               </div>
               <p className="text-sm text-gray-700 mt-2">
-                Your Local Expert: <span className="font-semibold">Dr. Jan Duffy</span>
+                Your Local Expert: <Link href="/about-dr-janet-duffy" className="font-semibold text-blue-600 hover:underline">Dr. Jan Duffy</Link> | 
+                <Link href="/for-buyers" className="text-blue-600 hover:underline ml-2">Why use a buyer's agent?</Link>
               </p>
             </div>
             <div className="flex flex-col gap-2">
