@@ -30,7 +30,7 @@ export default function NotFound() {
           <Button asChild variant="outline">
             <a href="tel:702-919-7292" className="flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" />
-              Call Dr. Janet
+              Call Dr. Jan
             </a>
           </Button>
         </div>

@@ -87,10 +87,10 @@ export default function ShouldIUseRealtorArticle() {
                 to Terra at Skyeview. This is the ONLY way to ensure you get the best price and her representation.
               </p>
               <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-2xl px-12 py-8 h-auto">
-                <a href="tel:702-919-7292">📞 Call Dr. Janet Now: (702) 919-7292</a>
+                <a href="tel:702-919-7292">📞 Call Dr. Jan Now: (702) 919-7292</a>
               </Button>
               <p className="text-sm mt-4 opacity-90">
-                If you visit without calling first, it may be too late for Dr. Janet to represent you!
+                If you visit without calling first, it may be too late for Dr. Jan to represent you!
               </p>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function ShouldIUseRealtorArticle() {
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                 <a href="tel:702-919-7292">
-                  Call Dr. Janet: (702) 919-7292
+                  Call Dr. Jan: (702) 919-7292
                 </a>
               </Button>
             </div>

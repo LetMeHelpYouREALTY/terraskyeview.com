@@ -84,7 +84,7 @@ export default function HomePage() {
               href="tel:702-919-7292"
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors shadow-lg animate-pulse"
             >
-              📞 Call Dr. Janet FIRST: (702) 919-7292
+              📞 Call Dr. Jan FIRST: (702) 919-7292
             </a>
             <a
               href="http://drjanduffy.realscout.com/"
@@ -117,7 +117,7 @@ export default function HomePage() {
       <div className="bg-red-600 text-white py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-lg font-bold mb-1">⚠️ IMPORTANT: Contact Dr. Jan Duffy BEFORE Visiting!</p>
-          <p className="text-sm">You must be registered with the builder to get the best price and ensure Dr. Janet can represent you.</p>
+          <p className="text-sm">You must be registered with the builder to get the best price and ensure Dr. Jan can represent you.</p>
         </div>
       </div>
 
@@ -132,7 +132,7 @@ export default function HomePage() {
                 🔒 CRITICAL: Contact Dr. Jan Duffy BEFORE Your First Visit
               </p>
               <p className="text-sm text-gray-700">
-                To get the best price and ensure Dr. Janet can represent you, she must register you with 
+                To get the best price and ensure Dr. Jan can represent you, she must register you with 
                 Century Communities before you tour the model homes. Call <a href="tel:702-919-7292" className="text-blue-600 font-bold hover:underline">(702) 919-7292</a> now!
               </p>
             </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
               <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
                 1
               </div>
-              <p className="text-xl font-bold text-gray-900">Call Dr. Janet FIRST</p>
+              <p className="text-xl font-bold text-gray-900">Call Dr. Jan FIRST</p>
               <p className="text-base text-gray-700 font-semibold">Register with builder before visiting</p>
               <p className="text-sm text-gray-600">Required to get best price & ensure representation</p>
               <Button asChild className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold">
@@ -155,14 +155,14 @@ export default function HomePage() {
               </div>
               <p className="text-xl font-bold text-gray-900">Visit Model Homes</p>
               <p className="text-base text-gray-700">Tour at 8592 Vanhoy Creek Street</p>
-              <p className="text-sm text-gray-600">With Dr. Janet registered, you're protected</p>
+              <p className="text-sm text-gray-600">With Dr. Jan registered, you're protected</p>
             </div>
             <div className="flex flex-col items-center gap-3 text-center bg-gray-50 rounded-xl p-6">
               <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
                 3
               </div>
               <p className="text-xl font-bold text-gray-900">Get Best Price</p>
-              <p className="text-base text-gray-700">Dr. Janet negotiates for you</p>
+              <p className="text-base text-gray-700">Dr. Jan negotiates for you</p>
               <p className="text-sm text-gray-600">Save thousands with expert representation</p>
             </div>
           </div>

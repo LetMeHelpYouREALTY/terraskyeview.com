@@ -33,7 +33,7 @@ export default function SkyeviewPage() {
                 Available Homes
               </a>
               <a href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
-                About Dr. Janet
+                About Dr. Jan
               </a>
               <a href="/special-offers" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Special Offers
@@ -42,7 +42,7 @@ export default function SkyeviewPage() {
                 Blog
               </a>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
-                <a href="tel:702-919-7292">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Jan</a>
               </Button>
             </nav>
             <MobileMenu />
@@ -62,7 +62,7 @@ export default function SkyeviewPage() {
               </p>
             </div>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-8 py-6 h-auto">
-              <a href="tel:702-919-7292">Call Dr. Janet: (702) 919-7292</a>
+              <a href="tel:702-919-7292">Call Dr. Jan: (702) 919-7292</a>
             </Button>
           </div>
         </div>

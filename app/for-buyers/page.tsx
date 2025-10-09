@@ -69,10 +69,10 @@ const process = [
     title: 'Secure Your Home',
     description: 'Complete the purchase and lock in your choice at Terra',
     details: [
-      'Dr. Janet negotiates best price with Century Communities',
+      'Dr. Jan negotiates best price with Century Communities',
       'Complete online buying form',
       'Pay initial earnest money deposit',
-      'Sign purchase contract with expert guidance from Dr. Janet',
+      'Sign purchase contract with expert guidance from Dr. Jan',
       'Finalize loan and closing details',
       'Receive keys and Century Communities home warranty',
     ],
@@ -98,7 +98,7 @@ export default function ForBuyersPage() {
                 Available Homes
               </Link>
               <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
-                About Dr. Janet
+                About Dr. Jan
               </Link>
               <Link href="/for-buyers" className="text-base font-semibold text-blue-600">
                 For Buyers
@@ -107,7 +107,7 @@ export default function ForBuyersPage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
-                <a href="tel:702-919-7292">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Jan</a>
               </Button>
             </nav>
           </div>
@@ -138,7 +138,7 @@ export default function ForBuyersPage() {
               home at Terra at Skyeview. Learn about the benefits of working with Dr. Jan Duffy as your 
               buyer's agent, understand available financing options, and discover why having your own representation 
               ensures you get the best price and terms. Century Communities is a top 10 national homebuilder, 
-              and with Dr. Janet in your corner, you'll have the expertise needed to navigate the process with confidence.
+              and with Dr. Jan in your corner, you'll have the expertise needed to navigate the process with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">

@@ -344,7 +344,7 @@ export default function WhatAreClosingCostsArticle() {
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                 <a href="tel:702-919-7292">
-                  Call Dr. Janet: (702) 919-7292
+                  Call Dr. Jan: (702) 919-7292
                 </a>
               </Button>
             </div>

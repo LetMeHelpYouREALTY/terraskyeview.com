@@ -110,7 +110,7 @@ export default function SpecialOffersPage() {
                 Available Homes
               </Link>
               <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
-                About Dr. Janet
+                About Dr. Jan
               </Link>
               <Link href="/special-offers" className="text-base font-semibold text-blue-600">
                 Special Offers
@@ -119,7 +119,7 @@ export default function SpecialOffersPage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
-                <a href="tel:702-919-7292">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Jan</a>
               </Button>
             </nav>
           </div>
@@ -449,7 +449,7 @@ export default function SpecialOffersPage() {
         </div>
       </section>
 
-      {/* Why Work with Dr. Janet Section */}
+      {/* Why Work with Dr. Jan Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
@@ -467,7 +467,7 @@ export default function SpecialOffersPage() {
                 Preferred Lender Relationships
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Dr. Janet has established relationships with multiple preferred lenders beyond just the 
+                Dr. Jan has established relationships with multiple preferred lenders beyond just the 
                 builder's affiliated lender. This means she can shop your loan across multiple institutions 
                 to ensure you're getting the absolute best rate and terms. Sometimes lenders outside the 
                 builder's network offer better deals—having a buyer's agent who knows these connections is invaluable.
@@ -477,7 +477,7 @@ export default function SpecialOffersPage() {
                 Maximizing Closing Cost Assistance
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                The advertised $5,000 closing cost assistance is just the starting point. Dr. Janet knows 
+                The advertised $5,000 closing cost assistance is just the starting point. Dr. Jan knows 
                 how to structure your offer and loan application to maximize this benefit. She understands 
                 which closing costs can be covered, how to negotiate additional builder credits, and ways 
                 to reduce your out-of-pocket expenses beyond what's publicly advertised.
@@ -487,7 +487,7 @@ export default function SpecialOffersPage() {
                 Understanding the Fine Print
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Financing offers come with terms, conditions, and limitations. Dr. Janet will explain 
+                Financing offers come with terms, conditions, and limitations. Dr. Jan will explain 
                 exactly what you qualify for, what the actual monthly payments will be, how different loan 
                 types compare, and which option is best for your specific financial situation. She'll ensure 
                 you understand every aspect of your financing before you commit, protecting you from surprises 

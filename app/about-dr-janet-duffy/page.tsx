@@ -11,12 +11,12 @@ const testimonials = [
     location: 'Skyeview at Skye Canyon',
   },
   {
-    quote: "We almost went to the builder alone, but Dr. Janet showed us why having a buyer's agent is essential. She got us $5,000 in closing cost assistance!",
+    quote: "We almost went to the builder alone, but Dr. Jan showed us why having a buyer's agent is essential. She got us $5,000 in closing cost assistance!",
     author: 'Robert K.',
     location: 'Skye Canyon',
   },
   {
-    quote: "Professional, knowledgeable, and truly works for YOU. Dr. Janet made our home buying experience stress-free and saved us money.",
+    quote: "Professional, knowledgeable, and truly works for YOU. Dr. Jan made our home buying experience stress-free and saved us money.",
     author: 'The Martinez Family',
     location: 'Northwest Las Vegas',
   },
@@ -41,7 +41,7 @@ export default function AboutDrJanetDuffyPage() {
                 Available Homes
               </Link>
               <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-blue-600">
-                About Dr. Janet
+                About Dr. Jan
               </Link>
               <Link href="/blog" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Blog
@@ -89,7 +89,7 @@ export default function AboutDrJanetDuffyPage() {
                 <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                   <a href="mailto:DrJanSells@TerraSkyeview.com">
                     <Mail className="w-5 h-5 mr-2" />
-                    Email Dr. Janet
+                    Email Dr. Jan
                   </a>
                 </Button>
               </div>
@@ -235,7 +235,7 @@ export default function AboutDrJanetDuffyPage() {
         </div>
       </section>
 
-      {/* Why Choose Dr. Janet Section */}
+      {/* Why Choose Dr. Jan Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -468,7 +468,7 @@ export default function AboutDrJanetDuffyPage() {
                 </li>
                 <li>
                   <Link href="/about-dr-janet-duffy" className="text-gray-400 hover:text-white transition">
-                    About Dr. Janet
+                    About Dr. Jan
                   </Link>
                 </li>
                 <li>

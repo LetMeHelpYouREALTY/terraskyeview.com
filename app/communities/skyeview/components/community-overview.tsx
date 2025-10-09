@@ -89,7 +89,7 @@ export default function CommunityOverview() {
               When you work with Dr. Jan Duffy as your buyer's agent at Terra at Skyeview, you 
               gain a powerful advocate who will negotiate the best possible price and terms on 
               your behalf. Unlike the builder's agent who represents Century Communities' interests, 
-              Dr. Janet works exclusively for you. She'll help you navigate upgrade selections, 
+              Dr. Jan works exclusively for you. She'll help you navigate upgrade selections, 
               review contracts thoroughly, access up to $5,000 in closing cost assistance through 
               preferred lenders, and ensure you're making informed decisions throughout the process. 
               Best of all, her services are completely FREE to you as the buyer—the seller pays 

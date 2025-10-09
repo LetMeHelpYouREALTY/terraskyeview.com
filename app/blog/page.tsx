@@ -153,7 +153,7 @@ export default function BlogPage() {
                 Available Homes
               </Link>
               <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
-                About Dr. Janet
+                About Dr. Jan
               </Link>
               <Link href="/special-offers" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Special Offers
@@ -162,7 +162,7 @@ export default function BlogPage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
-                <a href="tel:702-919-7292">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Jan</a>
               </Button>
             </nav>
           </div>
