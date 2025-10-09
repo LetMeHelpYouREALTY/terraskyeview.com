@@ -263,7 +263,7 @@ export default function SkyeviewPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 Terra Skyeview. All rights reserved. | Equal Housing Opportunity</p>
+            <p>&copy; 2025 Terra Skyeview | Homes By Dr. Jan Duffy S.0197614. All rights reserved. | Equal Housing Opportunity</p>
           </div>
         </div>
       </footer>
