@@ -21,8 +21,8 @@ export default function SkyeviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold">Terra</span>
-              <span className="text-2xl font-light">Skyeview</span>
+              <span className="text-2xl font-bold">Terra at Skyeview</span>
+              <span className="text-sm text-gray-600 ml-2">by Century Communities</span>
             </a>
             <nav className="hidden md:flex items-center gap-6">
               <a href="/" className="text-sm font-medium hover:text-blue-600 transition">
@@ -61,11 +61,12 @@ export default function SkyeviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">Skyeview - Terra</h1>
+              <h1 className="text-3xl font-bold text-gray-900">Terra at Skyeview</h1>
+              <p className="text-sm text-gray-600 mb-1">by Century Communities</p>
               <p className="text-lg text-gray-600 mt-1">
                 8592 Vanhoy Creek Street, Las Vegas, NV 89166
               </p>
-              <p className="text-sm text-gray-500">Skye Canyon Community</p>
+              <p className="text-sm text-gray-500">Skye Canyon Master-Planned Community</p>
               <div className="flex items-center gap-4 mt-2">
                 <span className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
                   Now Selling
@@ -202,13 +203,14 @@ export default function SkyeviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Terra Skyeview</h3>
+              <h3 className="text-xl font-bold mb-4">Terra at Skyeview</h3>
+              <p className="text-sm text-gray-500 mb-2">by Century Communities</p>
               <p className="text-gray-400 text-sm mb-4">
-                Your dream home in Las Vegas awaits.
+                Two-story new homes in Skye Canyon, Las Vegas.
               </p>
               <p className="text-gray-400 text-sm">
                 <span className="text-white font-medium">Dr. Janet Duffy</span><br />
-                Your Local Real Estate Expert
+                Your Preferred Buyer's Agent
               </p>
             </div>
             <div>

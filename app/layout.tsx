@@ -15,18 +15,18 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Terra Skyeview | New Homes in Las Vegas | Dr. Janet Duffy',
-  description: 'Discover new construction homes at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990. Expert guidance from Dr. Janet Duffy. Call 702-568-0333.',
-  keywords: 'Las Vegas new homes, Skye Canyon, Skyeview, Dr. Janet Duffy, real estate Las Vegas, new construction',
+  title: 'Terra at Skyeview by Century Communities | New Homes Las Vegas | Dr. Janet Duffy',
+  description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Janet Duffy. Call 702-568-0333.',
+  keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Janet Duffy, Northwest Las Vegas, new construction homes',
   openGraph: {
-    title: 'Terra Skyeview | New Homes in Las Vegas',
-    description: 'Discover new construction homes at Skyeview in Skye Canyon, Las Vegas. From $479,990.',
+    title: 'Terra at Skyeview by Century Communities | Las Vegas New Homes',
+    description: 'Two-story new construction homes in Skye Canyon from $479,990. Expert buyer representation.',
     images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terra Skyeview | New Homes in Las Vegas',
-    description: 'Discover new construction homes at Skyeview in Skye Canyon, Las Vegas. From $479,990.',
+    title: 'Terra at Skyeview by Century Communities',
+    description: 'New construction homes in Skye Canyon, Las Vegas from $479,990.',
     images: ['/og-image.png'],
   },
 }

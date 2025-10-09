@@ -37,14 +37,10 @@ export default function CommunityOverview() {
         <div>
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 leading-relaxed mb-6">
-              Welcome to Skyeview at Skye Canyon, a community offering inspired new homes for
-              sale in Las Vegas, NV. The Skye Canyon planned community offers plenty of
-              adventure and relaxation with its state-of-the-art amenities, annual community
-              events and interactive programming.
+              Welcome to <strong>Terra at Skyeview</strong>, a new home community by <strong>Century Communities</strong> offering inspired two-story homes for sale in Las Vegas, NV. Located within the Skye Canyon master-planned community, Terra offers plenty of adventure and relaxation with state-of-the-art amenities, annual community events, and interactive programming.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Discover the best new construction homes in Las Vegas, NV at Skyeview at Skye
-              Canyon and start your dream home journey today.
+              Discover quality new construction homes from one of the nation's top 10 homebuilders. Terra at Skyeview features modern two-story floor plans ranging from 1,792 to 2,119 square feet with 3-5 bedrooms. Start your dream home journey today with expert representation from Dr. Janet Duffy, your preferred buyer's agent.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">

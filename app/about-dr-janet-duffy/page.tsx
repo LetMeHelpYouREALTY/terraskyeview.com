@@ -30,8 +30,8 @@ export default function AboutDrJanetDuffyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold">Terra</span>
-              <span className="text-2xl font-light">Skyeview</span>
+              <span className="text-xl font-bold">Terra at Skyeview</span>
+              <span className="text-xs text-gray-600 ml-2">by Century Communities</span>
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/" className="text-sm font-medium hover:text-blue-600 transition">
@@ -60,13 +60,13 @@ export default function AboutDrJanetDuffyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
-                Preferred Buyer's Agent at Skyeview
+                Preferred Buyer's Agent at Terra at Skyeview
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
                 Meet Dr. Janet Duffy
               </h1>
               <p className="text-2xl text-blue-100 mb-8">
-                Your advocate for getting the best price and deal on new construction homes at Skyeview at Skye Canyon
+                Your advocate for getting the best price and deal on new construction homes at Terra at Skyeview by Century Communities
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">

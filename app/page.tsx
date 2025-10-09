@@ -227,16 +227,19 @@ export default function HomePage() {
           className="text-center px-4 sm:px-6 max-w-4xl mx-auto -translate-y-1/4"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 text-pretty">
-            Terra Skyeview
+            Terra at Skyeview
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-2 text-pretty">
-            New Construction Homes from $479,990 in Las Vegas
+          <p className="text-xl text-muted-foreground mb-2">
+            by Century Communities
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 text-pretty">
+            New Two-Story Homes from $479,990 in Skye Canyon, Las Vegas
           </p>
           <div className="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg mb-6">
             <p className="text-sm font-semibold">
-              ⭐ Dr. Janet Duffy - Your Preferred Buyer's Agent
+              ⭐ Dr. Janet Duffy - Preferred Buyer's Agent
             </p>
-            <p className="text-xs">Get the Best Price & Expert Negotiation • FREE to Buyers</p>
+            <p className="text-xs">Get the Best Price & Exclusive Deals • FREE to Buyers</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -261,7 +264,8 @@ export default function HomePage() {
           </div>
 
           <div className="text-sm text-muted-foreground">
-            <p>Your Local Expert: <span className="font-semibold text-foreground">Dr. Janet Duffy</span></p>
+            <p className="mb-1"><strong className="text-foreground">Century Communities</strong> - Top 10 National Homebuilder</p>
+            <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Janet Duffy</span></p>
             <p className="mt-1">Call: <a href="tel:702-568-0333" className="text-blue-600 hover:underline">702.568.0333</a></p>
           </div>
         </div>

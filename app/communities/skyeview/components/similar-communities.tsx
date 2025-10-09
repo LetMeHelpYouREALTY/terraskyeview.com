@@ -19,9 +19,9 @@ const communities = [
     name: 'Mesa at Skyeview',
     location: 'Las Vegas, NV 89166',
     phone: '702.568.0333',
-    startingPrice: 528665,
-    estimatedPayment: 2929,
-    status: ['Masterplan Community', 'NW Las Vegas'],
+    startingPrice: 474990,
+    estimatedPayment: 2632,
+    status: ['Single-Story Homes', 'Same Community'],
   },
   {
     id: 3,
