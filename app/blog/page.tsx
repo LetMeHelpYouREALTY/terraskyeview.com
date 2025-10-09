@@ -1,0 +1,437 @@
+'use client'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowRight, Calendar, User, Tag, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+const categories = [
+  'All Posts',
+  'Home Buying Tips',
+  'Las Vegas Market',
+  'Neighborhood Guides',
+  'Design & Style',
+  'Investment Advice',
+]
+
+const blogPosts = [
+  {
+    id: 1,
+    title: 'How to Navigate the Las Vegas Real Estate Market in 2025',
+    excerpt:
+      'Learn expert strategies for buying a home in the competitive Las Vegas market. Discover insider tips for making winning offers and avoiding common pitfalls.',
+    author: 'Dr. Janet Duffy',
+    date: 'January 15, 2025',
+    category: 'Las Vegas Market',
+    readTime: '5 min read',
+    featured: true,
+    image: '/blog/las-vegas-market.jpg',
+  },
+  {
+    id: 2,
+    title: 'Why Skye Canyon is Las Vegas\' Hottest Master-Planned Community',
+    excerpt:
+      'Discover what makes Skye Canyon stand out from other Las Vegas communities. From top-rated schools to resort-style amenities, find out why families are choosing this northwest neighborhood.',
+    author: 'Dr. Janet Duffy',
+    date: 'January 10, 2025',
+    category: 'Neighborhood Guides',
+    readTime: '7 min read',
+    featured: true,
+    image: '/blog/skye-canyon.jpg',
+  },
+  {
+    id: 3,
+    title: 'Understanding Down Payment Gift Funds: A Complete Guide',
+    excerpt:
+      'Learn how down payment gift funds can fast-track your home purchase. Understand the rules, documentation requirements, and how to use gift funds effectively.',
+    author: 'Dr. Janet Duffy',
+    date: 'January 5, 2025',
+    category: 'Home Buying Tips',
+    readTime: '6 min read',
+    featured: true,
+    image: '/blog/down-payment.jpg',
+  },
+  {
+    id: 4,
+    title: 'Top 10 Interior Design Trends for New Homes in 2025',
+    excerpt:
+      'Stay ahead of the curve with the latest interior design trends. From sustainable materials to smart home integration, see what\'s shaping modern home design.',
+    author: 'Dr. Janet Duffy',
+    date: 'December 28, 2024',
+    category: 'Design & Style',
+    readTime: '8 min read',
+    featured: false,
+    image: '/blog/design-trends.jpg',
+  },
+  {
+    id: 5,
+    title: 'New Home vs. Resale: Making the Right Choice for Your Family',
+    excerpt:
+      'Weigh the pros and cons of buying new construction versus an existing home. Learn about warranties, customization options, and long-term value.',
+    author: 'Dr. Janet Duffy',
+    date: 'December 20, 2024',
+    category: 'Home Buying Tips',
+    readTime: '5 min read',
+    featured: false,
+    image: '/blog/new-vs-resale.jpg',
+  },
+  {
+    id: 6,
+    title: 'Investment Opportunities in Las Vegas Real Estate',
+    excerpt:
+      'Discover why Las Vegas continues to be a strong market for real estate investment. Learn about rental yields, appreciation trends, and emerging neighborhoods.',
+    author: 'Dr. Janet Duffy',
+    date: 'December 15, 2024',
+    category: 'Investment Advice',
+    readTime: '6 min read',
+    featured: false,
+    image: '/blog/investment.jpg',
+  },
+  {
+    id: 7,
+    title: 'The Complete Guide to New Home Warranties',
+    excerpt:
+      'Understand what\'s covered under your new home warranty and how to maximize its benefits. Learn about structural warranties, appliance coverage, and claim processes.',
+    author: 'Dr. Janet Duffy',
+    date: 'December 10, 2024',
+    category: 'Home Buying Tips',
+    readTime: '7 min read',
+    featured: false,
+    image: '/blog/warranties.jpg',
+  },
+  {
+    id: 8,
+    title: 'Best Schools in Northwest Las Vegas: A Parent\'s Guide',
+    excerpt:
+      'Explore the top-rated schools in Northwest Las Vegas, including Skye Canyon area. Get insights on academic performance, extracurriculars, and community involvement.',
+    author: 'Dr. Janet Duffy',
+    date: 'December 5, 2024',
+    category: 'Neighborhood Guides',
+    readTime: '9 min read',
+    featured: false,
+    image: '/blog/schools.jpg',
+  },
+]
+
+export default function BlogPage() {
+  const [selectedCategory, setSelectedCategory] = useState('All Posts')
+  const [featuredIndex, setFeaturedIndex] = useState(0)
+
+  const filteredPosts = blogPosts.filter(
+    (post) => selectedCategory === 'All Posts' || post.category === selectedCategory
+  )
+
+  const featuredPosts = blogPosts.filter((post) => post.featured)
+
+  const nextFeatured = () => {
+    setFeaturedIndex((prev) => (prev + 1) % featuredPosts.length)
+  }
+
+  const prevFeatured = () => {
+    setFeaturedIndex((prev) => (prev - 1 + featuredPosts.length) % featuredPosts.length)
+  }
+
+  return (
+    <main className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-2xl font-bold">Terra</span>
+              <span className="text-2xl font-light">Skyeview</span>
+            </Link>
+            <nav className="hidden md:flex items-center gap-6">
+              <Link href="/" className="text-sm font-medium hover:text-blue-600 transition">
+                Home
+              </Link>
+              <Link href="/communities/skyeview" className="text-sm font-medium hover:text-blue-600 transition">
+                Available Homes
+              </Link>
+              <Link href="/special-offers" className="text-sm font-medium hover:text-blue-600 transition">
+                Special Offers
+              </Link>
+              <Link href="/homebuying-process" className="text-sm font-medium hover:text-blue-600 transition">
+                Resources
+              </Link>
+              <Link href="/blog" className="text-sm font-medium text-blue-600">
+                Blog
+              </Link>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <a href="tel:702-568-0333">Contact Us</a>
+              </Button>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              The Front Porch
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-4">
+              Your Resource for Las Vegas Real Estate Insights
+            </p>
+            <p className="text-lg text-blue-100">
+              Expert advice, market trends, and neighborhood guides from Dr. Janet Duffy
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Posts Carousel */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">Featured Articles</h2>
+            <div className="flex gap-2">
+              <button
+                onClick={prevFeatured}
+                className="p-2 rounded-lg border border-gray-300 hover:bg-white transition"
+                aria-label="Previous featured article"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={nextFeatured}
+                className="p-2 rounded-lg border border-gray-300 hover:bg-white transition"
+                aria-label="Next featured article"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Image */}
+              <div className="relative h-64 lg:h-auto bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center text-white p-8">
+                    <div className="w-24 h-24 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                      <span className="text-4xl">📰</span>
+                    </div>
+                    <p className="text-sm opacity-75">Featured Article Image</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                    {featuredPosts[featuredIndex].category}
+                  </span>
+                  <span className="text-sm text-gray-500">
+                    {featuredPosts[featuredIndex].readTime}
+                  </span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                  {featuredPosts[featuredIndex].title}
+                </h3>
+
+                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                  {featuredPosts[featuredIndex].excerpt}
+                </p>
+
+                <div className="flex items-center gap-4 mb-6 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <User className="w-4 h-4" />
+                    <span>{featuredPosts[featuredIndex].author}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>{featuredPosts[featuredIndex].date}</span>
+                  </div>
+                </div>
+
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                  Read Full Article
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Category Filter */}
+      <section className="py-8 bg-white border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap gap-3">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                  selectedCategory === category
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Posts Grid */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">
+              {selectedCategory === 'All Posts' ? 'All Articles' : selectedCategory}
+            </h2>
+            <p className="text-gray-600 mt-2">
+              {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'} found
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredPosts.map((post) => (
+              <article
+                key={post.id}
+                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition group"
+              >
+                {/* Image */}
+                <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-600 overflow-hidden">
+                  <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-center text-white">
+                      <div className="w-16 h-16 mx-auto mb-2 bg-white/20 rounded-full flex items-center justify-center">
+                        <Tag className="w-8 h-8" />
+                      </div>
+                      <p className="text-xs opacity-75">Article Image</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="inline-flex items-center px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
+                      {post.category}
+                    </span>
+                    <span className="text-xs text-gray-500">{post.readTime}</span>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition">
+                    {post.title}
+                  </h3>
+
+                  <p className="text-gray-600 mb-4 line-clamp-3 text-sm leading-relaxed">
+                    {post.excerpt}
+                  </p>
+
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-2 text-xs text-gray-600">
+                      <Calendar className="w-3 h-3" />
+                      <span>{post.date}</span>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-blue-600 hover:text-blue-700 p-0 h-auto font-semibold"
+                    >
+                      Read More
+                      <ArrowRight className="w-3 h-3 ml-1" />
+                    </Button>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Find Your Dream Home?</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Explore available homes at Skyeview at Skye Canyon or schedule a tour with Dr. Janet Duffy today.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Link href="/communities/skyeview">
+                View Available Homes
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
+              <a href="tel:702-568-0333">
+                Call: 702.568.0333
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Terra Skyeview</h3>
+              <p className="text-gray-400 text-sm mb-4">
+                Your dream home in Las Vegas awaits.
+              </p>
+              <p className="text-gray-400 text-sm">
+                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <br />
+                Your Local Real Estate Expert
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white transition">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/communities/skyeview" className="text-gray-400 hover:text-white transition">
+                    Available Homes
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" className="text-gray-400 hover:text-white transition">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Categories</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>Home Buying Tips</li>
+                <li>Las Vegas Market</li>
+                <li>Neighborhood Guides</li>
+                <li>Design & Style</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Contact</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>702.568.0333</li>
+                <li>info@terraskyeview.com</li>
+                <li>8592 Vanhoy Creek Street<br />Las Vegas, NV 89166</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            <p>
+              &copy; 2025 Terra Skyeview. All rights reserved. | Equal Housing Opportunity
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  )
+}
+
