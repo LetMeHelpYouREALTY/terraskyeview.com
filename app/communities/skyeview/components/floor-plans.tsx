@@ -148,11 +148,15 @@ export default function FloorPlans() {
               </div>
 
               <div className="flex gap-2">
-                <Button variant="outline" className="flex-1">
-                  Request Info
+                <Button asChild variant="outline" className="flex-1">
+                  <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer">
+                    Request Info
+                  </a>
                 </Button>
-                <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
-                  View Details
+                <Button asChild className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
+                  <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                    View Details
+                  </a>
                 </Button>
               </div>
             </div>

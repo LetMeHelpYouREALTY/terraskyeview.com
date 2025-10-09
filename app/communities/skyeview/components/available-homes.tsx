@@ -192,11 +192,15 @@ export default function AvailableHomes() {
               </div>
 
               <div className="flex gap-2">
-                <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
-                  Buy Now
+                <Button asChild className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
+                  <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer">
+                    Request Info
+                  </a>
                 </Button>
-                <Button variant="outline" className="flex-1">
-                  View Details
+                <Button asChild variant="outline" className="flex-1">
+                  <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                    View Details
+                  </a>
                 </Button>
               </div>
             </div>
