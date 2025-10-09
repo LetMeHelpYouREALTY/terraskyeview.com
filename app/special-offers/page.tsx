@@ -228,10 +228,20 @@ export default function SpecialOffersPage() {
       {/* Benefits Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Save big and achieve your dream home goals!
+              Save Big and Achieve Your Dream Home Goals!
             </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
+              At Terra at Skyeview by Century Communities, we've partnered with preferred lenders to 
+              bring you exceptional financing opportunities that make homeownership more affordable than ever.
+            </p>
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              Work with Dr. Janet Duffy to access these exclusive benefits and ensure you're getting the 
+              absolute best deal available. As your buyer's agent, she'll connect you with lenders offering 
+              the most competitive rates and maximum closing cost assistance—benefits you might miss if you 
+              work only with the builder's representative.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -363,11 +373,17 @@ export default function SpecialOffersPage() {
       {/* How It Works Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Start your new home journey today
+              Start Your New Home Journey Today
             </h2>
-            <p className="text-xl text-gray-600">in just three easy steps</p>
+            <p className="text-xl text-gray-700 mb-6">In just three easy steps with expert guidance</p>
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              The homebuying process at Terra at Skyeview has been streamlined to make your experience 
+              as smooth as possible. When you work with Dr. Janet Duffy, you'll have expert representation 
+              at every stage, ensuring you don't miss any opportunities for savings or incentives. Here's 
+              how the process works from start to finish.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -424,21 +440,72 @@ export default function SpecialOffersPage() {
         </div>
       </section>
 
+      {/* Why Work with Dr. Janet Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Why Work with Dr. Janet Duffy for Special Offers?
+            </h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-700 leading-relaxed mb-6">
+                While you can access Century Communities' base financing options on your own, working with 
+                Dr. Janet Duffy as your buyer's agent ensures you're maximizing every available benefit. 
+                Here's what she brings to the table when it comes to financing and special offers:
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Preferred Lender Relationships
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Dr. Janet has established relationships with multiple preferred lenders beyond just the 
+                builder's affiliated lender. This means she can shop your loan across multiple institutions 
+                to ensure you're getting the absolute best rate and terms. Sometimes lenders outside the 
+                builder's network offer better deals—having a buyer's agent who knows these connections is invaluable.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Maximizing Closing Cost Assistance
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The advertised $5,000 closing cost assistance is just the starting point. Dr. Janet knows 
+                how to structure your offer and loan application to maximize this benefit. She understands 
+                which closing costs can be covered, how to negotiate additional builder credits, and ways 
+                to reduce your out-of-pocket expenses beyond what's publicly advertised.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Understanding the Fine Print
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Financing offers come with terms, conditions, and limitations. Dr. Janet will explain 
+                exactly what you qualify for, what the actual monthly payments will be, how different loan 
+                types compare, and which option is best for your specific financial situation. She'll ensure 
+                you understand every aspect of your financing before you commit, protecting you from surprises 
+                down the road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Disclaimer Section */}
       <section className="py-12 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl p-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Disclaimer</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Important Disclosure</h3>
             <div className="text-sm text-gray-600 space-y-3 leading-relaxed">
               <p>
-                *Rates are available only on the purchase of select homes at Skyeview at Skye Canyon. 
+                *Rates are available only on the purchase of select homes at Terra at Skyeview. 
                 Availability of rate specials are limited and subject to change at any time without notice. 
-                This offer may change upon exhaustion of funds.
+                This offer may change upon exhaustion of funds. Offers and incentives are subject to builder's 
+                terms and conditions.
               </p>
               <p>
                 Receipt of up to $5,000 towards closing costs is contingent upon buyer closing a loan 
                 with our affiliated lender and is subject to limits. The offer to pay closing costs does 
-                not include payment of prepaid taxes, property or mortgage insurance, or mortgage installments.
+                not include payment of prepaid taxes, property or mortgage insurance, or mortgage installments. 
+                Pre-payment of HOA assessments are typically subject to lender limits.
               </p>
               <p>
                 Financing examples are for illustration purposes only. Interest rates, payments, terms and 
@@ -447,8 +514,9 @@ export default function SpecialOffersPage() {
                 Loans are subject to credit approval. Restrictions and conditions may apply.
               </p>
               <p>
-                This information is provided by Dr. Janet Duffy, a licensed real estate professional in Nevada. 
-                Equal Housing Opportunity. All rights reserved.
+                This information is provided by Dr. Janet Duffy, an independent real estate professional licensed 
+                in Nevada. Dr. Janet Duffy is not employed by or affiliated with Century Communities. She represents 
+                buyers as an independent buyer's agent. Equal Housing Opportunity. All rights reserved.
               </p>
             </div>
           </div>
