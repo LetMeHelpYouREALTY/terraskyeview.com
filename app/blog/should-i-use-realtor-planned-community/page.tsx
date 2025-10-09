@@ -112,7 +112,7 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Jan Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Jan Duffy is an expert not only in real estate, but also specializes in Terra at Skyeview and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal.
+              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Jan Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Jan Duffy is an expert not only in real estate, but also specializes in <Link href="/communities/skyeview" className="text-blue-600 hover:underline font-medium">Terra at Skyeview</Link> and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal. <Link href="/about-dr-janet-duffy" className="text-blue-600 hover:underline font-medium">Learn more about Dr. Jan Duffy's expertise</Link>.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8 rounded-r-lg">
@@ -121,7 +121,7 @@ export default function ShouldIUseRealtorArticle() {
                 It's important to understand that when you look at new construction communities, it can be tempting to just let the builder's agent handle the transaction. However, <strong>having your own real estate agent is a better idea.</strong>
               </p>
               <p className="text-gray-800">
-                The realtor who works for you is known as a <strong>"buyer's agent"</strong> and it is their responsibility to look out for your best interests during the entire process. The seller pays both the selling and buying agents' commissions, which means <strong>Dr. Jan Duffy's services cost you nothing!</strong>
+                The realtor who works for you is known as a <strong>"buyer's agent"</strong> and it is their responsibility to look out for your best interests during the entire process. The seller pays both the selling and buying agents' commissions, which means <strong>Dr. Jan Duffy's services cost you nothing!</strong> Discover all the <Link href="/for-buyers" className="text-blue-600 hover:underline font-semibold">benefits of working with a buyer's agent</Link>.
               </p>
             </div>
 
