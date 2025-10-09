@@ -78,6 +78,23 @@ export default function ShouldIUseRealtorArticle() {
             </p>
           </div>
 
+          {/* Critical Registration Alert */}
+          <div className="bg-red-600 text-white rounded-2xl p-8 mb-12 border-4 border-red-700">
+            <div className="text-center">
+              <p className="text-3xl font-bold mb-4">⚠️ CRITICAL: Call BEFORE You Visit!</p>
+              <p className="text-xl mb-6">
+                Dr. Janet Duffy MUST register you with Century Communities BEFORE your first visit 
+                to Terra at Skyeview. This is the ONLY way to ensure you get the best price and her representation.
+              </p>
+              <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-2xl px-12 py-8 h-auto">
+                <a href="tel:702-919-7292">📞 Call Dr. Janet Now: (702) 919-7292</a>
+              </Button>
+              <p className="text-sm mt-4 opacity-90">
+                If you visit without calling first, it may be too late for Dr. Janet to represent you!
+              </p>
+            </div>
+          </div>
+
           {/* Featured Image Placeholder */}
           <div className="relative h-96 bg-gradient-to-br from-blue-900 to-green-700 rounded-2xl mb-12 overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">

@@ -117,6 +117,14 @@ export default function ForBuyersPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
+            <p className="text-2xl font-bold mb-3">⚠️ IMPORTANT FIRST STEP:</p>
+            <p className="text-lg">
+              Contact Dr. Janet Duffy BEFORE visiting Terra at Skyeview! She must register you with 
+              Century Communities first to ensure the best price and her representation rights.
+            </p>
+          </div>
+
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Everything You Need to Buy Your Dream Home
