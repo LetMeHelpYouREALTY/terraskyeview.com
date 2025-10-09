@@ -400,7 +400,7 @@ export default function BlogPage() {
                   realscout-advanced-search {
                     --rs-as-button-text-color: #ffffff;
                     --rs-as-background-color: #ffffff;
-                    --rs-as-button-color: rgb(35, 93, 137);
+                    --rs-as-button-color: #F26419;
                     --rs-as-widget-width: 500px !important;
                   }
                 </style>
