@@ -67,7 +67,7 @@ export default function HomePage() {
             <p className="text-sm font-semibold">
               ⭐ Dr. Jan Duffy - Preferred Buyer's Agent
             </p>
-            <p className="text-xs">Get the Best Price & Exclusive Deals • FREE to Buyers</p>
+            <p className="text-xs">Get the Best Price & Exclusive Deals • FREE Consults to Buyers</p>
           </div>
           
           <div className="bg-red-50 border-2 border-red-500 rounded-xl p-6 mb-8 max-w-2xl mx-auto">

@@ -16,7 +16,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 - 3-step homebuying process
 - Clear CTAs (View Homes, Special Offers, Schedule Tour)
 - Century Communities branding
-- **Key Message:** "Get the Best Price & Exclusive Deals • FREE to Buyers"
+- **Key Message:** "Get the Best Price & Exclusive Deals • FREE Consults to Buyers"
 
 #### 2. **Community Page** - `/communities/skyeview`
 - Image carousel (61 placeholder slots ready for real photos)
@@ -81,7 +81,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 ### Dr. Jan Duffy:
 ✅ **"Preferred Buyer's Agent at Terra at Skyeview"**
 ✅ **"Get the Best Price & Deal"** - Core message
-✅ **"FREE to Buyers"** - Seller pays commission
+✅ **"FREE Consults to Buyers"** - Seller pays commission
 ✅ **$5,000 closing cost assistance** access
 ✅ **Expert Negotiation** - vs. builder's agent
 ✅ **Local Expert** - Skye Canyon specialist

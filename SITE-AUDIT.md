@@ -42,7 +42,7 @@
 ### Dr. Jan Duffy Positioning:
 - ✅ **"Preferred Buyer's Agent"** - mentioned throughout
 - ✅ **"Get the Best Price"** - core value proposition
-- ✅ **"FREE to Buyers"** - seller pays commission
+- ✅ **"FREE Consults to Buyers"** - seller pays commission
 - ✅ $5,000 closing cost assistance access
 - ✅ Expert negotiation emphasis
 - ✅ Phone: (702) 919-7292

@@ -109,7 +109,7 @@
 ### Dr. Jan Duffy Positioning:
 ✅ "Preferred Buyer's Agent" - used 40+ times across site  
 ✅ "Get the Best Price" - core value proposition  
-✅ "FREE to Buyers" - emphasized on every page  
+✅ "FREE Consults to Buyers" - emphasized on every page  
 ✅ "$5,000 closing cost assistance" - highlighted  
 ✅ "Buyer's Agent vs. Builder's Agent" - explained  
 ✅ Phone: 702.568.0333 - on every page  
