@@ -142,26 +142,26 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold">Terra at Skyeview</span>
-              <span className="text-xs text-gray-600 ml-2">by Century Communities</span>
+              <span className="text-xl font-bold text-gray-900">Terra at Skyeview</span>
+              <span className="text-xs text-gray-500 ml-2">by Century Communities</span>
             </Link>
-            <nav className="hidden md:flex items-center gap-6">
-              <Link href="/" className="text-sm font-medium hover:text-blue-600 transition">
+            <nav className="hidden md:flex items-center gap-8">
+              <Link href="/" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Home
               </Link>
-              <Link href="/communities/skyeview" className="text-sm font-medium hover:text-blue-600 transition">
+              <Link href="/communities/skyeview" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Available Homes
               </Link>
-              <Link href="/about-dr-janet-duffy" className="text-sm font-medium hover:text-blue-600 transition">
+              <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 About Dr. Janet
               </Link>
-              <Link href="/special-offers" className="text-sm font-medium hover:text-blue-600 transition">
+              <Link href="/special-offers" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Special Offers
               </Link>
-              <Link href="/blog" className="text-sm font-medium text-blue-600">
+              <Link href="/blog" className="text-base font-semibold text-blue-600">
                 Blog
               </Link>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
                 <a href="tel:702-919-7292">Call Dr. Janet</a>
               </Button>
             </nav>
