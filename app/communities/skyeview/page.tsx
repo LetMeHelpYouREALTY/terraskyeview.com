@@ -290,8 +290,8 @@ export default function SkyeviewPage() {
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-4">
-                <a href="#" className="text-gray-400 hover:text-white transition">Facebook</a>
-                <a href="#" className="text-gray-400 hover:text-white transition">Instagram</a>
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">Search Homes</a>
+                <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">Start Search</a>
               </div>
             </div>
           </div>

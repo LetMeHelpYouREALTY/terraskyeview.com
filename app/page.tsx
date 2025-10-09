@@ -84,16 +84,20 @@ export default function HomePage() {
               📞 Call Dr. Janet FIRST: (702) 919-7292
             </a>
             <a
-              href="/communities/skyeview"
+              href="http://drjanduffy.realscout.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold transition-colors"
             >
-              View Available Homes
+              Search Available Homes
             </a>
             <a
-              href="/special-offers"
+              href="http://drjanduffy.realscout.com/onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-6 py-3 rounded-lg text-base font-semibold transition-colors"
             >
-              Special Offers
+              Start Your Home Search
             </a>
           </div>
 
