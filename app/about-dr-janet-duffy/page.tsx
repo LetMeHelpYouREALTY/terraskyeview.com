@@ -57,6 +57,17 @@ export default function AboutDrJanetDuffyPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center">
+            <p className="text-2xl font-bold mb-2">⚠️ CRITICAL: Call Me BEFORE You Visit Terra!</p>
+            <p className="text-lg mb-4">
+              I must register you with Century Communities BEFORE your first visit to ensure I can 
+              represent you and negotiate the best price. Don't go to the model homes alone!
+            </p>
+            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-10 py-6 h-auto">
+              <a href="tel:702-919-7292">📞 Call Now: (702) 919-7292</a>
+            </Button>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">

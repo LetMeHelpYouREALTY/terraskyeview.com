@@ -50,6 +50,24 @@ export default function SkyeviewPage() {
         </div>
       </header>
 
+      {/* Critical Registration Notice */}
+      <div className="bg-red-600 text-white py-4 border-b-4 border-red-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+            <div className="flex-1">
+              <p className="text-xl font-bold mb-1">⚠️ STOP! Read This Before Touring:</p>
+              <p className="text-base">
+                You MUST contact Dr. Janet Duffy BEFORE your first visit to be registered with Century Communities. 
+                This is required to get the best price and ensure proper representation.
+              </p>
+            </div>
+            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-8 py-6 h-auto">
+              <a href="tel:702-919-7292">Call Dr. Janet: (702) 919-7292</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Carousel */}
       <HeroCarousel />
 
