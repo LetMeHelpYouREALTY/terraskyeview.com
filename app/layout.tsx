@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import DeployBanner from '../components/deploy-banner'
 import { OrganizationStructuredData, RealEstateAgentStructuredData } from './components/structured-data'
+import { GoogleAnalytics } from './google-analytics'
 import './globals.css'
 
 const geistSans = Geist({
@@ -16,19 +17,53 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://terraskyeview.com'),
   title: 'Terra at Skyeview by Century Communities | New Homes Las Vegas | Dr. Jan Duffy',
   description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Jan Duffy. Call 702-919-7292.',
-  keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Jan Duffy, Northwest Las Vegas, new construction homes',
+  keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Jan Duffy, Northwest Las Vegas, new construction homes, buyer agent Las Vegas, new homes Las Vegas 89166',
+  authors: [{ name: 'Dr. Jan Duffy', url: 'https://terraskyeview.com/about-dr-janet-duffy' }],
+  creator: 'Dr. Jan Duffy',
+  publisher: 'Terra at Skyeview',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
+  },
   openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://terraskyeview.com',
+    siteName: 'Terra at Skyeview',
     title: 'Terra at Skyeview by Century Communities | Las Vegas New Homes',
-    description: 'Two-story new construction homes in Skye Canyon from $479,990. Expert buyer representation.',
-    images: ['/og-image.png'],
+    description: 'Two-story new construction homes in Skye Canyon from $479,990. Expert buyer representation by Dr. Jan Duffy.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Terra at Skyeview by Century Communities',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@DrJanDuffy',
+    creator: '@DrJanDuffy',
     title: 'Terra at Skyeview by Century Communities',
     description: 'New construction homes in Skye Canyon, Las Vegas from $479,990.',
     images: ['/og-image.png'],
+  },
+  alternates: {
+    canonical: 'https://terraskyeview.com',
   },
 }
 
@@ -46,6 +81,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
