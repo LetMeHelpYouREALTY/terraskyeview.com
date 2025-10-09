@@ -58,7 +58,7 @@ export default function LocationMap() {
             </a>
           </Button>
           <Button variant="outline" className="flex-1">
-            <a href="tel:702-568-0333">Call Now</a>
+            <a href="tel:702-919-7292">Call Now</a>
           </Button>
         </div>
 

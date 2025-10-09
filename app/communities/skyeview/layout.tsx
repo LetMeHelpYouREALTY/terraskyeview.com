@@ -4,7 +4,7 @@ import { RealEstateListingStructuredData } from '@/app/components/structured-dat
 export const metadata: Metadata = {
   title: 'Terra at Skyeview by Century Communities | New Homes Skye Canyon Las Vegas | Dr. Janet Duffy',
   description:
-    'Discover new two-story homes at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990. Models open daily. Expert buyer representation from Dr. Janet Duffy at 702-568-0333.',
+    'Discover new two-story homes at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990. Models open daily. Expert buyer representation from Dr. Janet Duffy at 702-919-7292.',
   keywords:
     'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, two-story homes, Northwest Las Vegas, Dr. Janet Duffy, buyer\'s agent, new construction',
   openGraph: {

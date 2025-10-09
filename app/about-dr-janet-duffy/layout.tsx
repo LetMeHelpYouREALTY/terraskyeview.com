@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Dr. Janet Duffy | Preferred Buyer\'s Agent at Skyeview',
   description:
-    'Meet Dr. Janet Duffy, the preferred buyer\'s agent at Skyeview at Skye Canyon. Get the best price, expert negotiation, and $5,000 closing assistance. FREE to buyers! Call 702-568-0333.',
+    'Meet Dr. Janet Duffy, the preferred buyer\'s agent at Skyeview at Skye Canyon. Get the best price, expert negotiation, and $5,000 closing assistance. FREE to buyers! Call 702-919-7292.',
   keywords:
     'Dr. Janet Duffy, buyer\'s agent Las Vegas, Skye Canyon realtor, new construction agent, preferred agent, best price negotiation, FREE buyer representation',
   openGraph: {

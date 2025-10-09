@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'What Are Closing Costs? Complete Guide for Homebuyers | Dr. Janet Duffy',
   description:
-    'Learn about closing costs when buying a home at Skyeview at Skye Canyon. Get up to $5,000 in assistance with preferred lenders. Expert guidance from Dr. Janet Duffy at 702-568-0333.',
+    'Learn about closing costs when buying a home at Skyeview at Skye Canyon. Get up to $5,000 in assistance with preferred lenders. Expert guidance from Dr. Janet Duffy at 702-919-7292.',
   keywords:
     'closing costs, homebuying costs, Las Vegas closing costs, mortgage fees, down payment, title insurance, Dr. Janet Duffy, Skye Canyon',
   openGraph: {

@@ -206,7 +206,7 @@ export default function ContactForm() {
               <div>
                 <h4 className="font-semibold text-lg mb-1">Call Us</h4>
                 <a
-                  href="tel:702-568-0333"
+                  href="tel:702-919-7292"
                   className="text-blue-100 hover:text-white text-lg transition"
                 >
                   702.568.0333

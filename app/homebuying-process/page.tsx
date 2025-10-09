@@ -13,7 +13,7 @@ const processSteps = [
     description:
       "This no-commitment, knowledge-building exercise gives you insight into how much home you could probably afford, as well as which home loan type might be your best fit. All it requires is for a lender to take a snapshot of your finances and run a credit check. Prequalification is a powerful tool that will let you know exactly what steps you'll need to take before you're ready to purchase a home—if you're not there already! It also establishes a relationship with a lender, which will come in handy later on when you need preapproval to purchase a particular home.",
     ctaText: 'Get Prequalified',
-    ctaLink: 'tel:702-568-0333',
+    ctaLink: 'tel:702-919-7292',
     sidebarTitle: 'COMMON HOMEBUYING MYTHS',
     sidebarItems: [
       {
@@ -58,7 +58,7 @@ const processSteps = [
     description:
       "One of the great advantages of new home construction is that it's first-come, first-served. As long as you're a qualified buyer, the house is yours if you're the one who got there first. When you've found a home that checks the right boxes, you'll want to act fast to get it under contract—ensuring that no other buyer can swoop in and buy it out from under you.",
     ctaText: 'Contact Dr. Janet Duffy',
-    ctaLink: 'tel:702-568-0333',
+    ctaLink: 'tel:702-919-7292',
     sidebarTitle: 'CONTRACTING CONSIDERATIONS',
     sidebarItems: [
       { item: 'Home loan preapproval' },
@@ -75,7 +75,7 @@ const processSteps = [
     description:
       "This is your big day to sign final paperwork and breathe a sigh of satisfaction, because you've officially bought a home. And whether it's your first house, or one of several, the feeling never gets old. You'll also love the peace of mind that comes with a new home warranty, providing coverage on major items and repairs.",
     ctaText: 'Learn About Closing',
-    ctaLink: 'tel:702-568-0333',
+    ctaLink: 'tel:702-919-7292',
     sidebarTitle: 'CLOSING CONSIDERATIONS',
     sidebarItems: [
       { item: 'Down Payment' },
@@ -156,7 +156,7 @@ export default function HomebuyingProcessPage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Janet</a>
               </Button>
             </nav>
           </div>
@@ -317,7 +317,7 @@ export default function HomebuyingProcessPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <a href="tel:702-568-0333">
+                <a href="tel:702-919-7292">
                   Call: 702.568.0333
                 </a>
               </Button>

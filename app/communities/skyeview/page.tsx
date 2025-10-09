@@ -42,7 +42,7 @@ export default function SkyeviewPage() {
                 Blog
               </a>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Call Dr. Janet</a>
+                <a href="tel:702-919-7292">Call Dr. Janet</a>
               </Button>
             </nav>
             <MobileMenu />
@@ -77,7 +77,7 @@ export default function SkyeviewPage() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <a href="tel:702-568-0333" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+              <a href="tel:702-919-7292" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
                 <Phone className="w-4 h-4" />
                 702.568.0333
               </a>

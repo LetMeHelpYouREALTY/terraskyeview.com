@@ -4,7 +4,7 @@ export function RealEstateAgentStructuredData() {
     '@type': 'RealEstateAgent',
     name: 'Dr. Janet Duffy',
     description: 'Preferred Buyer\'s Agent at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas',
-    telephone: '+1-702-568-0333',
+    telephone: '+1-702-919-7292',
     email: 'info@terraskyeview.com',
     address: {
       '@type': 'PostalAddress',
@@ -75,7 +75,7 @@ export function OrganizationStructuredData() {
     logo: 'https://terraskyeview.com/og-image.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-702-568-0333',
+      telephone: '+1-702-919-7292',
       contactType: 'Customer Service',
       areaServed: 'US',
       availableLanguage: 'English',

@@ -106,7 +106,7 @@ export default function MobileMenu() {
                   <p className="text-sm font-semibold text-gray-900 mb-3">Contact Dr. Janet Duffy</p>
                   <div className="space-y-3">
                     <a
-                      href="tel:702-568-0333"
+                      href="tel:702-919-7292"
                       className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
                     >
                       <Phone className="w-5 h-5 text-blue-600" />
@@ -130,7 +130,7 @@ export default function MobileMenu() {
                 </div>
 
                 <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                  <a href="tel:702-568-0333">
+                  <a href="tel:702-919-7292">
                     Call Now
                   </a>
                 </Button>

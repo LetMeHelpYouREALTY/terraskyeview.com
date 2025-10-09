@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Special Offers & Financing | Limited Time Deals | Dr. Janet Duffy',
   description:
-    'Take advantage of special financing offers at Skyeview at Skye Canyon. Low rates starting at 3.875% plus up to $5,000 toward closing costs. Contact Dr. Janet Duffy at 702-568-0333.',
+    'Take advantage of special financing offers at Skyeview at Skye Canyon. Low rates starting at 3.875% plus up to $5,000 toward closing costs. Contact Dr. Janet Duffy at 702-919-7292.',
   keywords:
     'Las Vegas home financing, special offers, low interest rates, closing cost assistance, new home deals, FHA loans, VA loans, conventional loans, Dr. Janet Duffy',
   openGraph: {

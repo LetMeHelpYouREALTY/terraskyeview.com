@@ -30,7 +30,7 @@ export default function HomePage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Contact</a>
+                <a href="tel:702-919-7292">Contact</a>
               </Button>
             </nav>
             <MobileMenu />
@@ -92,7 +92,7 @@ export default function HomePage() {
             <p className="mb-1"><strong className="text-foreground">Century Communities</strong> - Top 10 National Homebuilder</p>
             <p className="mb-1">📍 Model Home: <span className="font-semibold text-foreground">8592 Vanhoy Creek Street, Las Vegas, NV 89166</span></p>
             <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Janet Duffy</span></p>
-            <p className="mt-1">Call: <a href="tel:702-568-0333" className="text-blue-600 hover:underline">702.568.0333</a></p>
+            <p className="mt-1">Call: <a href="tel:702-919-7292" className="text-blue-600 hover:underline">702.568.0333</a></p>
           </div>
         </div>
       </div>

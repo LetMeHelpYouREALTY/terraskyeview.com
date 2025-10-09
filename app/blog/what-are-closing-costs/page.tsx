@@ -29,7 +29,7 @@ export default function WhatAreClosingCostsArticle() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Contact Us</a>
+                <a href="tel:702-919-7292">Contact Us</a>
               </Button>
             </nav>
           </div>
@@ -343,7 +343,7 @@ export default function WhatAreClosingCostsArticle() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
-                <a href="tel:702-568-0333">
+                <a href="tel:702-919-7292">
                   Call Dr. Janet: 702.568.0333
                 </a>
               </Button>

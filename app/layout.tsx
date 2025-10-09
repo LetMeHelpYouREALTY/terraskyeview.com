@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Terra at Skyeview by Century Communities | New Homes Las Vegas | Dr. Janet Duffy',
-  description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Janet Duffy. Call 702-568-0333.',
+  description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Janet Duffy. Call 702-919-7292.',
   keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Janet Duffy, Northwest Las Vegas, new construction homes',
   openGraph: {
     title: 'Terra at Skyeview by Century Communities | Las Vegas New Homes',

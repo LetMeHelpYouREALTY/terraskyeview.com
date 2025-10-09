@@ -18,7 +18,7 @@ const communities = [
     id: 2,
     name: 'Mesa at Skyeview',
     location: 'Las Vegas, NV 89166',
-    phone: '702.568.0333',
+    phone: '702.919.7292',
     startingPrice: 474990,
     estimatedPayment: 2632,
     status: ['Single-Story Homes', 'Same Community'],
