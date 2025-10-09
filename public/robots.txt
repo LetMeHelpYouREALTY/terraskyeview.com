@@ -1,0 +1,19 @@
+# robots.txt for Terra at Skyeview
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://terraskyeview.com/sitemap.xml
+
+# Block old API routes
+Disallow: /api/
+Disallow: /projects/
+
+# Allow all pages for indexing
+Allow: /communities/skyeview
+Allow: /blog
+Allow: /special-offers
+Allow: /homebuying-process
+Allow: /for-buyers
+Allow: /about-dr-janet-duffy
+
