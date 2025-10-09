@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { RealEstateListingStructuredData } from '@/app/components/structured-data'
 
 export const metadata: Metadata = {
   title: 'Terra at Skyeview by Century Communities | New Homes Skye Canyon Las Vegas | Dr. Janet Duffy',
@@ -27,6 +28,11 @@ export default function SkyeviewLayout({
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <RealEstateListingStructuredData />
+      {children}
+    </>
+  )
 }
 
