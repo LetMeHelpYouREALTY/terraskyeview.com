@@ -333,9 +333,9 @@ export default function HomebuyingProcessPage() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
-                <Link href="/communities/skyeview">
-                  View Available Homes
-                </Link>
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                  Search Available Homes
+                </a>
               </Button>
             </div>
           </div>

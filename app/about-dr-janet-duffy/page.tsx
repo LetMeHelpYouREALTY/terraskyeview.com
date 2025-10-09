@@ -397,9 +397,9 @@ export default function AboutDrJanetDuffyPage() {
             </div>
 
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Link href="/communities/skyeview">
-                View Available Homes at Skyeview
-              </Link>
+              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                Search Available Homes
+              </a>
             </Button>
           </div>
         </div>

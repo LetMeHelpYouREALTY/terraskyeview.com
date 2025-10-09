@@ -22,10 +22,10 @@ export default function NotFound() {
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/communities/skyeview" className="flex items-center justify-center gap-2">
+            <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
               <Search className="w-4 h-4" />
-              View Homes
-            </Link>
+              Search Homes
+            </a>
           </Button>
           <Button asChild variant="outline">
             <a href="tel:702-919-7292" className="flex items-center justify-center gap-2">
@@ -41,9 +41,9 @@ export default function NotFound() {
           </p>
           <ul className="text-left space-y-2 text-sm text-gray-700 max-w-md mx-auto">
             <li>
-              <Link href="/communities/skyeview" className="text-blue-600 hover:underline">
-                → Available Homes at Terra at Skyeview
-              </Link>
+              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                → Search Available Homes
+              </a>
             </li>
             <li>
               <Link href="/special-offers" className="text-blue-600 hover:underline">
