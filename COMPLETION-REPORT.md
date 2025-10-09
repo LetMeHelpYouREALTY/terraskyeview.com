@@ -276,7 +276,7 @@ ec2d567 - Expand About Dr. Janet page (200+ words)
 **Community:** Terra at Skyeview  
 **Builder:** Century Communities  
 **Agent:** Dr. Janet Duffy  
-**Phone:** 702.568.0333  
+**Phone:** (702) 919-7292  
 **Address:** 8592 Vanhoy Creek Street, Las Vegas, NV 89166  
 **Website:** terraskyeview.com  
 
