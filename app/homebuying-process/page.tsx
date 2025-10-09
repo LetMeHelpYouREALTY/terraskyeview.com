@@ -166,6 +166,17 @@ export default function HomebuyingProcessPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Critical Registration Notice */}
+          <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
+            <p className="text-2xl font-bold mb-2">⚠️ STEP ZERO (Most Important!):</p>
+            <p className="text-xl mb-4">
+              Before starting ANY of these steps: Call Dr. Janet Duffy to be registered with the builder!
+            </p>
+            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-10 py-6 h-auto">
+              <a href="tel:702-919-7292">📞 Register First: (702) 919-7292</a>
+            </Button>
+          </div>
+
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <Home className="w-12 h-12" />

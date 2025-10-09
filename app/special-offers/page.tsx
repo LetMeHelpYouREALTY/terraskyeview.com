@@ -132,6 +132,15 @@ export default function SpecialOffersPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Critical Registration Notice */}
+          <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
+            <p className="text-2xl font-bold mb-2">⚠️ To Access These Offers:</p>
+            <p className="text-lg">
+              Call Dr. Janet Duffy FIRST! She must register you with Century Communities before you visit 
+              to unlock these financing benefits and ensure the best pricing.
+            </p>
+          </div>
+
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
               <TrendingDown className="w-4 h-4" />
