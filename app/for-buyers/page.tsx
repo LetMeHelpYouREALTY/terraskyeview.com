@@ -121,9 +121,16 @@ export default function ForBuyersPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Everything You Need to Buy Your Dream Home
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-blue-100 mb-6">
               From online browsing to expert representation, we make homebuying simple, 
               transparent, and exciting at Terra at Skyeview by Century Communities.
+            </p>
+            <p className="text-lg text-blue-200 mb-8">
+              This comprehensive guide explains everything you need to know about buying a new construction 
+              home at Terra at Skyeview. Learn about the benefits of working with Dr. Janet Duffy as your 
+              buyer's agent, understand available financing options, and discover why having your own representation 
+              ensures you get the best price and terms. Century Communities is a top 10 national homebuilder, 
+              and with Dr. Janet in your corner, you'll have the expertise needed to navigate the process with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">

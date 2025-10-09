@@ -274,9 +274,16 @@ export default function HomebuyingProcessPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               How We Make It Easy
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
               Work with Dr. Janet Duffy for expert guidance and personalized service throughout your 
-              entire homebuying journey at Skyeview at Skye Canyon.
+              entire homebuying journey at Terra at Skyeview by Century Communities.
+            </p>
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              Unlike working directly with the builder's agent, having Dr. Janet Duffy as your dedicated 
+              buyer's agent means you have someone who is contractually obligated to represent YOUR interests, 
+              not the builder's. She brings market expertise, negotiation skills, and access to preferred 
+              financing options that can save you thousands of dollars on your home purchase—all at no cost 
+              to you since the seller pays her commission.
             </p>
           </div>
 
