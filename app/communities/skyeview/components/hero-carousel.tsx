@@ -6,28 +6,44 @@ import { Button } from '@/components/ui/button'
 
 const images = [
   {
-    src: '/images/skyeview/exterior-1.jpg',
-    alt: 'A house with a garage and modern exterior',
+    src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=800&fit=crop&q=85',
+    alt: 'Modern Terra at Skyeview home exterior with garage',
   },
   {
-    src: '/images/skyeview/exterior-2.jpg',
-    alt: 'Beautiful home exterior with landscaping',
+    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop&q=85',
+    alt: 'Beautiful two-story home with landscaping at Terra Skyeview',
   },
   {
-    src: '/images/skyeview/living-room.jpg',
-    alt: 'Spacious living room with modern furnishings',
+    src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop&q=85',
+    alt: 'Spacious open-concept living room with modern furnishings',
   },
   {
-    src: '/images/skyeview/kitchen.jpg',
+    src: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&h=800&fit=crop&q=85',
     alt: 'Gourmet kitchen with island and white cabinets',
   },
   {
-    src: '/images/skyeview/master-bedroom.jpg',
-    alt: 'Master bedroom with large windows',
+    src: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&h=800&fit=crop&q=85',
+    alt: 'Master bedroom with large windows and natural light',
   },
   {
-    src: '/images/skyeview/bathroom.jpg',
-    alt: 'Luxurious bathroom with modern fixtures',
+    src: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=800&fit=crop&q=85',
+    alt: 'Luxurious bathroom with modern fixtures and finishes',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=800&fit=crop&q=85',
+    alt: 'Contemporary home office with built-in shelving',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&h=800&fit=crop&q=85',
+    alt: 'Elegant dining room with chandelier',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&h=800&fit=crop&q=85',
+    alt: 'Backyard with covered patio and mountain views',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&h=800&fit=crop&q=85',
+    alt: 'Modern laundry room with organized storage',
   },
 ]
 

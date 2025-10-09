@@ -119,11 +119,13 @@ export default function AvailableHomes() {
             key={home.id}
             className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition group"
           >
-            {/* Image Placeholder */}
-            <div className="relative h-56 bg-gray-800 flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                <Home className="w-16 h-16" />
-              </div>
+            {/* Image */}
+            <div className="relative h-56 overflow-hidden">
+              <img 
+                src={`https://images.unsplash.com/photo-${home.id === 1 ? '1600596542815-ffad4c1539a9' : home.id === 2 ? '1600585154340-be6161a56a0c' : '1600607687939-ce8a6c25118c'}?w=800&h=600&fit=crop&q=85`}
+                alt={`${home.model} at ${home.address}`}
+                className="w-full h-full object-cover"
+              />
               {home.features.length > 0 && (
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {home.features.slice(0, 2).map((feature, idx) => (
