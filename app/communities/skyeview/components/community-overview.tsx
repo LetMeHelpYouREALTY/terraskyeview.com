@@ -121,13 +121,13 @@ export default function CommunityOverview() {
             </div>
           </div>
 
-          {/* Community Map Placeholder */}
-          <div className="mt-6 bg-gray-800 rounded-2xl h-64 flex items-center justify-center">
-            <div className="text-center text-gray-400">
-              <MapPin className="w-12 h-12 mx-auto mb-2" />
-              <p className="text-sm font-medium">Community Map</p>
-              <p className="text-xs">Interactive map coming soon</p>
-            </div>
+          {/* Community Aerial View */}
+          <div className="mt-6 rounded-2xl overflow-hidden h-64">
+            <img 
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop&q=85"
+              alt="Skye Canyon master-planned community aerial view"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

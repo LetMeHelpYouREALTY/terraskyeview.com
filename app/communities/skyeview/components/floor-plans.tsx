@@ -72,12 +72,15 @@ export default function FloorPlans() {
             key={plan.id}
             className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition"
           >
-            {/* Floor Plan Image Placeholder */}
-            <div className="relative h-64 bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center">
-              <div className="text-center text-white">
-                <Home className="w-20 h-20 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-medium">Floor Plan</p>
-                <p className="text-sm opacity-75">{plan.name}</p>
+            {/* Floor Plan Image */}
+            <div className="relative h-64 overflow-hidden">
+              <img 
+                src={`https://images.unsplash.com/photo-${plan.id === 1 ? '1600607687939-ce8a6c25118c' : plan.id === 2 ? '1600585154340-be6161a56a0c' : '1600596542815-ffad4c1539a9'}?w=800&h=600&fit=crop&q=85`}
+                alt={`${plan.name} floor plan at Terra Skyeview`}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white font-medium">{plan.name}</p>
               </div>
               {plan.features.length > 0 && (
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
