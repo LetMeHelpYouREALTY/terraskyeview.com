@@ -239,7 +239,7 @@ export default function HomebuyingProcessPage() {
                       <ul className="space-y-4">
                         {step.sidebarItems.map((item, idx) => (
                           <li key={idx} className="text-sm">
-                            {item.myth ? (
+                            {'myth' in item ? (
                               <>
                                 <p className="font-bold text-gray-900 mb-1">{item.myth}</p>
                                 <p className="text-gray-700">{item.reality}</p>

@@ -74,7 +74,7 @@ export default function ShouldIUseRealtorArticle() {
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Discover why having Dr. Janet Duffy as your buyer's agent at Skyeview at Skye Canyon ensures you get the best price, expert guidance, and exclusive benefits throughout your homebuying journey.
+              Discover why having Dr. Janet Duffy as your buyer's agent at Terra at Skyeview by Century Communities ensures you get the best price, expert guidance, and exclusive benefits throughout your homebuying journey.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              When you decide to buy a home in a master-planned community like Skyeview at Skye Canyon, the perks of working with <strong>Dr. Janet Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Janet Duffy is an expert not only in real estate, but also in the Las Vegas market and specifically in Skye Canyon. As a local expert, she is the perfect choice when you're seeking a trusted professional to assist you with your home purchase.
+              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Janet Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Janet Duffy is an expert not only in real estate, but also specializes in Terra at Skyeview and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8 rounded-r-lg">
