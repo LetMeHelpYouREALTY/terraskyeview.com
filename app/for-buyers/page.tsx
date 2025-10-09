@@ -13,7 +13,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Real Estate Agent Representation',
-    description: 'Work with Dr. Janet Duffy, your preferred buyer\'s agent and trusted local expert who knows Terra at Skyeview, Skye Canyon, and the Las Vegas market inside and out.',
+    description: 'Work with Dr. Janet Duffy, your preferred buyer\'s agent and trusted local expert who specializes in Terra at Skyeview by Century Communities and the Skye Canyon master-planned community.',
   },
   {
     icon: DollarSign,
