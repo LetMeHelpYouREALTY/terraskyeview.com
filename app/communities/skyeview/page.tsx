@@ -143,6 +143,14 @@ export default function SkyeviewPage() {
       {/* Available Homes Section */}
       <section id="homes" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Available Homes & Quick Move-Ins
+            </h2>
+            <p className="text-xl text-gray-600">
+              Browse our current inventory at Terra at Skyeview
+            </p>
+          </div>
           <AvailableHomes />
         </div>
       </section>
@@ -150,6 +158,14 @@ export default function SkyeviewPage() {
       {/* Floor Plans Section */}
       <section id="floor-plans" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Terra Collection Floor Plans
+            </h2>
+            <p className="text-xl text-gray-600">
+              Explore our inspired two-story home designs
+            </p>
+          </div>
           <FloorPlans />
         </div>
       </section>

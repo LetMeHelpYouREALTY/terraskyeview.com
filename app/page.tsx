@@ -39,12 +39,15 @@ export default function HomePage() {
       </header>
 
       {/* Special Offers Banner */}
-      <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 py-3 px-4 text-center relative z-40">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 text-sm font-semibold">
-          <span>🎉 LIMITED TIME: Low Rates from 3.875% + Up to $5,000 Toward Closing!</span>
-          <a href="/special-offers" className="underline hover:no-underline">
-            View Offers →
-          </a>
+      <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 py-6 px-4 text-center relative z-40">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">🎉 Limited Time Special Offers</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm font-semibold">
+            <span>Low Rates from 3.875% + Up to $5,000 Toward Closing!</span>
+            <a href="/special-offers" className="underline hover:no-underline">
+              View Offers →
+            </a>
+          </div>
         </div>
       </div>
 
