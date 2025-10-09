@@ -40,6 +40,8 @@ export default function MobileMenu() {
                 <button
                   onClick={() => setIsOpen(false)}
                   className="p-2 hover:bg-gray-100 rounded-lg transition"
+                  aria-label="Close menu"
+                  title="Close navigation menu"
                 >
                   <X className="w-6 h-6" />
                 </button>
