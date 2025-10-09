@@ -265,34 +265,27 @@ export default function HomePage() {
       {/* How It Works Section */}
       <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 1
               </div>
-              <p className="text-sm font-semibold text-gray-900">Browse Homes Online</p>
-              <p className="text-xs text-gray-600">Explore floor plans & availability</p>
+              <p className="text-base font-bold text-gray-900">Get Pre-Qualified</p>
+              <p className="text-sm text-gray-600">Determine your budget with loan pre-approval</p>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 2
               </div>
-              <p className="text-sm font-semibold text-gray-900">Work With Dr. Janet Duffy</p>
-              <p className="text-xs text-gray-600">Expert local representation</p>
+              <p className="text-base font-bold text-gray-900">Start Your Home Search</p>
+              <p className="text-sm text-gray-600">Browse homes online or visit in person</p>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 3
               </div>
-              <p className="text-sm font-semibold text-gray-900">Secure Financing</p>
-              <p className="text-xs text-gray-600">Low rates & closing cost assistance</p>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                4
-              </div>
-              <p className="text-sm font-semibold text-gray-900">Move In With Warranty</p>
-              <p className="text-xs text-gray-600">Protected peace of mind</p>
+              <p className="text-base font-bold text-gray-900">Secure Your Home</p>
+              <p className="text-sm text-gray-600">Complete form, pay deposit & sign contract</p>
             </div>
           </div>
         </div>

@@ -55,18 +55,18 @@ const benefits = [
 const steps = [
   {
     number: '1',
-    title: 'Shop for your new home',
-    description: 'Browse available homes at Skyeview at Skye Canyon',
+    title: 'Get Pre-Qualified',
+    description: 'Determine your budget by getting pre-approved for a loan',
   },
   {
     number: '2',
-    title: 'Get Pre-Qualified',
-    description: 'Contact Dr. Janet Duffy to start the process',
+    title: 'Start Your Home Search',
+    description: 'Browse new homes online or in person at Skyeview at Skye Canyon',
   },
   {
     number: '3',
-    title: 'Submit an offer',
-    description: 'Secure your dream home quickly',
+    title: 'Secure Your Home',
+    description: 'Complete the online buying form, pay deposit, and sign contract',
   },
 ]
 
@@ -367,7 +367,7 @@ export default function SpecialOffersPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Start your new home journey today
             </h2>
-            <p className="text-xl text-gray-600">in just a few easy steps</p>
+            <p className="text-xl text-gray-600">in just three easy steps</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

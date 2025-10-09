@@ -40,57 +40,41 @@ const benefits = [
 const process = [
   {
     step: '1',
-    title: 'Search & Explore',
-    description: 'Browse available homes online at Skyeview at Skye Canyon',
+    title: 'Get Pre-Qualified',
+    description: 'Determine your budget by getting pre-approved for a loan',
     details: [
-      'View detailed floor plans and specifications',
-      'Explore community amenities and location',
-      'Compare different home models',
-      'Check availability and pricing',
+      'Connect with preferred lenders through Dr. Janet Duffy',
+      'Review your finances and credit',
+      'Understand your exact budget',
+      'Access competitive rates starting at 3.875%',
+      'Qualify for up to $5,000 closing cost assistance',
+      'Get pre-approval letter for offers',
     ],
   },
   {
     step: '2',
-    title: 'Schedule Tour',
-    description: 'Visit model homes with Dr. Janet Duffy',
+    title: 'Start Your Home Search',
+    description: 'Browse new homes online or in person to find a community you like',
     details: [
-      'Virtual or in-person tour options',
-      'Expert guidance on features and options',
-      'Neighborhood walkthrough',
-      'Answer all your questions',
+      'View available homes at Skyeview at Skye Canyon online',
+      'Explore detailed floor plans and specifications',
+      'Schedule tours with Dr. Janet Duffy',
+      'Visit model homes in person',
+      'Compare 3-5 bedroom options from $479,990',
+      'Learn about community amenities and location',
     ],
   },
   {
     step: '3',
-    title: 'Get Pre-Qualified',
-    description: 'Secure your financing and understand your budget',
-    details: [
-      'Competitive interest rates',
-      'Multiple loan program options',
-      'Up to $5,000 closing cost assistance',
-      'Fast approval process',
-    ],
-  },
-  {
-    step: '4',
-    title: 'Make Your Offer',
-    description: 'Secure your chosen home',
+    title: 'Secure Your Home',
+    description: 'Complete the purchase and lock in your choice',
     details: [
       'Complete online buying form',
-      'Submit earnest money deposit',
-      'Review and sign contract',
-      'First-come, first-served advantage',
-    ],
-  },
-  {
-    step: '5',
-    title: 'Close & Move In',
-    description: 'Complete the process and get your keys',
-    details: [
-      'Final walkthrough inspection',
-      'Sign closing documents',
-      'Receive your home warranty',
-      'Get keys to your new home!',
+      'Pay initial earnest money deposit',
+      'Sign purchase contract with expert guidance',
+      'Lock in your home (first-come, first-served)',
+      'Finalize loan and closing details',
+      'Receive keys and home warranty',
     ],
   },
 ]
@@ -197,7 +181,7 @@ export default function ForBuyersPage() {
               Your Journey to Homeownership
             </h2>
             <p className="text-xl text-gray-600">
-              Five simple steps to owning your dream home
+              Three key steps to owning your dream home
             </p>
           </div>
 

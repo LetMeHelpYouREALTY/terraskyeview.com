@@ -60,13 +60,15 @@ export default function HeroCarousel() {
     setCurrentIndex(index)
   }
 
+  const translateX = `-${currentIndex * 100}%`
+
   return (
     <div className="relative w-full bg-gray-900">
       {/* Main Image */}
       <div className="relative w-full h-[400px] md:h-[600px] overflow-hidden">
         <div
-          className={`flex transition-transform duration-500 ease-out h-full`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          className="flex transition-transform duration-500 ease-out h-full"
+          style={{ transform: `translateX(${translateX})` }}
         >
           {images.map((image, index) => (
             <div
