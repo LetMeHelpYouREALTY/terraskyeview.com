@@ -147,8 +147,11 @@ export default function AboutDrJanetDuffyPage() {
               <h3 className="text-2xl font-bold text-blue-600 mb-4">
                 What do you love about being a buyer's agent?
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 I love being the person who helps families navigate what can be an overwhelming process and turn it into an exciting journey. Watching my clients get keys to their dream home, knowing I negotiated the best possible price and terms for them, is incredibly rewarding. I enjoy the entire process—from the first tour to seeing them move in with their families. And I particularly love educating buyers about why they absolutely need their own representation!
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                There's something special about seeing a family walk through their new Terra home for the first time, knowing that I helped them save thousands of dollars through expert negotiation, secured them $5,000 in closing cost assistance, and guided them through every decision. Unlike working with the builder's agent alone, my clients have someone in their corner who truly understands the market, knows the community intimately, and fights for their best interests from contract to closing.
               </p>
             </div>
 
@@ -197,8 +200,24 @@ export default function AboutDrJanetDuffyPage() {
               <h3 className="text-2xl font-bold text-blue-600 mb-4">
                 What lights you up in life?
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 Helping families achieve their dreams of homeownership is what drives me every day. There's nothing more satisfying than handing over the keys and knowing I've helped my clients get the best possible deal on their new home. Outside of work, I love exploring everything Las Vegas has to offer, from hiking at Red Rock Canyon to enjoying the incredible dining scene.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                I'm passionate about educating buyers on the real estate process. Too many people don't realize that having a buyer's agent costs them nothing but can save them thousands. That's why I created this website—to inform potential buyers about the Terra at Skyeview community and to explain why working with a dedicated buyer's agent is essential, especially in new construction where the builder's agent is not on your side of the negotiating table.
+              </p>
+            </div>
+
+            {/* Additional Question */}
+            <div className="border-l-4 border-blue-600 pl-6">
+              <h3 className="text-2xl font-bold text-blue-600 mb-4">
+                What sets you apart from other agents?
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                My specialization in Terra at Skyeview and the Skye Canyon community gives me insights that general real estate agents simply don't have. I know the floor plans inside and out, I understand which lots offer the best value, I'm familiar with every upgrade option and can tell you which ones truly add value versus which are overpriced. I've built relationships with preferred lenders who can offer my clients the best rates and up to $5,000 in closing cost assistance.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Most importantly, I'm not afraid to negotiate hard on behalf of my clients. The builder's agent will always protect Century Communities' interests—that's their job. My job is to protect YOUR interests and ensure you're getting the absolute best deal possible. I've helped dozens of families save significant money by negotiating better pricing, securing additional upgrades at no cost, and ensuring every contract term favors the buyer. That's what a true buyer's agent does.
               </p>
             </div>
           </div>
