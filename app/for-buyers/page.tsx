@@ -146,10 +146,10 @@ export default function ForBuyersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Buy at Skyeview at Skye Canyon?
+              Why Buy at Terra at Skyeview?
             </h2>
             <p className="text-xl text-gray-600">
-              We've designed a homebuying experience that puts you first
+              Century Communities + Dr. Janet Duffy = The best homebuying experience
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export default function ForBuyersPage() {
             Ready to Start Your Homebuying Journey?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact Dr. Janet Duffy today to explore your options at Skyeview at Skye Canyon. 
+            Contact Dr. Janet Duffy today to explore your options at Terra at Skyeview by Century Communities. 
             Your dream home is waiting!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
