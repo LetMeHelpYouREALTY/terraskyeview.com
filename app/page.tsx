@@ -162,6 +162,39 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Advanced Property Search Widget */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Search All Available Homes in Las Vegas
+            </h2>
+            <p className="text-xl text-gray-700 mb-2">
+              Explore Terra at Skyeview and surrounding communities
+            </p>
+            <p className="text-lg text-gray-600">
+              Dr. Jan Duffy can help you find your perfect home with exclusive buyer benefits
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div dangerouslySetInnerHTML={{
+              __html: `
+                <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
+                <style>
+                  realscout-advanced-search {
+                    --rs-as-button-text-color: #ffffff;
+                    --rs-as-background-color: #ffffff;
+                    --rs-as-button-color: rgb(35, 93, 137);
+                    --rs-as-widget-width: 500px !important;
+                  }
+                </style>
+                <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+              `
+            }} />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

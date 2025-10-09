@@ -107,6 +107,39 @@ export default function SkyeviewPage() {
         </div>
       </div>
 
+      {/* Advanced Property Search Widget */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Find Your Perfect Home at Terra at Skyeview
+            </h2>
+            <p className="text-xl text-gray-700 mb-2">
+              Search all available homes and floor plans
+            </p>
+            <p className="text-lg text-gray-600">
+              Dr. Jan Duffy will help you get the best price with exclusive buyer representation
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div dangerouslySetInnerHTML={{
+              __html: `
+                <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
+                <style>
+                  realscout-advanced-search {
+                    --rs-as-button-text-color: #ffffff;
+                    --rs-as-background-color: #ffffff;
+                    --rs-as-button-color: rgb(35, 93, 137);
+                    --rs-as-widget-width: 500px !important;
+                  }
+                </style>
+                <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+              `
+            }} />
+          </div>
+        </div>
+      </section>
+
       {/* Available Homes Section */}
       <section id="homes" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
