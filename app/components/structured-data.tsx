@@ -2,8 +2,15 @@ export function RealEstateAgentStructuredData() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
+    '@id': 'https://terraskyeview.com/#agent',
     name: 'Dr. Jan Duffy',
-    description: 'Preferred Buyer\'s Agent at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas',
+    givenName: 'Jan',
+    familyName: 'Duffy',
+    honorificPrefix: 'Dr.',
+    jobTitle: 'Preferred Buyer\'s Agent',
+    description: 'Preferred Buyer\'s Agent at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas. Specializing in new construction home purchases with expert negotiation and buyer representation.',
+    url: 'https://terraskyeview.com/about-dr-janet-duffy',
+    image: 'https://terraskyeview.com/og-image.png',
     telephone: '+1-702-919-7292',
     email: 'DrJanSells@TerraSkyeview.com',
     address: {
@@ -14,11 +21,46 @@ export function RealEstateAgentStructuredData() {
       postalCode: '89166',
       addressCountry: 'US',
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Las Vegas',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.316134,
+      longitude: -115.32963,
     },
-    priceRange: '$$$',
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Las Vegas',
+      },
+      {
+        '@type': 'City',
+        name: 'Henderson',
+      },
+      {
+        '@type': 'City',
+        name: 'North Las Vegas',
+      },
+    ],
+    knowsAbout: [
+      'New Construction Homes',
+      'Buyer Representation',
+      'Real Estate Negotiation',
+      'Skye Canyon',
+      'Century Communities',
+      'Master-Planned Communities',
+    ],
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Buyer\'s Agent Services',
+          description: 'FREE buyer representation with expert negotiation and closing cost assistance',
+        },
+        price: '0',
+        priceCurrency: 'USD',
+      },
+    ],
+    priceRange: 'FREE to buyers',
   }
 
   return (
@@ -68,21 +110,55 @@ export function RealEstateListingStructuredData() {
 export function OrganizationStructuredData() {
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Terra at Skyeview',
-    description: 'New homes by Century Communities in Skye Canyon, Las Vegas',
+    '@type': 'LocalBusiness',
+    '@id': 'https://terraskyeview.com/#organization',
+    name: 'Terra at Skyeview by Century Communities',
+    alternateName: 'Terra Skyeview',
+    description: 'New two-story homes by Century Communities in Skye Canyon master-planned community, Las Vegas. Expert buyer representation by Dr. Jan Duffy.',
     url: 'https://terraskyeview.com',
     logo: 'https://terraskyeview.com/og-image.png',
+    image: 'https://terraskyeview.com/og-image.png',
+    priceRange: '$479,990 - $569,990',
+    telephone: '+1-702-919-7292',
+    email: 'DrJanSells@TerraSkyeview.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '8592 Vanhoy Creek Street',
+      addressLocality: 'Las Vegas',
+      addressRegion: 'NV',
+      postalCode: '89166',
+      addressCountry: 'US',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.316134,
+      longitude: -115.32963,
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        opens: '10:00',
+        closes: '18:00',
+      },
+    ],
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+1-702-919-7292',
-      contactType: 'Customer Service',
-      areaServed: 'US',
+      contactType: 'Sales',
+      areaServed: ['Las Vegas', 'Henderson', 'North Las Vegas'],
       availableLanguage: 'English',
+      contactOption: 'TollFree',
     },
     sameAs: [
       'https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---terra/',
+      'http://drjanduffy.realscout.com',
     ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '1',
+    },
   }
 
   return (

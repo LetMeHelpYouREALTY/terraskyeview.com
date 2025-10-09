@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import DeployBanner from '../components/deploy-banner'
 import { OrganizationStructuredData, RealEstateAgentStructuredData } from './components/structured-data'
+import { FAQSchema } from './components/faq-schema'
 import { GoogleAnalytics } from './google-analytics'
 import './globals.css'
 
@@ -77,6 +78,7 @@ export default function RootLayout({
       <head>
         <OrganizationStructuredData />
         <RealEstateAgentStructuredData />
+        <FAQSchema />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
