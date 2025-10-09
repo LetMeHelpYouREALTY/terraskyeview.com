@@ -24,7 +24,7 @@ export default function LocationMap() {
           <h4 className="font-bold text-gray-900 mb-2">Model Home Location</h4>
           <p className="text-gray-700">{address}</p>
           <p className="text-sm text-gray-600 mt-2">
-            Your Local Expert: <span className="font-semibold text-blue-600">Dr. Janet Duffy</span>
+            Your Local Expert: <span className="font-semibold text-blue-600">Dr. Jan Duffy</span>
           </p>
         </div>
 

@@ -136,7 +136,7 @@ export default function SpecialOffersPage() {
           <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
             <p className="text-2xl font-bold mb-2">⚠️ To Access These Offers:</p>
             <p className="text-lg">
-              Call Dr. Janet Duffy FIRST! She must register you with Century Communities before you visit 
+              Call Dr. Jan Duffy FIRST! She must register you with Century Communities before you visit 
               to unlock these financing benefits and ensure the best pricing.
             </p>
           </div>
@@ -246,7 +246,7 @@ export default function SpecialOffersPage() {
               bring you exceptional financing opportunities that make homeownership more affordable than ever.
             </p>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Work with Dr. Janet Duffy to access these exclusive benefits and ensure you're getting the 
+              Work with Dr. Jan Duffy to access these exclusive benefits and ensure you're getting the 
               absolute best deal available. As your buyer's agent, she'll connect you with lenders offering 
               the most competitive rates and maximum closing cost assistance—benefits you might miss if you 
               work only with the builder's representative.
@@ -279,7 +279,7 @@ export default function SpecialOffersPage() {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Sign up to speak with Dr. Janet Duffy & learn about offers in your area
+                Sign up to speak with Dr. Jan Duffy & learn about offers in your area
               </h2>
               <p className="text-gray-600">
                 Get personalized information about current promotions and financing options
@@ -389,7 +389,7 @@ export default function SpecialOffersPage() {
             <p className="text-xl text-gray-700 mb-6">In just three easy steps with expert guidance</p>
             <p className="text-gray-700 max-w-3xl mx-auto">
               The homebuying process at Terra at Skyeview has been streamlined to make your experience 
-              as smooth as possible. When you work with Dr. Janet Duffy, you'll have expert representation 
+              as smooth as possible. When you work with Dr. Jan Duffy, you'll have expert representation 
               at every stage, ensuring you don't miss any opportunities for savings or incentives. Here's 
               how the process works from start to finish.
             </p>
@@ -454,12 +454,12 @@ export default function SpecialOffersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Why Work with Dr. Janet Duffy for Special Offers?
+              Why Work with Dr. Jan Duffy for Special Offers?
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-6">
                 While you can access Century Communities' base financing options on your own, working with 
-                Dr. Janet Duffy as your buyer's agent ensures you're maximizing every available benefit. 
+                Dr. Jan Duffy as your buyer's agent ensures you're maximizing every available benefit. 
                 Here's what she brings to the table when it comes to financing and special offers:
               </p>
 
@@ -523,8 +523,8 @@ export default function SpecialOffersPage() {
                 Loans are subject to credit approval. Restrictions and conditions may apply.
               </p>
               <p>
-                This information is provided by Dr. Janet Duffy, an independent real estate professional licensed 
-                in Nevada. Dr. Janet Duffy is not employed by or affiliated with Century Communities. She represents 
+                This information is provided by Dr. Jan Duffy, an independent real estate professional licensed 
+                in Nevada. Dr. Jan Duffy is not employed by or affiliated with Century Communities. She represents 
                 buyers as an independent buyer's agent. Equal Housing Opportunity. All rights reserved.
               </p>
             </div>
@@ -542,7 +542,7 @@ export default function SpecialOffersPage() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Local Real Estate Expert
               </p>
@@ -585,7 +585,7 @@ export default function SpecialOffersPage() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

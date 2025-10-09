@@ -190,7 +190,7 @@ export default function ContactForm() {
               <span className="text-3xl font-bold text-blue-600">JD</span>
             </div>
             <h3 className="text-3xl font-bold mb-2">Get in Touch</h3>
-            <p className="text-xl font-semibold text-blue-100 mb-2">Dr. Janet Duffy</p>
+            <p className="text-xl font-semibold text-blue-100 mb-2">Dr. Jan Duffy</p>
             <p className="text-blue-100">Your Local Real Estate Expert</p>
           </div>
           <p className="text-blue-100 text-lg mb-8">
@@ -222,10 +222,10 @@ export default function ContactForm() {
               <div>
                 <h4 className="font-semibold text-lg mb-1">Email Us</h4>
                 <a
-                  href="mailto:info@terraskyeview.com"
+                  href="mailto:DrJanSells@TerraSkyeview.com"
                   className="text-blue-100 hover:text-white transition"
                 >
-                  info@terraskyeview.com
+                  DrJanSells@TerraSkyeview.com
                 </a>
               </div>
             </div>

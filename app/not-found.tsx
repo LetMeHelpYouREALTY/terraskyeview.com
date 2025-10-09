@@ -52,7 +52,7 @@ export default function NotFound() {
             </li>
             <li>
               <Link href="/about-dr-janet-duffy" className="text-blue-600 hover:underline">
-                → Meet Dr. Janet Duffy - Your Buyer's Agent
+                → Meet Dr. Jan Duffy - Your Buyer's Agent
               </Link>
             </li>
             <li>
@@ -65,7 +65,7 @@ export default function NotFound() {
 
         <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
           <p className="text-sm font-semibold text-gray-900 mb-1">
-            ⭐ Dr. Janet Duffy - Your Preferred Buyer's Agent
+            ⭐ Dr. Jan Duffy - Your Preferred Buyer's Agent
           </p>
           <p className="text-xs text-gray-600">
             Get the best price & expert negotiation • FREE to buyers (seller pays)

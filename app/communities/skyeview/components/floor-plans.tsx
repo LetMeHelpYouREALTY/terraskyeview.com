@@ -60,7 +60,7 @@ export default function FloorPlans() {
           walk-in closets, and 2-car garages.
         </p>
         <p className="text-gray-600 mb-6">
-          <strong>Work with Dr. Janet Duffy</strong> to tour these homes and discuss which floor plan best 
+          <strong>Work with Dr. Jan Duffy</strong> to tour these homes and discuss which floor plan best 
           fits your needs. She'll help you understand upgrade options, structural modifications available, 
           and which features add the most value.
         </p>

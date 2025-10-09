@@ -77,13 +77,13 @@ export default function AvailableHomes() {
         <p className="text-lg text-gray-700 mb-4">
           Discover {availableHomes.length} exceptional new construction homes ready for your family. 
           Each Terra home by Century Communities features modern two-story living with spacious layouts, 
-          premium finishes, and energy-efficient design. Work with Dr. Janet Duffy to secure the best 
+          premium finishes, and energy-efficient design. Work with Dr. Jan Duffy to secure the best 
           price and access exclusive financing benefits.
         </p>
         <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg mb-6">
           <p className="text-sm text-gray-800">
             <strong>💡 Buyer's Agent Tip:</strong> These homes are first-come, first-served. Contact 
-            Dr. Janet Duffy today to schedule a tour and get pre-qualified before your dream home is gone!
+            Dr. Jan Duffy today to schedule a tour and get pre-qualified before your dream home is gone!
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@
 ## 🎉 PROJECT STATUS: **COMPLETE & PRODUCTION READY**
 
 **Date:** October 9, 2025  
-**Client:** Dr. Janet Duffy  
+**Client:** Dr. Jan Duffy  
 **Project:** Terra at Skyeview by Century Communities Website  
 **Repository:** github.com/DrJanDuffy/terraskyeview.com  
 **Build Status:** ✅ Passing on Vercel  
@@ -31,7 +31,7 @@
    - Google Maps integration
    - Contact form
 
-3. **About Dr. Janet Duffy** (`/about-dr-janet-duffy`) ✅
+3. **About Dr. Jan Duffy** (`/about-dr-janet-duffy`) ✅
    - H1: "Meet Dr. Janet Duffy"
    - 10+ H3 tags (Q&A format)
    - 1200+ words of content
@@ -106,7 +106,7 @@
 
 ## 🎯 KEY MESSAGING IMPLEMENTED:
 
-### Dr. Janet Duffy Positioning:
+### Dr. Jan Duffy Positioning:
 ✅ "Preferred Buyer's Agent" - used 40+ times across site  
 ✅ "Get the Best Price" - core value proposition  
 ✅ "FREE to Buyers" - emphasized on every page  
@@ -275,8 +275,9 @@ ec2d567 - Expand About Dr. Janet page (200+ words)
 
 **Community:** Terra at Skyeview  
 **Builder:** Century Communities  
-**Agent:** Dr. Janet Duffy  
+**Agent:** Dr. Jan Duffy  
 **Phone:** (702) 919-7292  
+**Email:** DrJanSells@TerraSkyeview.com  
 **Address:** 8592 Vanhoy Creek Street, Las Vegas, NV 89166  
 **Website:** terraskyeview.com  
 
@@ -285,5 +286,5 @@ ec2d567 - Expand About Dr. Janet page (200+ words)
 **🎉 SITE IS LIVE AND READY FOR BUSINESS! 🎉**
 
 All technical requirements met. All content cloned and expanded. All SEO optimizations complete. 
-The website is professional, comprehensive, and ready to generate leads for Dr. Janet Duffy.
+The website is professional, comprehensive, and ready to generate leads for Dr. Jan Duffy.
 

@@ -24,7 +24,7 @@ export default function HomePage() {
                 Available Homes
               </Link>
               <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
-                About Dr. Janet
+                About Dr. Jan
               </Link>
               <Link href="/blog" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Blog
@@ -62,7 +62,7 @@ export default function HomePage() {
           </p>
           <div className="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg mb-6">
             <p className="text-sm font-semibold">
-              ⭐ Dr. Janet Duffy - Preferred Buyer's Agent
+              ⭐ Dr. Jan Duffy - Preferred Buyer's Agent
             </p>
             <p className="text-xs">Get the Best Price & Exclusive Deals • FREE to Buyers</p>
           </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
           <div className="bg-red-50 border-2 border-red-500 rounded-xl p-6 mb-8 max-w-2xl mx-auto">
             <p className="text-lg font-bold text-red-900 mb-2">⚠️ MUST READ BEFORE VISITING:</p>
             <p className="text-base text-gray-900 font-semibold">
-              Contact Dr. Janet Duffy FIRST to be registered with Century Communities. 
+              Contact Dr. Jan Duffy FIRST to be registered with Century Communities. 
               This ensures you get the best price and her expert representation. 
               <span className="text-red-600">Don't visit alone!</span>
             </p>
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="text-sm text-muted-foreground">
             <p className="mb-1"><strong className="text-foreground">Century Communities</strong> - Top 10 National Homebuilder</p>
             <p className="mb-1">📍 Model Home: <span className="font-semibold text-foreground">8592 Vanhoy Creek Street, Las Vegas, NV 89166</span></p>
-            <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Janet Duffy</span></p>
+            <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Jan Duffy</span></p>
             <p className="mt-1">Call: <a href="tel:702-919-7292" className="text-blue-600 hover:underline">(702) 919-7292</a></p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function HomePage() {
       {/* Critical Notice */}
       <div className="bg-red-600 text-white py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg font-bold mb-1">⚠️ IMPORTANT: Contact Dr. Janet Duffy BEFORE Visiting!</p>
+          <p className="text-lg font-bold mb-1">⚠️ IMPORTANT: Contact Dr. Jan Duffy BEFORE Visiting!</p>
           <p className="text-sm">You must be registered with the builder to get the best price and ensure Dr. Janet can represent you.</p>
         </div>
       </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
             <p className="text-xl text-gray-700 mb-4">Three simple steps to your dream home</p>
             <div className="max-w-3xl mx-auto bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 mb-8">
               <p className="text-sm font-bold text-gray-900 mb-2">
-                🔒 CRITICAL: Contact Dr. Janet Duffy BEFORE Your First Visit
+                🔒 CRITICAL: Contact Dr. Jan Duffy BEFORE Your First Visit
               </p>
               <p className="text-sm text-gray-700">
                 To get the best price and ensure Dr. Janet can represent you, she must register you with 

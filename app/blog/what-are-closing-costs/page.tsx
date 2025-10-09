@@ -65,7 +65,7 @@ export default function WhatAreClosingCostsArticle() {
               </span>
               <span className="inline-flex items-center gap-1">
                 <User className="w-4 h-4" />
-                Dr. Janet Duffy
+                Dr. Jan Duffy
               </span>
             </div>
 
@@ -75,7 +75,7 @@ export default function WhatAreClosingCostsArticle() {
 
             <p className="text-xl text-gray-600 leading-relaxed">
               Understanding closing costs and how to prepare for them is essential for every homebuyer. 
-              Learn what fees to expect and how working with Dr. Janet Duffy can help you navigate these expenses.
+              Learn what fees to expect and how working with Dr. Jan Duffy can help you navigate these expenses.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function WhatAreClosingCostsArticle() {
 
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
               <p className="text-gray-800 font-medium">
-                💡 <strong>Pro Tip from Dr. Janet Duffy:</strong> At Skyeview at Skye Canyon, buyers working with me 
+                💡 <strong>Pro Tip from Dr. Jan Duffy:</strong> At Skyeview at Skye Canyon, buyers working with me 
                 may qualify for up to $5,000 toward closing costs through our preferred lenders. This can significantly 
                 reduce your out-of-pocket expenses!
               </p>
@@ -148,7 +148,7 @@ export default function WhatAreClosingCostsArticle() {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-3">
                 <Home className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                <span className="text-gray-700"><strong>Real Estate Agent Commissions:</strong> Covered by seller when working with Dr. Janet Duffy</span>
+                <span className="text-gray-700"><strong>Real Estate Agent Commissions:</strong> Covered by seller when working with Dr. Jan Duffy</span>
               </li>
               <li className="flex items-start gap-3">
                 <Calculator className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
@@ -238,7 +238,7 @@ export default function WhatAreClosingCostsArticle() {
 
             <p className="text-gray-700 leading-relaxed mb-6">
               However, some sellers may be willing to cover some of the buyer's closing costs as part of the home sale 
-              deal. <strong>As your buyer's agent, Dr. Janet Duffy can negotiate these terms on your behalf to help 
+              deal. <strong>As your buyer's agent, Dr. Jan Duffy can negotiate these terms on your behalf to help 
               reduce your out-of-pocket expenses.</strong>
             </p>
 
@@ -255,7 +255,7 @@ export default function WhatAreClosingCostsArticle() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">1. Shop Around for Lenders</h3>
                 <p className="text-gray-700">
                   Do comparison shopping when taking out a mortgage loan. Ask various lenders for their rates, closing 
-                  costs, and fees. Dr. Janet Duffy can connect you with preferred lenders offering competitive rates 
+                  costs, and fees. Dr. Jan Duffy can connect you with preferred lenders offering competitive rates 
                   and up to $5,000 in closing cost assistance.
                 </p>
               </div>
@@ -264,7 +264,7 @@ export default function WhatAreClosingCostsArticle() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. Negotiate with the Seller</h3>
                 <p className="text-gray-700">
                   If the seller is motivated, they may be willing to cover some of your closing costs. As your buyer's 
-                  agent, Dr. Janet Duffy has extensive experience negotiating these terms to get you the best deal possible.
+                  agent, Dr. Jan Duffy has extensive experience negotiating these terms to get you the best deal possible.
                 </p>
               </div>
 
@@ -330,7 +330,7 @@ export default function WhatAreClosingCostsArticle() {
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-center text-white my-12">
             <h3 className="text-3xl font-bold mb-4">Ready to Buy at Skyeview?</h3>
             <p className="text-xl text-blue-100 mb-4">
-              Dr. Janet Duffy is your preferred buyer's agent at Skyeview at Skye Canyon
+              Dr. Jan Duffy is your preferred buyer's agent at Skyeview at Skye Canyon
             </p>
             <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
               Get expert negotiation, access to up to $5,000 in closing cost assistance through preferred lenders, 
@@ -390,7 +390,7 @@ export default function WhatAreClosingCostsArticle() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Preferred Buyer's Agent
               </p>
@@ -428,7 +428,7 @@ export default function WhatAreClosingCostsArticle() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

@@ -57,7 +57,7 @@ const processSteps = [
     subtitle: 'Make a preliminary commitment to buy',
     description:
       "One of the great advantages of new home construction is that it's first-come, first-served. As long as you're a qualified buyer, the house is yours if you're the one who got there first. When you've found a home that checks the right boxes, you'll want to act fast to get it under contract—ensuring that no other buyer can swoop in and buy it out from under you.",
-    ctaText: 'Contact Dr. Janet Duffy',
+    ctaText: 'Contact Dr. Jan Duffy',
     ctaLink: 'tel:702-919-7292',
     sidebarTitle: 'CONTRACTING CONSIDERATIONS',
     sidebarItems: [
@@ -91,7 +91,7 @@ const benefits = [
   {
     icon: TrendingUp,
     title: 'Expert Guidance',
-    description: 'Work with Dr. Janet Duffy, a trusted local expert who knows the Las Vegas market inside and out.',
+    description: 'Work with Dr. Jan Duffy, a trusted local expert who knows the Las Vegas market inside and out.',
   },
   {
     icon: Heart,
@@ -170,7 +170,7 @@ export default function HomebuyingProcessPage() {
           <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
             <p className="text-2xl font-bold mb-2">⚠️ STEP ZERO (Most Important!):</p>
             <p className="text-xl mb-4">
-              Before starting ANY of these steps: Call Dr. Janet Duffy to be registered with the builder!
+              Before starting ANY of these steps: Call Dr. Jan Duffy to be registered with the builder!
             </p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-10 py-6 h-auto">
               <a href="tel:702-919-7292">📞 Register First: (702) 919-7292</a>
@@ -286,11 +286,11 @@ export default function HomebuyingProcessPage() {
               How We Make It Easy
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
-              Work with Dr. Janet Duffy for expert guidance and personalized service throughout your 
+              Work with Dr. Jan Duffy for expert guidance and personalized service throughout your 
               entire homebuying journey at Terra at Skyeview by Century Communities.
             </p>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Unlike working directly with the builder's agent, having Dr. Janet Duffy as your dedicated 
+              Unlike working directly with the builder's agent, having Dr. Jan Duffy as your dedicated 
               buyer's agent means you have someone who is contractually obligated to represent YOUR interests, 
               not the builder's. She brings market expertise, negotiation skills, and access to preferred 
               financing options that can save you thousands of dollars on your home purchase—all at no cost 
@@ -323,7 +323,7 @@ export default function HomebuyingProcessPage() {
             </div>
             <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Contact Dr. Janet Duffy today for personalized guidance through every step 
+              Contact Dr. Jan Duffy today for personalized guidance through every step 
               of your homebuying journey at Skyeview at Skye Canyon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -394,7 +394,7 @@ export default function HomebuyingProcessPage() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Local Real Estate Expert
               </p>
@@ -437,7 +437,7 @@ export default function HomebuyingProcessPage() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

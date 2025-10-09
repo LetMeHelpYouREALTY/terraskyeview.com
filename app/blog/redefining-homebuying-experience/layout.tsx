@@ -3,9 +3,9 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'How We\'re Redefining the Homebuying Experience | Terra Skyeview Blog',
   description:
-    'Discover the modern approach to buying new construction at Skyeview at Skye Canyon. Browse online, streamlined process, and expert guidance from Dr. Janet Duffy. Say goodbye to bidding wars.',
+    'Discover the modern approach to buying new construction at Skyeview at Skye Canyon. Browse online, streamlined process, and expert guidance from Dr. Jan Duffy. Say goodbye to bidding wars.',
   keywords:
-    'homebuying experience, online home shopping, new construction Las Vegas, streamlined homebuying, Dr. Janet Duffy, Skye Canyon homes',
+    'homebuying experience, online home shopping, new construction Las Vegas, streamlined homebuying, Dr. Jan Duffy, Skye Canyon homes',
   openGraph: {
     title: 'How We\'re Redefining the Homebuying Experience at Skyeview',
     description:

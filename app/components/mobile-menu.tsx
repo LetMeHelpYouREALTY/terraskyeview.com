@@ -68,7 +68,7 @@ export default function MobileMenu() {
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
                 >
-                  About Dr. Janet Duffy
+                  About Dr. Jan Duffy
                 </Link>
                 <Link
                   href="/special-offers"
@@ -103,7 +103,7 @@ export default function MobileMenu() {
               {/* Contact Info */}
               <div className="border-t border-gray-200 pt-6 space-y-4">
                 <div>
-                  <p className="text-sm font-semibold text-gray-900 mb-3">Contact Dr. Janet Duffy</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-3">Contact Dr. Jan Duffy</p>
                   <div className="space-y-3">
                     <a
                       href="tel:702-919-7292"
@@ -113,11 +113,11 @@ export default function MobileMenu() {
                       <span>(702) 919-7292</span>
                     </a>
                     <a
-                      href="mailto:info@terraskyeview.com"
+                      href="mailto:DrJanSells@TerraSkyeview.com"
                       className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
                     >
                       <Mail className="w-5 h-5 text-blue-600" />
-                      <span>info@terraskyeview.com</span>
+                      <span>DrJanSells@TerraSkyeview.com</span>
                     </a>
                     <div className="flex items-start gap-3 text-gray-700">
                       <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />

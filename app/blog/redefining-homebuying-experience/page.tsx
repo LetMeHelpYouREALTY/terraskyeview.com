@@ -66,7 +66,7 @@ export default function RedefinigHomebuyingArticle() {
               </span>
               <span className="inline-flex items-center gap-1">
                 <User className="w-4 h-4" />
-                Dr. Janet Duffy
+                Dr. Jan Duffy
               </span>
             </div>
 
@@ -100,7 +100,7 @@ export default function RedefinigHomebuyingArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              By working with Dr. Janet Duffy and choosing new construction at Skyeview at Skye Canyon, you can bypass a 
+              By working with Dr. Jan Duffy and choosing new construction at Skyeview at Skye Canyon, you can bypass a 
               great deal of the typical resale homebuying process. We've reinvented the entire experience by focusing on 
               digital innovation—shop where and when it best suits you—exceptional efficiency, stellar customer satisfaction, 
               and true quality construction.
@@ -120,7 +120,7 @@ export default function RedefinigHomebuyingArticle() {
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
               <p className="text-gray-800 font-medium">
                 "The ability to browse homes online and schedule tours instantly made our home search so much easier. 
-                Dr. Janet Duffy was available to answer all our questions, even in the evenings!"
+                Dr. Jan Duffy was available to answer all our questions, even in the evenings!"
               </p>
               <p className="text-gray-600 text-sm mt-2">— Recent Skyeview Homebuyer</p>
             </div>
@@ -130,7 +130,7 @@ export default function RedefinigHomebuyingArticle() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              When you choose to buy a newly constructed home at Skyeview at Skye Canyon with Dr. Janet Duffy, you'll 
+              When you choose to buy a newly constructed home at Skyeview at Skye Canyon with Dr. Jan Duffy, you'll 
               experience one of the most efficient and streamlined real estate processes in the market today.
             </p>
 
@@ -163,7 +163,7 @@ export default function RedefinigHomebuyingArticle() {
                   <p className="text-gray-700">
                     Many buyers cite the quality of the neighborhood as the most important factor in home selection, which is 
                     why Skyeview at Skye Canyon is located in one of Las Vegas's premier master-planned communities. Browse 
-                    available homes online, explore floor plans, and schedule an in-person tour with Dr. Janet Duffy to see 
+                    available homes online, explore floor plans, and schedule an in-person tour with Dr. Jan Duffy to see 
                     the community amenities and model homes.
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function RedefinigHomebuyingArticle() {
 
             <p className="text-gray-700 leading-relaxed mb-6">
               Although a vast majority of businesses today say that customer satisfaction is a priority, those who prove it 
-              through their actions are rare. Dr. Janet Duffy and every member of our team is focused on your experience, 
+              through their actions are rare. Dr. Jan Duffy and every member of our team is focused on your experience, 
               from the initial consultation to loan officers to the closing table.
             </p>
 
@@ -217,7 +217,7 @@ export default function RedefinigHomebuyingArticle() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Expert local representation with Dr. Janet Duffy</span>
+                  <span className="text-gray-700">Expert local representation with Dr. Jan Duffy</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -263,7 +263,7 @@ export default function RedefinigHomebuyingArticle() {
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-center text-white my-12">
             <h3 className="text-3xl font-bold mb-4">Ready to Experience the Difference?</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              If you're in the market for a new home, get in touch with Dr. Janet Duffy for personal guidance on 
+              If you're in the market for a new home, get in touch with Dr. Jan Duffy for personal guidance on 
               available homes at Skyeview at Skye Canyon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -363,7 +363,7 @@ export default function RedefinigHomebuyingArticle() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Local Real Estate Expert
               </p>
@@ -401,7 +401,7 @@ export default function RedefinigHomebuyingArticle() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

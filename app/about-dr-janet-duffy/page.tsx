@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 const testimonials = [
   {
-    quote: "Dr. Janet Duffy saved us thousands on our new home at Skyeview. She negotiated upgrades we didn't even know were possible!",
+    quote: "Dr. Jan Duffy saved us thousands on our new home at Skyeview. She negotiated upgrades we didn't even know were possible!",
     author: 'Sarah & Michael T.',
     location: 'Skyeview at Skye Canyon',
   },
@@ -74,7 +74,7 @@ export default function AboutDrJanetDuffyPage() {
                 Preferred Buyer's Agent at Terra at Skyeview
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Meet Dr. Janet Duffy
+                Meet Dr. Jan Duffy
               </h1>
               <p className="text-2xl text-blue-100 mb-8">
                 Your advocate for getting the best price and deal on new construction homes at Terra at Skyeview by Century Communities
@@ -87,7 +87,7 @@ export default function AboutDrJanetDuffyPage() {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
-                  <a href="mailto:info@terraskyeview.com">
+                  <a href="mailto:DrJanSells@TerraSkyeview.com">
                     <Mail className="w-5 h-5 mr-2" />
                     Email Dr. Janet
                   </a>
@@ -115,7 +115,7 @@ export default function AboutDrJanetDuffyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Get to Know Dr. Janet Duffy
+              Get to Know Dr. Jan Duffy
             </h2>
             <p className="text-xl text-gray-600">
               Your trusted partner in navigating the new home buying process
@@ -240,7 +240,7 @@ export default function AboutDrJanetDuffyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Dr. Janet Duffy as Your Buyer's Agent?
+              Why Choose Dr. Jan Duffy as Your Buyer's Agent?
             </h2>
             <p className="text-xl text-gray-600">
               The difference between a good deal and a great deal
@@ -291,7 +291,7 @@ export default function AboutDrJanetDuffyPage() {
               What Clients Say
             </h2>
             <p className="text-xl text-gray-600">
-              Real reviews from real buyers who worked with Dr. Janet Duffy
+              Real reviews from real buyers who worked with Dr. Jan Duffy
             </p>
           </div>
 
@@ -316,7 +316,7 @@ export default function AboutDrJanetDuffyPage() {
       <section className="py-20 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-8">
-            Here's What Dr. Janet Duffy Does For You
+            Here's What Dr. Jan Duffy Does For You
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -369,7 +369,7 @@ export default function AboutDrJanetDuffyPage() {
               Ready to Find Your Dream Home?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Contact Dr. Janet Duffy today and let's get started on finding your perfect home at Skyeview at Skye Canyon. Remember: better pricing, expert guidance, and NO COST to you!
+              Contact Dr. Jan Duffy today and let's get started on finding your perfect home at Skyeview at Skye Canyon. Remember: better pricing, expert guidance, and NO COST to you!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -383,8 +383,8 @@ export default function AboutDrJanetDuffyPage() {
               <div className="flex flex-col items-center gap-2">
                 <Mail className="w-8 h-8 text-blue-600" />
                 <p className="font-semibold text-gray-900">Email</p>
-                <a href="mailto:info@terraskyeview.com" className="text-blue-600 hover:text-blue-700">
-                  info@terraskyeview.com
+                <a href="mailto:DrJanSells@TerraSkyeview.com" className="text-blue-600 hover:text-blue-700">
+                  DrJanSells@TerraSkyeview.com
                 </a>
               </div>
               <div className="flex flex-col items-center gap-2">
@@ -415,7 +415,7 @@ export default function AboutDrJanetDuffyPage() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Preferred Buyer's Agent
               </p>
@@ -469,7 +469,7 @@ export default function AboutDrJanetDuffyPage() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

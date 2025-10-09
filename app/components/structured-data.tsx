@@ -2,10 +2,10 @@ export function RealEstateAgentStructuredData() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
-    name: 'Dr. Janet Duffy',
+    name: 'Dr. Jan Duffy',
     description: 'Preferred Buyer\'s Agent at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas',
     telephone: '+1-702-919-7292',
-    email: 'info@terraskyeview.com',
+    email: 'DrJanSells@TerraSkyeview.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '8592 Vanhoy Creek Street',

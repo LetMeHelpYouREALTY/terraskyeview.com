@@ -20,8 +20,8 @@ const blogPosts = [
     id: 1,
     title: 'Should I Use a Realtor to Buy a Home in a Planned Community?',
     excerpt:
-      'Discover why Dr. Janet Duffy is the preferred buyer\'s agent at Skyeview. Get the best price, expert negotiation, and $5,000 closing cost assistance—at NO COST to you!',
-    author: 'Dr. Janet Duffy',
+      'Discover why Dr. Jan Duffy is the preferred buyer\'s agent at Skyeview. Get the best price, expert negotiation, and $5,000 closing cost assistance—at NO COST to you!',
+    author: 'Dr. Jan Duffy',
     date: 'February 25, 2025',
     category: 'Home Buying Tips',
     readTime: '8 min read',
@@ -33,8 +33,8 @@ const blogPosts = [
     id: 2,
     title: 'What Are Closing Costs? Complete Homebuyer Guide',
     excerpt:
-      'Understand closing costs and how to reduce them. Learn how Dr. Janet Duffy helps clients access up to $5,000 in closing cost assistance through preferred lenders.',
-    author: 'Dr. Janet Duffy',
+      'Understand closing costs and how to reduce them. Learn how Dr. Jan Duffy helps clients access up to $5,000 in closing cost assistance through preferred lenders.',
+    author: 'Dr. Jan Duffy',
     date: 'January 20, 2025',
     category: 'Home Buying Tips',
     readTime: '9 min read',
@@ -46,8 +46,8 @@ const blogPosts = [
     id: 3,
     title: 'How We\'re Redefining the Homebuying Experience at Skyeview',
     excerpt:
-      'Say goodbye to stress and bidding wars. Discover the modern, streamlined approach to buying new construction at Skyeview at Skye Canyon with Dr. Janet Duffy.',
-    author: 'Dr. Janet Duffy',
+      'Say goodbye to stress and bidding wars. Discover the modern, streamlined approach to buying new construction at Skyeview at Skye Canyon with Dr. Jan Duffy.',
+    author: 'Dr. Jan Duffy',
     date: 'January 15, 2025',
     category: 'Home Buying Tips',
     readTime: '7 min read',
@@ -60,7 +60,7 @@ const blogPosts = [
     title: 'Why Skye Canyon is Las Vegas\' Hottest Master-Planned Community',
     excerpt:
       'Discover what makes Skye Canyon stand out from other Las Vegas communities. From top-rated schools to resort-style amenities, find out why families are choosing this northwest neighborhood.',
-    author: 'Dr. Janet Duffy',
+    author: 'Dr. Jan Duffy',
     date: 'January 10, 2025',
     category: 'Neighborhood Guides',
     readTime: '7 min read',
@@ -72,7 +72,7 @@ const blogPosts = [
     title: 'New Home vs. Resale: Making the Right Choice for Your Family',
     excerpt:
       'Weigh the pros and cons of buying new construction versus an existing home. Learn about warranties, customization options, and long-term value.',
-    author: 'Dr. Janet Duffy',
+    author: 'Dr. Jan Duffy',
     date: 'December 20, 2024',
     category: 'Home Buying Tips',
     readTime: '5 min read',
@@ -84,7 +84,7 @@ const blogPosts = [
     title: 'Investment Opportunities in Las Vegas Real Estate',
     excerpt:
       'Discover why Las Vegas continues to be a strong market for real estate investment. Learn about rental yields, appreciation trends, and emerging neighborhoods.',
-    author: 'Dr. Janet Duffy',
+    author: 'Dr. Jan Duffy',
     date: 'December 15, 2024',
     category: 'Investment Advice',
     readTime: '6 min read',
@@ -96,7 +96,7 @@ const blogPosts = [
     title: 'The Complete Guide to New Home Warranties',
     excerpt:
       'Understand what\'s covered under your new home warranty and how to maximize its benefits. Learn about structural warranties, appliance coverage, and claim processes.',
-    author: 'Dr. Janet Duffy',
+    author: 'Dr. Jan Duffy',
     date: 'December 10, 2024',
     category: 'Home Buying Tips',
     readTime: '7 min read',
@@ -108,7 +108,7 @@ const blogPosts = [
     title: 'Best Schools in Northwest Las Vegas: A Parent\'s Guide',
     excerpt:
       'Explore the top-rated schools in Northwest Las Vegas, including Skye Canyon area. Get insights on academic performance, extracurriculars, and community involvement.',
-    author: 'Dr. Janet Duffy',
+    author: 'Dr. Jan Duffy',
     date: 'December 5, 2024',
     category: 'Neighborhood Guides',
     readTime: '9 min read',
@@ -180,7 +180,7 @@ export default function BlogPage() {
               Your Resource for Las Vegas Real Estate Insights
             </p>
             <p className="text-lg text-blue-100">
-              Expert advice, market trends, and neighborhood guides from Dr. Janet Duffy
+              Expert advice, market trends, and neighborhood guides from Dr. Jan Duffy
             </p>
           </div>
         </div>
@@ -361,7 +361,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Find Your Dream Home?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Explore available homes at Skyeview at Skye Canyon or schedule a tour with Dr. Janet Duffy today.
+            Explore available homes at Skyeview at Skye Canyon or schedule a tour with Dr. Jan Duffy today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -388,7 +388,7 @@ export default function BlogPage() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Local Real Estate Expert
               </p>
@@ -426,7 +426,7 @@ export default function BlogPage() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>8592 Vanhoy Creek Street<br />Las Vegas, NV 89166</li>
               </ul>
             </div>

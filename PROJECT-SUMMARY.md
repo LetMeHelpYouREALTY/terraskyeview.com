@@ -2,7 +2,7 @@
 
 ## 🎉 **PROJECT STATUS: PRODUCTION READY**
 
-Your website for **Terra at Skyeview by Century Communities** has been successfully cloned from Century Communities and customized for **Dr. Janet Duffy** as the preferred buyer's agent.
+Your website for **Terra at Skyeview by Century Communities** has been successfully cloned from Century Communities and customized for **Dr. Jan Duffy** as the preferred buyer's agent.
 
 ---
 
@@ -12,7 +12,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 
 #### 1. **Homepage** - `/`
 - Hero section with special offers banner
-- Emphasizes Dr. Janet Duffy as preferred buyer's agent
+- Emphasizes Dr. Jan Duffy as preferred buyer's agent
 - 3-step homebuying process
 - Clear CTAs (View Homes, Special Offers, Schedule Tour)
 - Century Communities branding
@@ -38,7 +38,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 - CTA sections
 
 #### 4. **Blog Articles** (3 Complete Articles):
-- `/blog/should-i-use-realtor-planned-community` - Why you need Dr. Janet
+- `/blog/should-i-use-realtor-planned-community` - Why you need Dr. Jan
 - `/blog/what-are-closing-costs` - Financial education
 - `/blog/redefining-homebuying-experience` - Modern process
 
@@ -66,9 +66,9 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 - Financing options
 - Warranty information
 
-#### 8. **About Dr. Janet Duffy** - `/about-dr-janet-duffy`
+#### 8. **About Dr. Jan Duffy** - `/about-dr-janet-duffy`
 - Q&A spotlight format
-- Why choose Dr. Janet section
+- Why choose Dr. Jan section
 - Client testimonials
 - Value proposition (Before & After purchase support)
 - Contact information
@@ -78,7 +78,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 
 ## 🎯 **KEY POSITIONING ACHIEVED:**
 
-### Dr. Janet Duffy:
+### Dr. Jan Duffy:
 ✅ **"Preferred Buyer's Agent at Terra at Skyeview"**
 ✅ **"Get the Best Price & Deal"** - Core message
 ✅ **"FREE to Buyers"** - Seller pays commission
@@ -135,7 +135,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 ## 📞 **CONTACT INFORMATION:**
 
 **Phone:** (702) 919-7292
-**Email:** info@terraskyeview.com
+**Email:** DrJanSells@TerraSkyeview.com
 **Address:** 8592 Vanhoy Creek Street, Las Vegas, NV 89166
 **Website:** terraskyeview.com
 
@@ -148,7 +148,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
    - Replace 61 placeholder images in carousel
    - Add actual floor plan images
    - Community amenity photos
-   - Dr. Janet Duffy professional headshot
+   - Dr. Jan Duffy professional headshot
 
 2. **Verify Data with Century Communities:**
    - Confirm current pricing ($479,990+)
@@ -226,7 +226,7 @@ Your website for **Terra at Skyeview by Century Communities** has been successfu
 ## ⚠️ **IMPORTANT DISCLAIMERS NEEDED:**
 
 Before full launch, ensure you have:
-- [ ] Dr. Janet Duffy's Nevada Real Estate License #
+- [ ] Dr. Jan Duffy's Nevada Real Estate License #
 - [ ] Broker affiliation disclosure
 - [ ] Fair Housing logo
 - [ ] Written approval from Century Communities (if required)
@@ -242,7 +242,7 @@ Before full launch, ensure you have:
 
 **What Works:**
 - ✅ Professional, polished design
-- ✅ Strong Dr. Janet Duffy positioning
+- ✅ Strong Dr. Jan Duffy positioning
 - ✅ Clear value propositions
 - ✅ Comprehensive information architecture
 - ✅ Mobile-responsive throughout
@@ -262,5 +262,5 @@ Site is ready to LAUNCH TODAY as a professional showcase. Priority is adding rea
 
 **Built with critical thinking and attention to detail.**  
 **All Century Communities best practices implemented.**  
-**Dr. Janet Duffy positioned for maximum lead generation.**
+**Dr. Jan Duffy positioned for maximum lead generation.**
 

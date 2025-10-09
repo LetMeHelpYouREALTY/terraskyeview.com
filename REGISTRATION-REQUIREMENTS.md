@@ -2,7 +2,7 @@
 
 ## ⚠️ THE #1 RULE FOR NEW CONSTRUCTION:
 
-**BUYERS MUST CONTACT DR. JANET DUFFY BEFORE VISITING TERRA AT SKYEVIEW**
+**BUYERS MUST CONTACT DR. JAN DUFFY BEFORE VISITING TERRA AT SKYEVIEW**
 
 ---
 
@@ -18,20 +18,20 @@
 ### What Happens If Done Wrong:
 - ❌ Buyer visits model home alone
 - ❌ Builder's agent claims buyer as "unrepresented"
-- ❌ Dr. Janet cannot be added as buyer's agent later
+- ❌ Dr. Jan cannot be added as buyer's agent later
 - ❌ Buyer must negotiate alone vs. professional builder's agent
 - ❌ Buyer likely overpays by thousands
-- ❌ Dr. Janet cannot earn commission or help buyer
+- ❌ Dr. Jan cannot earn commission or help buyer
 
 ### What Happens If Done Right:
-- ✅ Buyer calls Dr. Janet first: (702) 919-7292
-- ✅ Dr. Janet registers buyer with Century Communities
+- ✅ Buyer calls Dr. Jan first: (702) 919-7292
+- ✅ Dr. Jan registers buyer with Century Communities
 - ✅ Buyer can then visit with protection
-- ✅ Dr. Janet negotiates best price
+- ✅ Dr. Jan negotiates best price
 - ✅ Buyer saves thousands of dollars
 - ✅ Expert representation throughout process
 - ✅ Access to $5,000 closing cost assistance
-- ✅ Dr. Janet earns her commission from seller (FREE to buyer)
+- ✅ Dr. Jan earns her commission from seller (FREE to buyer)
 
 ---
 
@@ -40,8 +40,8 @@
 ### 🏠 Homepage (`/`):
 1. **Red banner** at bottom of hero section (before "How It Works")
 2. **Red alert box** in hero area - "MUST READ BEFORE VISITING"
-3. **Animated call button** - pulsing red "Call Dr. Janet FIRST"
-4. **Step 1** prominently says "Call Dr. Janet FIRST" with call button
+3. **Animated call button** - pulsing red "Call Dr. Jan FIRST"
+4. **Step 1** prominently says "Call Dr. Jan FIRST" with call button
 5. **Yellow warning box** above the 3-step process
 
 ### 🏘️ Community Page (`/communities/skyeview`):
@@ -49,7 +49,7 @@
 2. Large call button on banner
 3. Explains registration requirement clearly
 
-### 👤 About Dr. Janet Page (`/about-dr-janet-duffy`):
+### 👤 About Dr. Jan Page (`/about-dr-janet-duffy`):
 1. **Red alert box** at top of hero section
 2. Explains "I MUST register you BEFORE your first visit"
 3. Large call-to-action button
@@ -68,7 +68,7 @@
 
 ### 💰 Special Offers Page (`/special-offers`):
 1. **Red notice** at top of hero
-2. "To Access These Offers: Call Dr. Janet FIRST!"
+2. "To Access These Offers: Call Dr. Jan FIRST!"
 3. Links financing benefits to proper registration
 
 ### 📚 Homebuying Process Page (`/homebuying-process`):
@@ -148,10 +148,10 @@
 
 ## 📞 THE ONE ACTION WE WANT:
 
-**CALL DR. JANET DUFFY AT (702) 919-7292 BEFORE VISITING**
+**CALL DR. JAN DUFFY AT (702) 919-7292 BEFORE VISITING**
 
 This single action:
-- Protects Dr. Janet's representation rights
+- Protects Dr. Jan's representation rights
 - Ensures buyer gets best price
 - Unlocks $5,000 closing cost assistance
 - Provides expert negotiation
@@ -167,13 +167,13 @@ This single action:
 **Repetition: A+** - On 7+ pages  
 **Psychology: A+** - Fear of loss + easy action  
 
-**Overall: A+** - This messaging will protect Dr. Janet's business and save buyers thousands.
+**Overall: A+** - This messaging will protect Dr. Jan's business and save buyers thousands.
 
 ---
 
 ## ✅ RESULT:
 
-No visitor can miss the requirement to call Dr. Janet FIRST before visiting Terra at Skyeview. 
+No visitor can miss the requirement to call Dr. Jan FIRST before visiting Terra at Skyeview. 
 The message is clear, urgent, repeated, and action-oriented.
 
 **This protects both the buyer (best price) and the agent (commission/representation).**

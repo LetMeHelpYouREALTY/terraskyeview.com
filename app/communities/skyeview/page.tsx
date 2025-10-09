@@ -57,7 +57,7 @@ export default function SkyeviewPage() {
             <div className="flex-1">
               <p className="text-xl font-bold mb-1">⚠️ STOP! Read This Before Touring:</p>
               <p className="text-base">
-                You MUST contact Dr. Janet Duffy BEFORE your first visit to be registered with Century Communities. 
+                You MUST contact Dr. Jan Duffy BEFORE your first visit to be registered with Century Communities. 
                 This is required to get the best price and ensure proper representation.
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function SkyeviewPage() {
                 </span>
               </div>
               <p className="text-sm text-gray-700 mt-2">
-                Your Local Expert: <span className="font-semibold">Dr. Janet Duffy</span>
+                Your Local Expert: <span className="font-semibold">Dr. Jan Duffy</span>
               </p>
             </div>
             <div className="flex flex-col gap-2">
@@ -195,7 +195,7 @@ export default function SkyeviewPage() {
               </div>
               <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl">
                 <p className="text-sm text-gray-700 mb-2">
-                  <span className="font-semibold text-blue-900">Working with Dr. Janet Duffy</span>
+                  <span className="font-semibold text-blue-900">Working with Dr. Jan Duffy</span>
                 </p>
                 <p className="text-sm text-gray-600">
                   Get expert guidance through every step of your home buying journey with a trusted local real estate professional who knows Skye Canyon inside and out.
@@ -224,7 +224,7 @@ export default function SkyeviewPage() {
                 Two-story new homes in Skye Canyon, Las Vegas.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span><br />
+                <span className="text-white font-medium">Dr. Jan Duffy</span><br />
                 Your Preferred Buyer's Agent
               </p>
             </div>
@@ -246,7 +246,7 @@ export default function SkyeviewPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  info@terraskyeview.com
+                  DrJanSells@TerraSkyeview.com
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />

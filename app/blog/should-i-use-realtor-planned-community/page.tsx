@@ -65,7 +65,7 @@ export default function ShouldIUseRealtorArticle() {
               </span>
               <span className="inline-flex items-center gap-1">
                 <User className="w-4 h-4" />
-                Dr. Janet Duffy
+                Dr. Jan Duffy
               </span>
             </div>
 
@@ -74,7 +74,7 @@ export default function ShouldIUseRealtorArticle() {
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Discover why having Dr. Janet Duffy as your buyer's agent at Terra at Skyeview by Century Communities ensures you get the best price, expert guidance, and exclusive benefits throughout your homebuying journey.
+              Discover why having Dr. Jan Duffy as your buyer's agent at Terra at Skyeview by Century Communities ensures you get the best price, expert guidance, and exclusive benefits throughout your homebuying journey.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function ShouldIUseRealtorArticle() {
             <div className="text-center">
               <p className="text-3xl font-bold mb-4">⚠️ CRITICAL: Call BEFORE You Visit!</p>
               <p className="text-xl mb-6">
-                Dr. Janet Duffy MUST register you with Century Communities BEFORE your first visit 
+                Dr. Jan Duffy MUST register you with Century Communities BEFORE your first visit 
                 to Terra at Skyeview. This is the ONLY way to ensure you get the best price and her representation.
               </p>
               <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-2xl px-12 py-8 h-auto">
@@ -112,7 +112,7 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Janet Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Janet Duffy is an expert not only in real estate, but also specializes in Terra at Skyeview and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal.
+              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Jan Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Jan Duffy is an expert not only in real estate, but also specializes in Terra at Skyeview and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8 rounded-r-lg">
@@ -121,16 +121,16 @@ export default function ShouldIUseRealtorArticle() {
                 It's important to understand that when you look at new construction communities, it can be tempting to just let the builder's agent handle the transaction. However, <strong>having your own real estate agent is a better idea.</strong>
               </p>
               <p className="text-gray-800">
-                The realtor who works for you is known as a <strong>"buyer's agent"</strong> and it is their responsibility to look out for your best interests during the entire process. The seller pays both the selling and buying agents' commissions, which means <strong>Dr. Janet Duffy's services cost you nothing!</strong>
+                The realtor who works for you is known as a <strong>"buyer's agent"</strong> and it is their responsibility to look out for your best interests during the entire process. The seller pays both the selling and buying agents' commissions, which means <strong>Dr. Jan Duffy's services cost you nothing!</strong>
               </p>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              Still wondering, "Do I need a realtor to buy a house in a planned community?" Consider these five benefits of working with Dr. Janet Duffy before you make your final decision:
+              Still wondering, "Do I need a realtor to buy a house in a planned community?" Consider these five benefits of working with Dr. Jan Duffy before you make your final decision:
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-              1. Dr. Janet Duffy Knows Skye Canyon Inside and Out
+              1. Dr. Jan Duffy Knows Skye Canyon Inside and Out
             </h2>
 
             <div className="flex gap-4 mb-6">
@@ -140,7 +140,7 @@ export default function ShouldIUseRealtorArticle() {
                   Skye Canyon is a premier master-planned community in Northwest Las Vegas with 1,700 acres of recreational space. Within Skye Canyon, there are multiple neighborhoods and builders, each offering a unique living experience. Style, size, lot location, and amenities are just a few characteristics that vary throughout the community.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Dr. Janet Duffy</strong> can help you determine what size lot is best for your needs, show you available properties across different neighborhoods (not just Skyeview), and help you find the home of your dreams at the best possible price. Her intimate knowledge of the area means you'll get insider insights that the builder's agent simply won't provide.
+                  <strong>Dr. Jan Duffy</strong> can help you determine what size lot is best for your needs, show you available properties across different neighborhoods (not just Skyeview), and help you find the home of your dreams at the best possible price. Her intimate knowledge of the area means you'll get insider insights that the builder's agent simply won't provide.
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function ShouldIUseRealtorArticle() {
                   Planned communities are known for their amenities, and Skye Canyon has something for everyone. Good quality of life is a concept honored at Skye Canyon by featuring a variety of principles that focus on giving you a future full of connection, well-being, enrichment, and convenience.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  By getting to know you as a client, <strong>Dr. Janet Duffy</strong> will know which specific location within Skye Canyon is right for you and can assist you in finding the right home in a shorter amount of time. She knows which areas are closest to schools, parks, trails, and other amenities that matter to your family.
+                  By getting to know you as a client, <strong>Dr. Jan Duffy</strong> will know which specific location within Skye Canyon is right for you and can assist you in finding the right home in a shorter amount of time. She knows which areas are closest to schools, parks, trails, and other amenities that matter to your family.
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function ShouldIUseRealtorArticle() {
             </div>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-              3. Dr. Janet Duffy Will Be Your Advocate
+              3. Dr. Jan Duffy Will Be Your Advocate
             </h2>
 
             <div className="flex gap-4 mb-6">
@@ -205,7 +205,7 @@ export default function ShouldIUseRealtorArticle() {
                   <strong className="text-red-600">Most builder's agents are thinking of their employer first and your needs second.</strong> The realtor you bring with you will ensure your interests are always at the forefront.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Dr. Janet Duffy</strong> works exclusively for YOU, not the builder. She will review contracts carefully, point out any issues, advise on upgrades that add value versus those that don't, and make sure you're protected throughout the entire process.
+                  <strong>Dr. Jan Duffy</strong> works exclusively for YOU, not the builder. She will review contracts carefully, point out any issues, advise on upgrades that add value versus those that don't, and make sure you're protected throughout the entire process.
                 </p>
               </div>
             </div>
@@ -219,12 +219,12 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              As the housing market continues to evolve, good negotiation tactics may be the difference between you getting the home of your dreams at the best price or overpaying. <strong>Dr. Janet Duffy</strong> is a professional and experienced negotiator who is expert at drawing up effective purchase agreements, especially when dealing with new construction where builders may offer numerous options for upgrades and add-ons.
+              As the housing market continues to evolve, good negotiation tactics may be the difference between you getting the home of your dreams at the best price or overpaying. <strong>Dr. Jan Duffy</strong> is a professional and experienced negotiator who is expert at drawing up effective purchase agreements, especially when dealing with new construction where builders may offer numerous options for upgrades and add-ons.
             </p>
 
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 my-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                How Dr. Janet Duffy Saves You Money:
+                How Dr. Jan Duffy Saves You Money:
               </h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
@@ -277,11 +277,11 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              An experienced real estate agent like <strong>Dr. Janet Duffy</strong> will know just what inspections are needed for a new construction home and will know what other issues to watch for. She has seen it all and has the experience necessary to work through almost anything. Realtors, particularly those with experience in planned communities like Skye Canyon, are extremely valuable during this process.
+              An experienced real estate agent like <strong>Dr. Jan Duffy</strong> will know just what inspections are needed for a new construction home and will know what other issues to watch for. She has seen it all and has the experience necessary to work through almost anything. Realtors, particularly those with experience in planned communities like Skye Canyon, are extremely valuable during this process.
             </p>
 
             <div className="bg-gray-50 rounded-xl p-6 my-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">What Dr. Janet Duffy Handles For You:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">What Dr. Jan Duffy Handles For You:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2">
                   <li className="text-gray-700">✓ Contract review and explanation</li>
@@ -299,7 +299,7 @@ export default function ShouldIUseRealtorArticle() {
             </div>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-              The Bottom Line: Yes, You Should Use Dr. Janet Duffy!
+              The Bottom Line: Yes, You Should Use Dr. Jan Duffy!
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -307,7 +307,7 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              It's crucial to have the right real estate agent by your side when purchasing a home in a planned community. <strong>Dr. Janet Duffy is the preferred buyer's agent at Skyeview at Skye Canyon</strong> because she:
+              It's crucial to have the right real estate agent by your side when purchasing a home in a planned community. <strong>Dr. Jan Duffy is the preferred buyer's agent at Skyeview at Skye Canyon</strong> because she:
             </p>
 
             <ul className="space-y-3 mb-8 pl-6">
@@ -322,9 +322,9 @@ export default function ShouldIUseRealtorArticle() {
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-center text-white my-12">
-            <h3 className="text-3xl font-bold mb-4">Ready to Get Started with Dr. Janet Duffy?</h3>
+            <h3 className="text-3xl font-bold mb-4">Ready to Get Started with Dr. Jan Duffy?</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Don't go to Skyeview alone! Contact Dr. Janet Duffy today to ensure you get the best price, 
+              Don't go to Skyeview alone! Contact Dr. Jan Duffy today to ensure you get the best price, 
               expert guidance, and exclusive benefits throughout your homebuying journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -381,7 +381,7 @@ export default function ShouldIUseRealtorArticle() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Preferred Buyer's Agent
               </p>
@@ -430,7 +430,7 @@ export default function ShouldIUseRealtorArticle() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

@@ -13,7 +13,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Real Estate Agent Representation',
-    description: 'Work with Dr. Janet Duffy, your preferred buyer\'s agent and trusted local expert who specializes in Terra at Skyeview by Century Communities and the Skye Canyon master-planned community.',
+    description: 'Work with Dr. Jan Duffy, your preferred buyer\'s agent and trusted local expert who specializes in Terra at Skyeview by Century Communities and the Skye Canyon master-planned community.',
   },
   {
     icon: DollarSign,
@@ -43,7 +43,7 @@ const process = [
     title: 'Get Pre-Qualified',
     description: 'Determine your budget by getting pre-approved for a loan',
     details: [
-      'Connect with Century Communities preferred lenders through Dr. Janet Duffy',
+      'Connect with Century Communities preferred lenders through Dr. Jan Duffy',
       'Review your finances and credit',
       'Understand your exact budget',
       'Access competitive rates starting at 3.875%',
@@ -58,7 +58,7 @@ const process = [
     details: [
       'View available two-story homes at Terra at Skyeview online',
       'Explore three floor plans: 1,792-2,119 sq ft',
-      'Schedule tours with Dr. Janet Duffy',
+      'Schedule tours with Dr. Jan Duffy',
       'Visit model homes at 8592 Vanhoy Creek Street',
       'Compare 3-5 bedroom options from $479,990',
       'Learn about Skye Canyon master-planned community amenities',
@@ -120,7 +120,7 @@ export default function ForBuyersPage() {
           <div className="bg-red-500 border-4 border-red-700 rounded-2xl p-6 mb-12 text-center max-w-4xl mx-auto">
             <p className="text-2xl font-bold mb-3">⚠️ IMPORTANT FIRST STEP:</p>
             <p className="text-lg">
-              Contact Dr. Janet Duffy BEFORE visiting Terra at Skyeview! She must register you with 
+              Contact Dr. Jan Duffy BEFORE visiting Terra at Skyeview! She must register you with 
               Century Communities first to ensure the best price and her representation rights.
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function ForBuyersPage() {
             </p>
             <p className="text-lg text-blue-200 mb-8">
               This comprehensive guide explains everything you need to know about buying a new construction 
-              home at Terra at Skyeview. Learn about the benefits of working with Dr. Janet Duffy as your 
+              home at Terra at Skyeview. Learn about the benefits of working with Dr. Jan Duffy as your 
               buyer's agent, understand available financing options, and discover why having your own representation 
               ensures you get the best price and terms. Century Communities is a top 10 national homebuilder, 
               and with Dr. Janet in your corner, you'll have the expertise needed to navigate the process with confidence.
@@ -148,7 +148,7 @@ export default function ForBuyersPage() {
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                 <a href="tel:702-919-7292">
-                  Call Dr. Janet Duffy
+                  Call Dr. Jan Duffy
                 </a>
               </Button>
             </div>
@@ -164,7 +164,7 @@ export default function ForBuyersPage() {
               Why Buy at Terra at Skyeview?
             </h2>
             <p className="text-xl text-gray-600">
-              Century Communities + Dr. Janet Duffy = The best homebuying experience
+              Century Communities + Dr. Jan Duffy = The best homebuying experience
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function ForBuyersPage() {
             Ready to Start Your Homebuying Journey?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact Dr. Janet Duffy today to explore your options at Terra at Skyeview by Century Communities. 
+            Contact Dr. Jan Duffy today to explore your options at Terra at Skyeview by Century Communities. 
             Your dream home is waiting!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -277,7 +277,7 @@ export default function ForBuyersPage() {
                 Your dream home in Las Vegas awaits.
               </p>
               <p className="text-gray-400 text-sm">
-                <span className="text-white font-medium">Dr. Janet Duffy</span>
+                <span className="text-white font-medium">Dr. Jan Duffy</span>
                 <br />
                 Your Local Real Estate Expert
               </p>
@@ -328,7 +328,7 @@ export default function ForBuyersPage() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>(702) 919-7292</li>
-                <li>info@terraskyeview.com</li>
+                <li>DrJanSells@TerraSkyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street
                   <br />

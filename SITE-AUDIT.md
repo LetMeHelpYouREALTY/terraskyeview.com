@@ -27,7 +27,7 @@
 5. **For Buyers** (`/for-buyers`) - Comprehensive buyer guide
 6. **Homebuying Process** (`/homebuying-process`) - 4-step process guide
 7. **Special Offers** (`/special-offers`) - Financing promotions
-8. **About Dr. Janet Duffy** (`/about-dr-janet-duffy`) - Agent spotlight
+8. **About Dr. Jan Duffy** (`/about-dr-janet-duffy`) - Agent spotlight
 
 ## ✅ **KEY MESSAGING IMPLEMENTED:**
 
@@ -39,18 +39,19 @@
 - Location: 8592 Vanhoy Creek Street, Las Vegas, NV 89166
 - Skye Canyon Master-Planned Community
 
-### Dr. Janet Duffy Positioning:
+### Dr. Jan Duffy Positioning:
 - ✅ **"Preferred Buyer's Agent"** - mentioned throughout
 - ✅ **"Get the Best Price"** - core value proposition
 - ✅ **"FREE to Buyers"** - seller pays commission
 - ✅ $5,000 closing cost assistance access
 - ✅ Expert negotiation emphasis
-- ✅ Phone: 702.568.0333
+- ✅ Phone: (702) 919-7292
+- ✅ Email: DrJanSells@TerraSkyeview.com
 
 ## 🎯 **CRITICAL FINDINGS & RECOMMENDATIONS:**
 
 ### STRENGTHS:
-1. ✅ Clear Dr. Janet Duffy positioning as buyer advocate
+1. ✅ Clear Dr. Jan Duffy positioning as buyer advocate
 2. ✅ Strong emphasis on "FREE" and "Best Price"
 3. ✅ Comprehensive content cloned from Century Communities
 4. ✅ Professional design and navigation
@@ -75,7 +76,7 @@
 #### 3. Content Accuracy:
 - ⚠️ Need to verify exact pricing with Century Communities
 - ⚠️ Need to verify actual available inventory
-- ⚠️ Need to confirm Dr. Janet's actual preferred agent status
+- ⚠️ Need to confirm Dr. Jan's actual preferred agent status
 
 ## 📋 **RECOMMENDED NEXT STEPS:**
 
@@ -135,7 +136,7 @@
 - ✅ Phone number prominently displayed: 702.568.0333
 - ✅ Multiple contact opportunities on each page
 - ✅ Clear "Schedule Tour" and "View Homes" buttons
-- ✅ "Call Dr. Janet" personalized CTAs
+- ✅ "Call Dr. Jan" personalized CTAs
 
 ## 🎨 **DESIGN AUDIT:**
 
@@ -157,7 +158,7 @@
 - ✅ Terra = Two-story homes
 - ✅ Mesa = Single-story (sister community)
 - ✅ Century Communities = builder
-- ✅ Dr. Janet Duffy = buyer's agent
+- ✅ Dr. Jan Duffy = buyer's agent
 - ✅ Seller pays commission
 - ✅ $5,000 closing cost assistance available
 
@@ -174,7 +175,7 @@
 
 **Strengths:**
 - Professional, comprehensive site
-- Strong Dr. Janet Duffy positioning
+- Strong Dr. Jan Duffy positioning
 - Excellent content cloned from Century Communities
 - Clear value proposition
 - Mobile-responsive and modern

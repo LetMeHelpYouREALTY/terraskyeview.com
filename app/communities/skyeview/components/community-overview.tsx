@@ -40,7 +40,7 @@ export default function CommunityOverview() {
               Welcome to <strong>Terra at Skyeview</strong>, a new home community by <strong>Century Communities</strong> offering inspired two-story homes for sale in Las Vegas, NV. Located within the Skye Canyon master-planned community, Terra offers plenty of adventure and relaxation with state-of-the-art amenities, annual community events, and interactive programming.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Discover quality new construction homes from one of the nation's top 10 homebuilders. Terra at Skyeview features modern two-story floor plans ranging from 1,792 to 2,119 square feet with 3-5 bedrooms. Start your dream home journey today with expert representation from Dr. Janet Duffy, your preferred buyer's agent.
+              Discover quality new construction homes from one of the nation's top 10 homebuilders. Terra at Skyeview features modern two-story floor plans ranging from 1,792 to 2,119 square feet with 3-5 bedrooms. Start your dream home journey today with expert representation from Dr. Jan Duffy, your preferred buyer's agent.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -83,10 +83,10 @@ export default function CommunityOverview() {
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              Working with Dr. Janet Duffy
+              Working with Dr. Jan Duffy
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              When you work with Dr. Janet Duffy as your buyer's agent at Terra at Skyeview, you 
+              When you work with Dr. Jan Duffy as your buyer's agent at Terra at Skyeview, you 
               gain a powerful advocate who will negotiate the best possible price and terms on 
               your behalf. Unlike the builder's agent who represents Century Communities' interests, 
               Dr. Janet works exclusively for you. She'll help you navigate upgrade selections, 
