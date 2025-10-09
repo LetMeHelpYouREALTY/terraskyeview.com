@@ -31,17 +31,17 @@ export default function SkyeviewPage() {
               <a href="#homes" className="text-sm font-medium hover:text-blue-600 transition">
                 Available Homes
               </a>
+              <a href="/about-dr-janet-duffy" className="text-sm font-medium hover:text-blue-600 transition">
+                About Dr. Janet
+              </a>
               <a href="/special-offers" className="text-sm font-medium hover:text-blue-600 transition">
                 Special Offers
-              </a>
-              <a href="/homebuying-process" className="text-sm font-medium hover:text-blue-600 transition">
-                Resources
               </a>
               <a href="/blog" className="text-sm font-medium hover:text-blue-600 transition">
                 Blog
               </a>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                Schedule Tour
+                <a href="tel:702-568-0333">Call Dr. Janet</a>
               </Button>
             </nav>
             <div className="md:hidden">

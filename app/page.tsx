@@ -229,10 +229,15 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 text-pretty">
             Terra Skyeview
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
-            Discover your dream home in Las Vegas at Skyeview at Skye Canyon. 
-            New construction homes from $479,990 in a master-planned community.
+          <p className="text-lg md:text-xl text-muted-foreground mb-2 text-pretty">
+            New Construction Homes from $479,990 in Las Vegas
           </p>
+          <div className="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg mb-6">
+            <p className="text-sm font-semibold">
+              ⭐ Dr. Janet Duffy - Your Preferred Buyer's Agent
+            </p>
+            <p className="text-xs">Get the Best Price & Expert Negotiation • FREE to Buyers</p>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a

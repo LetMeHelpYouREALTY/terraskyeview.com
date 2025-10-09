@@ -146,8 +146,8 @@ export default function HomebuyingProcessPage() {
               <Link href="/communities/skyeview" className="text-sm font-medium hover:text-blue-600 transition">
                 Available Homes
               </Link>
-              <Link href="/special-offers" className="text-sm font-medium hover:text-blue-600 transition">
-                Special Offers
+              <Link href="/about-dr-janet-duffy" className="text-sm font-medium hover:text-blue-600 transition">
+                About Dr. Janet
               </Link>
               <Link href="/homebuying-process" className="text-sm font-medium text-blue-600">
                 Resources
@@ -156,7 +156,7 @@ export default function HomebuyingProcessPage() {
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Contact Us</a>
+                <a href="tel:702-568-0333">Call Dr. Janet</a>
               </Button>
             </nav>
           </div>

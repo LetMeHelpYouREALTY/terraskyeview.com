@@ -18,18 +18,45 @@ const categories = [
 const blogPosts = [
   {
     id: 1,
-    title: 'How to Navigate the Las Vegas Real Estate Market in 2025',
+    title: 'Should I Use a Realtor to Buy a Home in a Planned Community?',
     excerpt:
-      'Learn expert strategies for buying a home in the competitive Las Vegas market. Discover insider tips for making winning offers and avoiding common pitfalls.',
+      'Discover why Dr. Janet Duffy is the preferred buyer\'s agent at Skyeview. Get the best price, expert negotiation, and $5,000 closing cost assistance—at NO COST to you!',
     author: 'Dr. Janet Duffy',
-    date: 'January 15, 2025',
-    category: 'Las Vegas Market',
-    readTime: '5 min read',
+    date: 'February 25, 2025',
+    category: 'Home Buying Tips',
+    readTime: '8 min read',
     featured: true,
-    image: '/blog/las-vegas-market.jpg',
+    image: '/blog/buyers-agent.jpg',
+    link: '/blog/should-i-use-realtor-planned-community',
   },
   {
     id: 2,
+    title: 'What Are Closing Costs? Complete Homebuyer Guide',
+    excerpt:
+      'Understand closing costs and how to reduce them. Learn how Dr. Janet Duffy helps clients access up to $5,000 in closing cost assistance through preferred lenders.',
+    author: 'Dr. Janet Duffy',
+    date: 'January 20, 2025',
+    category: 'Home Buying Tips',
+    readTime: '9 min read',
+    featured: true,
+    image: '/blog/closing-costs.jpg',
+    link: '/blog/what-are-closing-costs',
+  },
+  {
+    id: 3,
+    title: 'How We\'re Redefining the Homebuying Experience at Skyeview',
+    excerpt:
+      'Say goodbye to stress and bidding wars. Discover the modern, streamlined approach to buying new construction at Skyeview at Skye Canyon with Dr. Janet Duffy.',
+    author: 'Dr. Janet Duffy',
+    date: 'January 15, 2025',
+    category: 'Home Buying Tips',
+    readTime: '7 min read',
+    featured: true,
+    image: '/blog/redefining-experience.jpg',
+    link: '/blog/redefining-homebuying-experience',
+  },
+  {
+    id: 4,
     title: 'Why Skye Canyon is Las Vegas\' Hottest Master-Planned Community',
     excerpt:
       'Discover what makes Skye Canyon stand out from other Las Vegas communities. From top-rated schools to resort-style amenities, find out why families are choosing this northwest neighborhood.',
@@ -37,32 +64,8 @@ const blogPosts = [
     date: 'January 10, 2025',
     category: 'Neighborhood Guides',
     readTime: '7 min read',
-    featured: true,
-    image: '/blog/skye-canyon.jpg',
-  },
-  {
-    id: 3,
-    title: 'Understanding Down Payment Gift Funds: A Complete Guide',
-    excerpt:
-      'Learn how down payment gift funds can fast-track your home purchase. Understand the rules, documentation requirements, and how to use gift funds effectively.',
-    author: 'Dr. Janet Duffy',
-    date: 'January 5, 2025',
-    category: 'Home Buying Tips',
-    readTime: '6 min read',
-    featured: true,
-    image: '/blog/down-payment.jpg',
-  },
-  {
-    id: 4,
-    title: 'Top 10 Interior Design Trends for New Homes in 2025',
-    excerpt:
-      'Stay ahead of the curve with the latest interior design trends. From sustainable materials to smart home integration, see what\'s shaping modern home design.',
-    author: 'Dr. Janet Duffy',
-    date: 'December 28, 2024',
-    category: 'Design & Style',
-    readTime: '8 min read',
     featured: false,
-    image: '/blog/design-trends.jpg',
+    image: '/blog/skye-canyon.jpg',
   },
   {
     id: 5,
@@ -149,17 +152,17 @@ export default function BlogPage() {
               <Link href="/communities/skyeview" className="text-sm font-medium hover:text-blue-600 transition">
                 Available Homes
               </Link>
+              <Link href="/about-dr-janet-duffy" className="text-sm font-medium hover:text-blue-600 transition">
+                About Dr. Janet
+              </Link>
               <Link href="/special-offers" className="text-sm font-medium hover:text-blue-600 transition">
                 Special Offers
-              </Link>
-              <Link href="/homebuying-process" className="text-sm font-medium hover:text-blue-600 transition">
-                Resources
               </Link>
               <Link href="/blog" className="text-sm font-medium text-blue-600">
                 Blog
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="tel:702-568-0333">Contact Us</a>
+                <a href="tel:702-568-0333">Call Dr. Janet</a>
               </Button>
             </nav>
           </div>
@@ -250,10 +253,12 @@ export default function BlogPage() {
                   </div>
                 </div>
 
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white w-fit">
-                  Read Full Article
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link href={featuredPosts[featuredIndex].link || '/blog'}>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                    Read Full Article
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -333,6 +338,7 @@ export default function BlogPage() {
                       <Calendar className="w-3 h-3" />
                       <span>{post.date}</span>
                     </div>
+                  <Link href={post.link || '/blog'}>
                     <Button
                       variant="ghost"
                       size="sm"
@@ -341,6 +347,7 @@ export default function BlogPage() {
                       Read More
                       <ArrowRight className="w-3 h-3 ml-1" />
                     </Button>
+                  </Link>
                   </div>
                 </div>
               </article>
