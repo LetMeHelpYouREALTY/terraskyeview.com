@@ -26,7 +26,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '8 min read',
     featured: true,
-    image: '/blog/buyers-agent.jpg',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80',
     link: '/blog/should-i-use-realtor-planned-community',
   },
   {
@@ -39,7 +39,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '9 min read',
     featured: true,
-    image: '/blog/closing-costs.jpg',
+    image: 'https://images.unsplash.com/photo-1554224311-beee460c201a?w=800&h=600&fit=crop&q=80',
     link: '/blog/what-are-closing-costs',
   },
   {
@@ -52,7 +52,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '7 min read',
     featured: true,
-    image: '/blog/redefining-experience.jpg',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80',
     link: '/blog/redefining-homebuying-experience',
   },
   {
@@ -65,7 +65,7 @@ const blogPosts = [
     category: 'Neighborhood Guides',
     readTime: '7 min read',
     featured: false,
-    image: '/blog/skye-canyon.jpg',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop&q=80',
   },
   {
     id: 5,
@@ -77,7 +77,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '5 min read',
     featured: false,
-    image: '/blog/new-vs-resale.jpg',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const blogPosts = [
     category: 'Investment Advice',
     readTime: '6 min read',
     featured: false,
-    image: '/blog/investment.jpg',
+    image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&h=600&fit=crop&q=80',
   },
   {
     id: 7,
@@ -101,7 +101,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '7 min read',
     featured: false,
-    image: '/blog/warranties.jpg',
+    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80',
   },
   {
     id: 8,
@@ -113,7 +113,7 @@ const blogPosts = [
     category: 'Neighborhood Guides',
     readTime: '9 min read',
     featured: false,
-    image: '/blog/schools.jpg',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop&q=80',
   },
 ]
 
@@ -212,15 +212,12 @@ export default function BlogPage() {
           <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Image */}
-              <div className="relative h-64 lg:h-auto bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white p-8">
-                    <div className="w-24 h-24 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                      <span className="text-4xl">📰</span>
-                    </div>
-                    <p className="text-sm opacity-75">Featured Article Image</p>
-                  </div>
-                </div>
+              <div className="relative h-64 lg:h-auto overflow-hidden">
+                <img 
+                  src={featuredPosts[featuredIndex].image} 
+                  alt={featuredPosts[featuredIndex].title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
 
               {/* Content */}
@@ -305,15 +302,12 @@ export default function BlogPage() {
                 className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition group"
               >
                 {/* Image */}
-                <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-600 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <div className="text-center text-white">
-                      <div className="w-16 h-16 mx-auto mb-2 bg-white/20 rounded-full flex items-center justify-center">
-                        <Tag className="w-8 h-8" />
-                      </div>
-                      <p className="text-xs opacity-75">Article Image</p>
-                    </div>
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
 
                 {/* Content */}
