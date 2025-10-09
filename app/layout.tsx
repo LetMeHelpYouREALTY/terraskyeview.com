@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://terraskyeview.com'),
+  metadataBase: new URL('https://www.terraskyeview.com'),
   title: 'Terra at Skyeview by Century Communities | New Homes Las Vegas | Dr. Jan Duffy',
   description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Jan Duffy. Call 702-919-7292.',
   keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Jan Duffy, Northwest Las Vegas, new construction homes, buyer agent Las Vegas, new homes Las Vegas 89166',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://terraskyeview.com',
+    url: 'https://www.terraskyeview.com',
     siteName: 'Terra at Skyeview',
     title: 'Terra at Skyeview by Century Communities | Las Vegas New Homes',
     description: 'Two-story new construction homes in Skye Canyon from $479,990. Expert buyer representation by Dr. Jan Duffy.',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://terraskyeview.com',
+    canonical: 'https://www.terraskyeview.com',
   },
 }
 

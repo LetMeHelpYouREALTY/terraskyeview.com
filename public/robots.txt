@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://terraskyeview.com/sitemap.xml
+Sitemap: https://www.terraskyeview.com/sitemap.xml
 
 # Block old API routes
 Disallow: /api/
