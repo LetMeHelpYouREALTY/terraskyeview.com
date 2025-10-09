@@ -90,6 +90,7 @@ export default function HomePage() {
 
           <div className="text-sm text-muted-foreground">
             <p className="mb-1"><strong className="text-foreground">Century Communities</strong> - Top 10 National Homebuilder</p>
+            <p className="mb-1">📍 Model Home: <span className="font-semibold text-foreground">8592 Vanhoy Creek Street, Las Vegas, NV 89166</span></p>
             <p>Your Preferred Buyer's Agent: <span className="font-semibold text-foreground">Dr. Janet Duffy</span></p>
             <p className="mt-1">Call: <a href="tel:702-568-0333" className="text-blue-600 hover:underline">702.568.0333</a></p>
           </div>
@@ -115,15 +116,15 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 2
               </div>
-              <p className="text-base font-bold text-gray-900">Start Your Home Search</p>
-              <p className="text-sm text-gray-600">Browse homes online or visit in person</p>
+              <p className="text-base font-bold text-gray-900">Visit Model Homes</p>
+              <p className="text-sm text-gray-600">Tour at 8592 Vanhoy Creek Street, Las Vegas</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 3
               </div>
               <p className="text-base font-bold text-gray-900">Secure Your Home</p>
-              <p className="text-sm text-gray-600">Complete form, pay deposit & sign contract</p>
+              <p className="text-sm text-gray-600">Get best price with Dr. Janet Duffy</p>
             </div>
           </div>
         </div>
