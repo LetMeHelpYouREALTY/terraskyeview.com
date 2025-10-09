@@ -8,12 +8,12 @@ const benefits = [
   {
     icon: Home,
     title: 'Online Homebuying',
-    description: 'Browse available homes, view floor plans, and explore details completely online. Schedule virtual or in-person tours at your convenience.',
+    description: 'Browse available homes at Terra at Skyeview, view floor plans, and explore details completely online. Schedule virtual or in-person tours at your convenience.',
   },
   {
     icon: Users,
     title: 'Real Estate Agent Representation',
-    description: 'Continue working with Dr. Janet Duffy, your trusted local real estate expert who knows Skye Canyon and the Las Vegas market inside and out.',
+    description: 'Work with Dr. Janet Duffy, your preferred buyer\'s agent and trusted local expert who knows Terra at Skyeview, Skye Canyon, and the Las Vegas market inside and out.',
   },
   {
     icon: DollarSign,
@@ -43,38 +43,38 @@ const process = [
     title: 'Get Pre-Qualified',
     description: 'Determine your budget by getting pre-approved for a loan',
     details: [
-      'Connect with preferred lenders through Dr. Janet Duffy',
+      'Connect with Century Communities preferred lenders through Dr. Janet Duffy',
       'Review your finances and credit',
       'Understand your exact budget',
       'Access competitive rates starting at 3.875%',
       'Qualify for up to $5,000 closing cost assistance',
-      'Get pre-approval letter for offers',
+      'Get pre-approval letter for stronger offers',
     ],
   },
   {
     step: '2',
     title: 'Start Your Home Search',
-    description: 'Browse new homes online or in person to find a community you like',
+    description: 'Browse new homes online or in person at Terra at Skyeview',
     details: [
-      'View available homes at Skyeview at Skye Canyon online',
-      'Explore detailed floor plans and specifications',
+      'View available two-story homes at Terra at Skyeview online',
+      'Explore three floor plans: 1,792-2,119 sq ft',
       'Schedule tours with Dr. Janet Duffy',
-      'Visit model homes in person',
+      'Visit model homes at 8592 Vanhoy Creek Street',
       'Compare 3-5 bedroom options from $479,990',
-      'Learn about community amenities and location',
+      'Learn about Skye Canyon master-planned community amenities',
     ],
   },
   {
     step: '3',
     title: 'Secure Your Home',
-    description: 'Complete the purchase and lock in your choice',
+    description: 'Complete the purchase and lock in your choice at Terra',
     details: [
+      'Dr. Janet negotiates best price with Century Communities',
       'Complete online buying form',
       'Pay initial earnest money deposit',
-      'Sign purchase contract with expert guidance',
-      'Lock in your home (first-come, first-served)',
+      'Sign purchase contract with expert guidance from Dr. Janet',
       'Finalize loan and closing details',
-      'Receive keys and home warranty',
+      'Receive keys and Century Communities home warranty',
     ],
   },
 ]
@@ -123,7 +123,7 @@ export default function ForBuyersPage() {
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8">
               From online browsing to expert representation, we make homebuying simple, 
-              transparent, and exciting at Skyeview at Skye Canyon.
+              transparent, and exciting at Terra at Skyeview by Century Communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
