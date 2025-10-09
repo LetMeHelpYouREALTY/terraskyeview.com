@@ -142,9 +142,9 @@ export default function ForBuyersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/communities/skyeview">
-                  View Available Homes
-                </Link>
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                  Search Available Homes
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                 <a href="tel:702-919-7292">
@@ -282,9 +282,9 @@ export default function ForBuyersPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/communities/skyeview">
-                Browse Available Homes
-              </Link>
+              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                Search Available Homes
+              </a>
             </Button>
             <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-300">
               <Link href="/special-offers">

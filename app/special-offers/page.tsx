@@ -169,10 +169,10 @@ export default function SpecialOffersPage() {
             </div>
 
             <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-lg px-8 py-6 h-auto">
-              <Link href="/communities/skyeview">
-                Explore Our Homes
+              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                Search Available Homes
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
@@ -414,9 +414,9 @@ export default function SpecialOffersPage() {
 
           <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Link href="/communities/skyeview">
-                View Available Homes
-              </Link>
+              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                Search Available Homes
+              </a>
             </Button>
           </div>
         </div>
@@ -435,9 +435,9 @@ export default function SpecialOffersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/communities/skyeview">
-                  Browse Homes
-                </Link>
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">
+                  Search Available Homes
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
                 <a href="tel:702-919-7292">
