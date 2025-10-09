@@ -8,65 +8,81 @@ const processSteps = [
   {
     id: 1,
     icon: Calculator,
-    title: 'Get Pre-Qualified',
-    subtitle: 'Determine your budget',
+    title: 'Prequalify',
+    subtitle: 'Get a no-strings-attached financial assessment',
     description:
-      "The first step in your homebuying journey is getting pre-approved for a loan. This process gives you a clear understanding of your budget and shows sellers you're a serious buyer. Work with Dr. Janet Duffy to connect with preferred lenders who can offer competitive rates starting at 3.875% plus up to $5,000 toward closing costs. Pre-qualification typically involves a review of your finances and a credit check, giving you the confidence to move forward with your home search.",
-    ctaText: 'Get Pre-Qualified',
+      "This no-commitment, knowledge-building exercise gives you insight into how much home you could probably afford, as well as which home loan type might be your best fit. All it requires is for a lender to take a snapshot of your finances and run a credit check. Prequalification is a powerful tool that will let you know exactly what steps you'll need to take before you're ready to purchase a home—if you're not there already! It also establishes a relationship with a lender, which will come in handy later on when you need preapproval to purchase a particular home.",
+    ctaText: 'Get Prequalified',
     ctaLink: 'tel:702-568-0333',
-    sidebarTitle: 'PRE-QUALIFICATION BENEFITS',
+    sidebarTitle: 'COMMON HOMEBUYING MYTHS',
     sidebarItems: [
       {
-        myth: 'Know your exact budget',
-        reality: "Understand how much home you can afford before you start shopping.",
+        myth: 'You need a 20% down payment.',
+        reality: "Actually, most buyers don't. Some even qualify for zero-down loans.",
       },
       {
-        myth: 'Competitive advantage',
+        myth: 'You have to pay for everything.',
         reality:
-          'Sellers take pre-qualified buyers more seriously, giving you an edge in negotiations.',
+          'Maybe not. Several home loan types allow you to use a financial gift from family or friends toward your home purchase.',
       },
       {
-        myth: 'Special financing offers',
+        myth: 'You need perfect credit.',
         reality:
-          "Access low rates and closing cost assistance through our preferred lenders.",
+          "There wouldn't be many homebuyers if this were the case. While exceptional credit is ideal, many buyers have no trouble qualifying for a home loan with good credit.",
       },
     ],
   },
   {
     id: 2,
     icon: Search,
-    title: 'Start Your Home Search',
-    subtitle: 'Browse new homes online or in person',
+    title: 'House Hunt',
+    subtitle: 'Search on-site or online',
     description:
-      "Once you know your budget, it's time to find your dream home! Browse available homes at Skyeview at Skye Canyon online, where you can view detailed floor plans, pricing, and availability. Schedule a tour with Dr. Janet Duffy to visit model homes in person and explore the community amenities. Our master-planned community offers 3-5 bedroom homes starting from $479,990, with options for quick move-in.",
+      "Once you've prequalified and know your price range, you're ready to go shopping. Depending on what's most convenient for you, you could browse online, tour communities in person, or a combination of both! This is the time to put together your wish list of everything you'd want in your dream home at Skyeview at Skye Canyon.",
     ctaText: 'Start Your Search',
     ctaLink: '/communities/skyeview',
-    sidebarTitle: 'WHAT TO LOOK FOR',
+    sidebarTitle: 'POTENTIAL WISH-LIST ITEMS',
     sidebarItems: [
-      { item: 'Floor plan that fits your lifestyle' },
       { item: 'Number of bedrooms and bathrooms' },
-      { item: 'Community amenities (parks, pools, recreation)' },
-      { item: 'Proximity to schools and shopping' },
-      { item: 'Move-in timeline that works for you' },
+      { item: 'Number of stories' },
+      { item: 'Proximity to work, school and amenities' },
+      { item: 'Space for a home office' },
+      { item: 'How quickly you hope to move' },
     ],
   },
   {
     id: 3,
     icon: FileText,
-    title: 'Secure Your Home',
-    subtitle: 'Complete purchase and lock in your choice',
+    title: 'Contract',
+    subtitle: 'Make a preliminary commitment to buy',
     description:
-      "Found the perfect home? Act quickly! New homes at Skyeview are first-come, first-served. To secure your chosen home, complete the online buying form, pay an initial earnest money deposit, and sign the purchase contract with Dr. Janet Duffy's expert guidance. Your deposit locks in your home and protects you from other buyers. Once under contract, you'll work through the closing process, which includes finalizing your loan, conducting inspections, and preparing for move-in.",
+      "One of the great advantages of new home construction is that it's first-come, first-served. As long as you're a qualified buyer, the house is yours if you're the one who got there first. When you've found a home that checks the right boxes, you'll want to act fast to get it under contract—ensuring that no other buyer can swoop in and buy it out from under you.",
     ctaText: 'Contact Dr. Janet Duffy',
     ctaLink: 'tel:702-568-0333',
-    sidebarTitle: 'SECURING YOUR HOME',
+    sidebarTitle: 'CONTRACTING CONSIDERATIONS',
     sidebarItems: [
-      { item: 'Complete online buying form' },
-      { item: 'Pay initial earnest money deposit' },
-      { item: 'Sign purchase contract' },
-      { item: 'Finalize loan approval' },
-      { item: 'Schedule final walkthrough' },
-      { item: 'Close and receive keys + warranty' },
+      { item: 'Home loan preapproval' },
+      { item: 'Earnest money deposit' },
+      { item: 'Building timeline' },
+      { item: 'Avoiding major transactions before closing, like purchasing a car or large furniture' },
+    ],
+  },
+  {
+    id: 4,
+    icon: Key,
+    title: 'Close',
+    subtitle: "Put a bow on it and grab the keys… you're a new homeowner!",
+    description:
+      "This is your big day to sign final paperwork and breathe a sigh of satisfaction, because you've officially bought a home. And whether it's your first house, or one of several, the feeling never gets old. You'll also love the peace of mind that comes with a new home warranty, providing coverage on major items and repairs.",
+    ctaText: 'Learn About Closing',
+    ctaLink: 'tel:702-568-0333',
+    sidebarTitle: 'CLOSING CONSIDERATIONS',
+    sidebarItems: [
+      { item: 'Down Payment' },
+      { item: 'Closing costs' },
+      { item: 'Homeowners insurance' },
+      { item: 'Moving arrangements' },
+      { item: 'Change of address' },
     ],
   },
 ]
@@ -259,8 +275,8 @@ export default function HomebuyingProcessPage() {
               How We Make It Easy
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Working with Dr. Janet Duffy means you get personalized service and expert guidance 
-              throughout your entire homebuying journey at Skyeview at Skye Canyon.
+              Work with Dr. Janet Duffy for expert guidance and personalized service throughout your 
+              entire homebuying journey at Skyeview at Skye Canyon.
             </p>
           </div>
 
