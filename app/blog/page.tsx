@@ -371,7 +371,7 @@ export default function BlogPage() {
             </Button>
             <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
               <a href="tel:702-919-7292">
-                Call: 702.568.0333
+                Call: (702) 919-7292
               </a>
             </Button>
           </div>
@@ -425,7 +425,7 @@ export default function BlogPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>702.568.0333</li>
+                <li>(702) 919-7292</li>
                 <li>info@terraskyeview.com</li>
                 <li>8592 Vanhoy Creek Street<br />Las Vegas, NV 89166</li>
               </ul>

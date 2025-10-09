@@ -110,7 +110,7 @@ export default function MobileMenu() {
                       className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
                     >
                       <Phone className="w-5 h-5 text-blue-600" />
-                      <span>702.568.0333</span>
+                      <span>(702) 919-7292</span>
                     </a>
                     <a
                       href="mailto:info@terraskyeview.com"

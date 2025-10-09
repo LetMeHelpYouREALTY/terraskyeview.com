@@ -79,7 +79,7 @@ export default function SkyeviewPage() {
             <div className="flex flex-col gap-2">
               <a href="tel:702-919-7292" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
                 <Phone className="w-4 h-4" />
-                702.568.0333
+                (702) 919-7292
               </a>
               <p className="text-lg font-bold text-gray-900">
                 Homes from <span className="text-blue-600">$479,990</span>
@@ -224,7 +224,7 @@ export default function SkyeviewPage() {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  702.568.0333
+                  (702) 919-7292
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />

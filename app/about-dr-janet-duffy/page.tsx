@@ -72,7 +72,7 @@ export default function AboutDrJanetDuffyPage() {
                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                   <a href="tel:702-919-7292">
                     <Phone className="w-5 h-5 mr-2" />
-                    Call: 702.568.0333
+                    Call: (702) 919-7292
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
@@ -366,7 +366,7 @@ export default function AboutDrJanetDuffyPage() {
                 <Phone className="w-8 h-8 text-blue-600" />
                 <p className="font-semibold text-gray-900">Call</p>
                 <a href="tel:702-919-7292" className="text-blue-600 hover:text-blue-700">
-                  702.568.0333
+                  (702) 919-7292
                 </a>
               </div>
               <div className="flex flex-col items-center gap-2">
@@ -457,7 +457,7 @@ export default function AboutDrJanetDuffyPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>702.568.0333</li>
+                <li>(702) 919-7292</li>
                 <li>info@terraskyeview.com</li>
                 <li>
                   8592 Vanhoy Creek Street

@@ -209,7 +209,7 @@ export default function ContactForm() {
                   href="tel:702-919-7292"
                   className="text-blue-100 hover:text-white text-lg transition"
                 >
-                  702.568.0333
+                  (702) 919-7292
                 </a>
                 <p className="text-blue-100 text-sm mt-1">Mon-Sat: 10am - 6pm PST</p>
               </div>
