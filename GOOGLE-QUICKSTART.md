@@ -1,41 +1,53 @@
-# 🚀 GOOGLE QUICKSTART - 5 Minutes to Launch
-**Your site is 95% ready for Google. Follow these 3 simple steps:**
+# Google Search Console — Terra at Skyeview
+
+Canonical site: **https://www.terraskyeview.com**
+
+The site is crawl-ready (`robots.txt`, `sitemap.xml`, unique canonicals). Google still needs you to verify ownership in Search Console. Do not invent a verification code.
 
 ---
 
-## ⚡ STEP 1: Google Search Console (2 minutes)
+## STEP 1: Google Search Console
 
-### **A. Verify Your Site**
-1. Go to: https://search.google.com/search-console
-2. Click **"Add Property"**
-3. Enter: `https://terraskyeview.com`
-4. Choose **"HTML tag"** verification method
-5. Copy the code Google gives you (looks like: `<meta name="google-site-verification" content="ABC123XYZ" />`)
+### A. Add the property (preferred)
 
-### **B. Add Verification Code**
-1. Open `app/layout.tsx`
-2. Find this line:
-   ```typescript
-   google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
-   ```
-3. Replace with your code (just the code part, not the full meta tag):
-   ```typescript
-   google: 'ABC123XYZ',
-   ```
-4. Save and commit to GitHub
-5. Wait 1 minute for Vercel to redeploy
-6. Click "Verify" in Google Search Console ✅
+1. Open [Google Search Console](https://search.google.com/search-console)
+2. Click **Add property**
+3. Choose **Domain** and enter `terraskyeview.com` (no `https://`, no `www`)
+4. Google will show a DNS TXT record like `google-site-verification=...`
+5. Add that TXT record at the DNS host for `terraskyeview.com` (Cloudflare: DNS only / gray cloud, not proxied)
+6. Wait for DNS to propagate, then click **Verify**
 
-### **C. Submit Your Sitemap**
-1. In Search Console, go to **"Sitemaps"**
-2. Enter: `sitemap.xml`
-3. Click **"Submit"** ✅
+Domain verification covers `www`, apex, `http`, and `https` in one property.
 
-**DONE!** Google will start indexing within 24 hours.
+### B. URL-prefix fallback (HTML tag)
+
+Use this only if you cannot add a DNS TXT record:
+
+1. Add property → **URL prefix** → `https://www.terraskyeview.com`
+2. Choose **HTML tag**
+3. Copy only the `content` value from the meta tag (not the full HTML)
+4. In Vercel → Project **terraskyeview.com** → Settings → Environment Variables, add:
+   - Name: `GOOGLE_SITE_VERIFICATION`
+   - Value: the content string
+   - Environments: Production and Preview
+5. Redeploy production
+6. View source on https://www.terraskyeview.com and confirm:
+   `<meta name="google-site-verification" content="...">`
+7. Click **Verify** in Search Console
+
+HTML-file method: if Google gives you `googleNNNN.html`, put that exact file in `public/` and deploy. Do not use a placeholder filename.
+
+### C. Submit the sitemap
+
+1. In Search Console → **Sitemaps**
+2. Submit: `https://www.terraskyeview.com/sitemap.xml`
+3. Confirm robots.txt lists the same URL: https://www.terraskyeview.com/robots.txt
+
+Then use **URL Inspection** on `https://www.terraskyeview.com/` and request indexing.
 
 ---
 
-## ⚡ STEP 2: Google Analytics (2 minutes)
+## STEP 2: Google Analytics (2 minutes)
 
 ### **A. Create Analytics Property**
 1. Go to: https://analytics.google.com
@@ -49,7 +61,7 @@
 ### **B. Create Data Stream**
 1. Click **"Web"**
 2. Enter:
-   - Website URL: `https://terraskyeview.com`
+   - Website URL: `https://www.terraskyeview.com`
    - Stream name: `Terra Skyeview Website`
 3. Click **"Create stream"**
 4. Copy your **Measurement ID** (format: `G-XXXXXXXXXX`)
@@ -79,7 +91,7 @@
    - Category: `Real Estate Agent`
    - Location: `8592 Vanhoy Creek Street, Las Vegas, NV 89166`
    - Phone: `(702) 919-7292`
-   - Website: `https://terraskyeview.com`
+   - Website: `https://www.terraskyeview.com`
 4. Click **"Continue"**
 5. Choose verification method (Google will mail/call/email you)
 
@@ -119,7 +131,7 @@ After these 3 steps (5 minutes total):
 
 ### **Test Your Structured Data:**
 1. Go to: https://search.google.com/test/rich-results
-2. Enter: `https://terraskyeview.com`
+2. Enter: `https://www.terraskyeview.com`
 3. Click **"Test URL"**
 4. You should see:
    - ✅ LocalBusiness
@@ -129,7 +141,7 @@ After these 3 steps (5 minutes total):
 
 ### **Test Your Mobile Performance:**
 1. Go to: https://pagespeed.web.dev/
-2. Enter: `https://terraskyeview.com`
+2. Enter: `https://www.terraskyeview.com`
 3. Target scores:
    - Performance: 90+
    - Accessibility: 95+

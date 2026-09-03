@@ -13,6 +13,26 @@ type PageSeoInput = {
   type?: 'website' | 'article' | 'profile'
 }
 
+export function canonicalUrl(path: string): string {
+  if (!path || path === '/') {
+    return SITE_URL
+  }
+  const withSlash = path.startsWith('/') ? path : `/${path}`
+  return `${SITE_URL}${withSlash.replace(/\/$/, '')}`
+}
+
+export function googleVerificationMetadata(): Pick<Metadata, 'verification'> {
+  const google =
+    process.env.GOOGLE_SITE_VERIFICATION?.trim() ||
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim()
+
+  if (!google) {
+    return {}
+  }
+
+  return { verification: { google } }
+}
+
 export function pageMetadata({
   title,
   description,
@@ -22,7 +42,7 @@ export function pageMetadata({
   keywords,
   type = 'website',
 }: PageSeoInput): Metadata {
-  const url = `${SITE_URL}${path}`
+  const url = canonicalUrl(path)
   const fullTitle = title.includes(SITE_SERVICE) ? title : `${title}`
 
   return {
