@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Phone, Mail, MapPin, Award, Heart, Home, TrendingUp, Shield, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
+import AgentPortrait from '@/app/components/agent-portrait'
 
 const testimonials = [
   {
@@ -97,8 +98,8 @@ export default function AboutDrJanetDuffyPage() {
             </div>
             <div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-6xl font-bold text-blue-600">JD</span>
+                <div className="mx-auto mb-6">
+                  <AgentPortrait size={128} className="mx-auto" />
                 </div>
                 <div className="text-center text-white space-y-2">
                   <p className="text-lg"><strong>Specialization:</strong> Buyer Representation</p>

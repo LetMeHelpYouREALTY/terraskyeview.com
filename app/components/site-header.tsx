@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import MobileMenu from '@/app/components/mobile-menu'
+import AgentPortrait from '@/app/components/agent-portrait'
 
 type NavKey = 'home' | 'homes' | 'about' | 'blog'
 
@@ -9,24 +10,27 @@ type SiteHeaderProps = {
 }
 
 const navClass = (active: boolean) =>
-  `text-base font-semibold transition ${
-    active ? 'text-blue-600' : 'text-gray-900 hover:text-blue-600'
+  `text-sm font-semibold tracking-wide transition ${
+    active ? 'text-[#c4a35a]' : 'text-white/90 hover:text-[#c4a35a]'
   }`
 
 export default function SiteHeader({ current = 'home' }: SiteHeaderProps) {
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b1c2c]/95 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-gray-900">
-              Terra at Skyeview
-            </span>
-            <span className="ml-2 text-xs text-gray-500">
-              by Century Communities
+        <div className="flex min-h-16 items-center justify-between py-3">
+          <Link href="/" className="flex items-center gap-3">
+            <AgentPortrait size={44} priority className="hidden sm:block" />
+            <span>
+              <span className="block font-serif text-xl text-white">
+                Terra at Skyeview
+              </span>
+              <span className="block text-[11px] tracking-widest text-[#c4a35a] uppercase">
+                by Century Communities
+              </span>
             </span>
           </Link>
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-7 md:flex">
             <Link href="/" className={navClass(current === 'home')}>
               Home
             </Link>
@@ -45,8 +49,11 @@ export default function SiteHeader({ current = 'home' }: SiteHeaderProps) {
             <Link href="/blog" className={navClass(current === 'blog')}>
               Blog
             </Link>
-            <Button asChild className="bg-blue-600 font-semibold text-white hover:bg-blue-700">
-              <a href="tel:702-919-7292">Contact</a>
+            <Button
+              asChild
+              className="bg-[#c4a35a] font-semibold text-[#0b1c2c] hover:bg-[#d4b56c]"
+            >
+              <a href="tel:702-919-7292">Call (702) 919-7292</a>
             </Button>
           </nav>
           <MobileMenu />

@@ -124,8 +124,8 @@ export default function CommunityOverview() {
           {/* Community Aerial View */}
           <div className="mt-6 rounded-2xl overflow-hidden h-64">
             <img 
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop&q=85"
-              alt="Skye Canyon master-planned community aerial view"
+              src="/images/amenities.jpg"
+              alt="Skye Canyon pool and clubhouse near Terra at Skyeview in Las Vegas NV 89166"
               className="w-full h-full object-cover"
             />
           </div>

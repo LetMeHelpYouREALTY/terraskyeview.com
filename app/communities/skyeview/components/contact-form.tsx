@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Calendar, Phone, Mail } from 'lucide-react'
+import AgentPortrait from '@/app/components/agent-portrait'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -186,8 +187,8 @@ export default function ContactForm() {
       <div className="flex flex-col justify-center">
         <div className="text-white">
           <div className="mb-6">
-            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4">
-              <span className="text-3xl font-bold text-blue-600">JD</span>
+            <div className="mb-4">
+              <AgentPortrait size={80} />
             </div>
             <h3 className="text-3xl font-bold mb-2">Get in Touch</h3>
             <p className="text-xl font-semibold text-blue-100 mb-2">Dr. Jan Duffy</p>

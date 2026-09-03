@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, User, Tag, ArrowLeft, DollarSign, Shield, Calculator, Home } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -80,13 +81,14 @@ export default function WhatAreClosingCostsArticle() {
           </div>
 
           {/* Featured Image Placeholder */}
-          <div className="relative h-96 bg-gradient-to-br from-green-900 to-blue-700 rounded-2xl mb-12 overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <DollarSign className="w-24 h-24 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-medium">Closing Costs Guide</p>
-              </div>
-            </div>
+          <div className="relative mb-12 h-96 overflow-hidden rounded-2xl">
+            <Image
+              src="/images/blog-closing-costs.jpg"
+              alt="Closing documents and keys for a Terra at Skyeview home purchase in Las Vegas"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
 
           {/* Article Body */}

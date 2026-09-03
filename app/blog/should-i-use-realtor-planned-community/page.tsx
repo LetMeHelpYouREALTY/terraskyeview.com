@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, User, Tag, ArrowLeft, CheckCircle, Users, MapPin, Award, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -96,13 +97,14 @@ export default function ShouldIUseRealtorArticle() {
           </div>
 
           {/* Featured Image Placeholder */}
-          <div className="relative h-96 bg-gradient-to-br from-blue-900 to-green-700 rounded-2xl mb-12 overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <Users className="w-24 h-24 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-medium">Your Buyer's Agent Advantage</p>
-              </div>
-            </div>
+          <div className="relative mb-12 h-96 overflow-hidden rounded-2xl">
+            <Image
+              src="/images/blog-use-realtor.jpg"
+              alt="Dr. Jan Duffy meeting buyers at Terra at Skyeview in Skye Canyon, Las Vegas"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
 
           {/* Article Body */}

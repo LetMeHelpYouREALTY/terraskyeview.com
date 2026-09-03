@@ -80,13 +80,14 @@ export default function RedefinigHomebuyingArticle() {
           </div>
 
           {/* Featured Image Placeholder */}
-          <div className="relative h-96 bg-gradient-to-br from-blue-900 to-blue-700 rounded-2xl mb-12 overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <Home className="w-24 h-24 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-medium">Featured Article Image</p>
-              </div>
-            </div>
+          <div className="relative mb-12 h-96 overflow-hidden rounded-2xl">
+            <Image
+              src="/images/blog-redefining.jpg"
+              alt="Homebuyer touring a Terra at Skyeview new construction home in Skye Canyon, Las Vegas"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
 
           {/* Article Body */}
@@ -187,14 +188,14 @@ export default function RedefinigHomebuyingArticle() {
               </div>
             </div>
 
-            {/* Model Home Image Placeholder */}
-            <div className="relative h-64 bg-gray-800 rounded-xl my-12 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-white">
-                <div className="text-center">
-                  <Home className="w-16 h-16 mx-auto mb-2 opacity-50" />
-                  <p className="text-sm">Model Home at Skyeview</p>
-                </div>
-              </div>
+            <div className="relative my-12 h-64 overflow-hidden rounded-xl">
+              <Image
+                src="/images/front-porch.jpg"
+                alt="Model home at Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas NV 89166"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 896px"
+              />
             </div>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">

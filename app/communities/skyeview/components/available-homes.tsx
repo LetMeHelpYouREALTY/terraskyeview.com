@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Home, BedDouble, Bath, Car, MapPin } from 'lucide-react'
+import { mediaUrl } from '@/lib/media'
 
 const availableHomes = [
   {
@@ -19,6 +20,7 @@ const availableHomes = [
     parking: 2,
     completion: 'Dec. Move In',
     features: ['LVP Flooring', 'Upgraded Cabinets'],
+    image: mediaUrl('residence-1792.jpg'),
   },
   {
     id: 2,
@@ -34,6 +36,7 @@ const availableHomes = [
     parking: 2,
     completion: 'Nov. Move In',
     features: ['Modeled', 'Premium Lot'],
+    image: mediaUrl('residence-1943.jpg'),
   },
   {
     id: 3,
@@ -49,6 +52,7 @@ const availableHomes = [
     parking: 2,
     completion: 'Dec. Move In',
     features: ['5 Bedrooms', 'Corner Lot'],
+    image: mediaUrl('residence-2119.jpg'),
   },
 ]
 
@@ -75,7 +79,7 @@ export default function AvailableHomes() {
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Available Homes at Terra at Skyeview</h2>
         <p className="text-lg text-gray-700 mb-4">
-          Discover {availableHomes.length} exceptional new construction homes ready for your family. 
+          Discover {availableHomes.length} new construction homes ready for move-in. 
           Each Terra home by Century Communities features modern two-story living with spacious layouts, 
           premium finishes, and energy-efficient design. Work with Dr. Jan Duffy to secure the best 
           price and access exclusive financing benefits.
@@ -121,10 +125,10 @@ export default function AvailableHomes() {
           >
             {/* Image */}
             <div className="relative h-56 overflow-hidden">
-              <img 
-                src={`https://images.unsplash.com/photo-${home.id === 1 ? '1600596542815-ffad4c1539a9' : home.id === 2 ? '1600585154340-be6161a56a0c' : '1600607687939-ce8a6c25118c'}?w=800&h=600&fit=crop&q=85`}
-                alt={`${home.model} at ${home.address}`}
-                className="w-full h-full object-cover"
+              <img
+                src={home.image}
+                alt={`${home.model} at ${home.address}, Terra at Skyeview, Las Vegas`}
+                className="h-full w-full object-cover"
               />
               {home.features.length > 0 && (
                 <div className="absolute top-4 left-4 flex flex-col gap-2">

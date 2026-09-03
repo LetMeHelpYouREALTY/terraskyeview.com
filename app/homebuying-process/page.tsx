@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { CheckCircle, Home, FileText, Key, Search, Calculator, Heart, Shield, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import AgentPortrait from '@/app/components/agent-portrait'
 
 const processSteps = [
   {
@@ -318,8 +319,8 @@ export default function HomebuyingProcessPage() {
 
           {/* CTA */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-center text-white">
-            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-4xl font-bold text-blue-600">JD</span>
+            <div className="mx-auto mb-6">
+              <AgentPortrait size={96} className="mx-auto" />
             </div>
             <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

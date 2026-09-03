@@ -27,7 +27,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '8 min read',
     featured: true,
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80',
+    image: '/images/blog-use-realtor.jpg',
     link: '/blog/should-i-use-realtor-planned-community',
   },
   {
@@ -40,7 +40,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '9 min read',
     featured: true,
-    image: 'https://images.unsplash.com/photo-1554224311-beee460c201a?w=800&h=600&fit=crop&q=80',
+    image: '/images/blog-closing-costs.jpg',
     link: '/blog/what-are-closing-costs',
   },
   {
@@ -53,20 +53,20 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '7 min read',
     featured: true,
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80',
+    image: '/images/blog-redefining.jpg',
     link: '/blog/redefining-homebuying-experience',
   },
   {
     id: 4,
     title: 'Why Skye Canyon is Las Vegas\' Hottest Master-Planned Community',
     excerpt:
-      'Discover what makes Skye Canyon stand out from other Las Vegas communities. From top-rated schools to resort-style amenities, find out why families are choosing this northwest neighborhood.',
+      'Parks, pools, and commute times into the Las Vegas valley — see what Skye Canyon offers at 89166.',
     author: 'Dr. Jan Duffy',
     date: 'January 10, 2025',
     category: 'Neighborhood Guides',
     readTime: '7 min read',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop&q=80',
+    image: '/images/amenities.jpg',
   },
   {
     id: 5,
@@ -78,7 +78,7 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '5 min read',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
+    image: '/images/front-porch.jpg',
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ const blogPosts = [
     category: 'Investment Advice',
     readTime: '6 min read',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&h=600&fit=crop&q=80',
+    image: '/images/hero.jpg',
   },
   {
     id: 7,
@@ -102,19 +102,19 @@ const blogPosts = [
     category: 'Home Buying Tips',
     readTime: '7 min read',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80',
+    image: '/images/kitchen.jpg',
   },
   {
     id: 8,
-    title: 'Best Schools in Northwest Las Vegas: A Parent\'s Guide',
+    title: 'Northwest Las Vegas Commute and Daily Amenities',
     excerpt:
-      'Explore the top-rated schools in Northwest Las Vegas, including Skye Canyon area. Get insights on academic performance, extracurriculars, and community involvement.',
+      'Drive times to the Las Vegas valley, parks, and recreation near Skye Canyon and Terra at Skyeview at 89166.',
     author: 'Dr. Jan Duffy',
     date: 'December 5, 2024',
     category: 'Neighborhood Guides',
     readTime: '9 min read',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop&q=80',
+    image: '/images/patio.jpg',
   },
 ]
 

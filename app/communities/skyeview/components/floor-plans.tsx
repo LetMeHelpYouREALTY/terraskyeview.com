@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Home, BedDouble, Bath, Car } from 'lucide-react'
+import { mediaUrl } from '@/lib/media'
 
 const floorPlans = [
   {
@@ -15,6 +16,7 @@ const floorPlans = [
     bathrooms: 2.5,
     parking: 2,
     features: ['Twin Bedrooms', 'Open Floor Plan'],
+    image: mediaUrl('residence-1792.jpg'),
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ const floorPlans = [
     bathrooms: 2.5,
     parking: 2,
     features: ['Modeled', 'Open floor plan'],
+    image: mediaUrl('residence-1943.jpg'),
   },
   {
     id: 3,
@@ -39,6 +42,7 @@ const floorPlans = [
     bathrooms: 2.5,
     parking: 2,
     features: ['MODELED', 'Up to 5 bedrooms'],
+    image: mediaUrl('residence-2119.jpg'),
   },
 ]
 
@@ -54,9 +58,8 @@ export default function FloorPlans() {
           Century Communities, these homes showcase quality craftsmanship and attention to detail throughout.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Whether you're a growing family needing extra bedrooms, a professional seeking a home office space, 
-          or someone who loves entertaining, there's a Terra floor plan perfect for your lifestyle. Each home 
-          includes modern open-concept living areas, gourmet kitchens with islands, spacious master suites with 
+          Whether you need extra bedrooms, a dedicated office, or space for entertaining, each Terra
+          home includes open-concept living areas, kitchens with islands, primary suites with
           walk-in closets, and 2-car garages.
         </p>
         <p className="text-gray-600 mb-6">
@@ -74,10 +77,10 @@ export default function FloorPlans() {
           >
             {/* Floor Plan Image */}
             <div className="relative h-64 overflow-hidden">
-              <img 
-                src={`https://images.unsplash.com/photo-${plan.id === 1 ? '1600607687939-ce8a6c25118c' : plan.id === 2 ? '1600585154340-be6161a56a0c' : '1600596542815-ffad4c1539a9'}?w=800&h=600&fit=crop&q=85`}
-                alt={`${plan.name} floor plan at Terra Skyeview`}
-                className="w-full h-full object-cover"
+              <img
+                src={plan.image}
+                alt={`${plan.name} two-story home at Terra at Skyeview in Skye Canyon, Las Vegas`}
+                className="h-full w-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-medium">{plan.name}</p>

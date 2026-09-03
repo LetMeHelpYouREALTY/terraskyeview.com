@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { OrganizationStructuredData, RealEstateAgentStructuredData } from './components/structured-data'
 import { FAQSchema } from './components/faq-schema'
 import { GoogleAnalytics } from './google-analytics'
@@ -15,6 +16,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
+})
+
+const playfair = Playfair_Display({
+  variable: '--font-playfair',
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -48,10 +55,10 @@ export const metadata: Metadata = {
     description: 'Two-story new construction homes in Skye Canyon from $479,990. Expert buyer representation by Dr. Jan Duffy.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.jpg',
         width: 1200,
-        height: 630,
-        alt: 'Terra at Skyeview by Century Communities',
+        height: 800,
+        alt: 'Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas',
       },
     ],
   },
@@ -61,7 +68,7 @@ export const metadata: Metadata = {
     creator: '@DrJanDuffy',
     title: 'Terra at Skyeview by Century Communities',
     description: 'New construction homes in Skye Canyon, Las Vegas from $479,990.',
-    images: ['/og-image.png'],
+    images: ['/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://www.terraskyeview.com',
@@ -81,14 +88,14 @@ export default function RootLayout({
         <FAQSchema />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         )}
         <Script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           type="module"
         />
         <ThemeProvider
@@ -100,6 +107,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   )
