@@ -4,6 +4,8 @@ import SiteHeader from '@/app/components/site-header'
 import SiteFooter from '@/app/components/site-footer'
 import RealScoutSearch from '@/app/components/realscout-search'
 import AgentPortrait from '@/app/components/agent-portrait'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 import { mediaUrl } from '@/lib/media'
 
 const residences = [
@@ -126,6 +128,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       <div className="bg-[#c4a35a] px-4 py-3 text-center text-sm font-semibold text-[#0b1c2c]">
         Limited-time financing: rates from 3.875% · up to $5,000 toward closing.{' '}
@@ -286,6 +290,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <CalendlySection event="consult" />
 
       <SiteFooter />
     </div>

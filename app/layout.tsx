@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
-import { ThemeProvider } from 'next-themes'
+import { Geist, Playfair_Display } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { OrganizationStructuredData, RealEstateAgentStructuredData } from './components/structured-data'
 import { FAQSchema } from './components/faq-schema'
@@ -10,11 +9,6 @@ import './globals.css'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
   subsets: ['latin'],
 })
 
@@ -81,14 +75,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <OrganizationStructuredData />
         <RealEstateAgentStructuredData />
         <FAQSchema />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
+        className={`${geistSans.variable} ${playfair.variable} antialiased`}
       >
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
@@ -98,15 +92,7 @@ export default function RootLayout({
           strategy="afterInteractive"
           type="module"
         />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-          storageKey="theme"
-        >
-          {children}
-        </ThemeProvider>
+        {children}
         <SpeedInsights />
       </body>
     </html>

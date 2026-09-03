@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import MobileMenu from '@/app/components/mobile-menu'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -37,6 +39,8 @@ export default function PrivacyPolicyPage() {
         </div>
       </header>
 
+      <OfficeListingsBand />
+
       {/* Privacy Policy Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
@@ -66,7 +70,8 @@ export default function PrivacyPolicyPage() {
               We may collect personal information that you voluntarily provide when you:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li>Fill out contact forms or request information</li>
+              <li>Book a consultation through Calendly</li>
+              <li>Request information about Terra at Skyeview homes</li>
               <li>Schedule a tour or consultation</li>
               <li>Subscribe to our newsletter or blog updates</li>
               <li>Call or email us directly</li>
@@ -175,7 +180,7 @@ export default function PrivacyPolicyPage() {
               We do not sell, trade, or rent your personal information to third parties. We may share your information with:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li><strong>Service Providers:</strong> Third parties who perform services on our behalf (e.g., Google Analytics, RealScout, email service providers)</li>
+              <li><strong>Service Providers:</strong> Third parties who perform services on our behalf (e.g., Google Analytics, RealScout, Calendly, email service providers)</li>
               <li><strong>Century Communities:</strong> When you request information about properties they're building</li>
               <li><strong>Legal Compliance:</strong> When required by law, court order, or government regulation</li>
               <li><strong>Business Transfers:</strong> In connection with any merger, sale of assets, or acquisition</li>
@@ -309,6 +314,8 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
         </div>
+
+        <CalendlySection event="strategy" />
 
         {/* Back Button */}
         <div className="mt-12 text-center">

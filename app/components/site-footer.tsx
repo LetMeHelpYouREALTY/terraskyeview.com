@@ -1,11 +1,10 @@
 import Link from 'next/link'
+import FooterMap from '@/app/components/footer-map'
 
 const MAPS_PLACE =
   'https://www.google.com/maps/place/Terra+at+Skyeview+by+Homes+Dr.+Jan+Duffy/@36.316134,-115.32963,17z'
 const MAPS_DIRECTIONS =
   'https://www.google.com/maps/dir/?api=1&destination=8592+Vanhoy+Creek+Street,+Las+Vegas,+NV+89166'
-const MAPS_EMBED =
-  'https://www.google.com/maps?q=8592+Vanhoy+Creek+Street,+Las+Vegas,+NV+89166&output=embed'
 
 export default function SiteFooter() {
   return (
@@ -61,15 +60,7 @@ export default function SiteFooter() {
           </div>
         </div>
         <div className="overflow-hidden rounded-xl border border-white/10">
-          <iframe
-            src={MAPS_EMBED}
-            title="Map pin for Terra at Skyeview model home at 8592 Vanhoy Creek Street, Las Vegas"
-            width="100%"
-            height="240"
-            className="border-0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <FooterMap />
         </div>
       </div>
       <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">

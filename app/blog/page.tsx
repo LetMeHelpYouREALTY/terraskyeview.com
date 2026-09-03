@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { ArrowRight, Calendar, User, Tag, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 const categories = [
   'All Posts',
@@ -186,6 +188,8 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       {/* Featured Posts Carousel */}
       <section className="py-16 bg-gray-50">
@@ -372,6 +376,8 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <CalendlySection event="strategy" />
 
       {/* Advanced Property Search Widget */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">

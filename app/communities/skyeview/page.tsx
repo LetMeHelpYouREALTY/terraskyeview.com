@@ -11,6 +11,7 @@ import SimilarCommunities from './components/similar-communities'
 import ContactForm from './components/contact-form'
 import LocationMap from './components/location-map'
 import RealScoutSearch from '@/app/components/realscout-search'
+import OfficeListingsBand from '@/app/components/office-listings-band'
 
 export default function SkyeviewPage() {
   return (
@@ -68,6 +69,8 @@ export default function SkyeviewPage() {
 
       {/* Hero Carousel */}
       <HeroCarousel />
+
+      <OfficeListingsBand />
 
       {/* Community Info Bar */}
       <div className="bg-gray-50 border-y border-gray-200">

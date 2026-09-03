@@ -5,6 +5,8 @@ import { Phone, Mail, MapPin, Award, Heart, Home, TrendingUp, Shield, Star } fro
 import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
 import AgentPortrait from '@/app/components/agent-portrait'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 const testimonials = [
   {
@@ -111,6 +113,8 @@ export default function AboutDrJanetDuffyPage() {
           </div>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       {/* Interview Q&A Section */}
       <section className="py-20 bg-white">
@@ -406,6 +410,8 @@ export default function AboutDrJanetDuffyPage() {
           </div>
         </div>
       </section>
+
+      <CalendlySection event="strategy" />
 
       {/* Advanced Property Search Widget */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">

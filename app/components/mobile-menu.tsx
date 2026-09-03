@@ -2,153 +2,122 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { X, Menu, Phone, Mail, MapPin } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/communities/skyeview', label: 'Available Homes' },
+  { href: '/about-dr-janet-duffy', label: 'About Dr. Jan Duffy' },
+  { href: '/special-offers', label: 'Special Offers' },
+  { href: '/homebuying-process', label: 'Homebuying Process' },
+  { href: '/for-buyers', label: 'For Buyers' },
+  { href: '/blog', label: 'Blog' },
+] as const
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <Button
-        variant="outline"
-        size="sm"
+      <button
+        type="button"
         onClick={() => setIsOpen(true)}
-        className="md:hidden"
+        className="inline-flex h-9 items-center justify-center rounded-md border border-white/30 px-3 text-white md:hidden"
+        aria-label="Open menu"
       >
-        <Menu className="w-5 h-5" />
-      </Button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-      {/* Mobile Menu Overlay */}
-      {isOpen && (
+      {isOpen ? (
         <div className="fixed inset-0 z-[100] md:hidden">
-          {/* Backdrop */}
           <div
-            className="absolute inset-0 bg-gray-900/50 backdrop-blur-sm"
+            className="absolute inset-0 bg-[#0b1c2c]/50"
             onClick={() => setIsOpen(false)}
           />
-
-          {/* Menu Panel */}
-          <div className="absolute right-0 top-0 bottom-0 w-80 bg-white shadow-2xl overflow-y-auto">
+          <div className="absolute top-0 right-0 bottom-0 w-80 overflow-y-auto bg-white shadow-2xl">
             <div className="p-6">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-8">
+              <div className="mb-8 flex items-center justify-between">
                 <div>
-                  <h2 className="text-xl font-bold text-gray-900">Terra at Skyeview</h2>
-                  <p className="text-xs text-gray-600">by Century Communities</p>
+                  <p className="font-serif text-xl text-[#0b1c2c]">
+                    Terra at Skyeview
+                  </p>
+                  <p className="text-xs tracking-widest text-[#c4a35a] uppercase">
+                    by Century Communities
+                  </p>
                 </div>
                 <button
+                  type="button"
                   onClick={() => setIsOpen(false)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition"
+                  className="rounded-lg p-2 hover:bg-gray-100"
                   aria-label="Close menu"
-                  title="Close navigation menu"
                 >
-                  <X className="w-6 h-6" />
+                  <span className="text-2xl leading-none text-[#0b1c2c]">
+                    ×
+                  </span>
                 </button>
               </div>
 
-              {/* Navigation Links */}
-              <nav className="space-y-1 mb-8">
-                <Link
-                  href="/"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/communities/skyeview"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  Available Homes
-                </Link>
-                <Link
-                  href="/about-dr-janet-duffy"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  About Dr. Jan Duffy
-                </Link>
-                <Link
-                  href="/special-offers"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  Special Offers
-                </Link>
-                <Link
-                  href="/homebuying-process"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  Homebuying Process
-                </Link>
-                <Link
-                  href="/for-buyers"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  For Buyers
-                </Link>
-                <Link
-                  href="/blog"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-lg hover:bg-blue-50 text-gray-900 font-medium transition"
-                >
-                  Blog
-                </Link>
+              <nav className="mb-8 space-y-1">
+                {links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block rounded-lg px-4 py-3 font-medium text-[#0b1c2c] hover:bg-[#f7f3eb]"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </nav>
 
-              {/* Contact Info */}
-              <div className="border-t border-gray-200 pt-6 space-y-4">
-                <div>
-                  <p className="text-sm font-semibold text-gray-900 mb-3">Contact Dr. Jan Duffy</p>
-                  <div className="space-y-3">
-                    <a
-                      href="tel:702-919-7292"
-                      className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
-                    >
-                      <Phone className="w-5 h-5 text-blue-600" />
-                      <span>(702) 919-7292</span>
-                    </a>
-                    <a
-                      href="mailto:DrJanSells@TerraSkyeview.com"
-                      className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
-                    >
-                      <Mail className="w-5 h-5 text-blue-600" />
-                      <span>DrJanSells@TerraSkyeview.com</span>
-                    </a>
-                    <div className="flex items-start gap-3 text-gray-700">
-                      <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">
-                        8592 Vanhoy Creek Street<br />
-                        Las Vegas, NV 89166
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                  <a href="tel:702-919-7292">
-                    Call Now
-                  </a>
-                </Button>
-
-                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <p className="text-xs font-semibold text-gray-900 mb-1">
-                    ⭐ Preferred Buyer's Agent
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    Get the best price • FREE to buyers
-                  </p>
-                </div>
+              <div className="space-y-3 border-t border-gray-200 pt-6">
+                <p className="text-sm font-semibold text-[#0b1c2c]">
+                  Contact Dr. Jan Duffy
+                </p>
+                <a
+                  href="tel:702-919-7292"
+                  className="block text-[#0b1c2c]/80"
+                >
+                  (702) 919-7292
+                </a>
+                <a
+                  href="mailto:DrJanSells@TerraSkyeview.com"
+                  className="block text-[#0b1c2c]/80"
+                >
+                  DrJanSells@TerraSkyeview.com
+                </a>
+                <p className="text-sm text-[#0b1c2c]/80">
+                  8592 Vanhoy Creek Street
+                  <br />
+                  Las Vegas, NV 89166
+                </p>
+                <a
+                  href="https://calendly.com/drjanduffy/15min"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-[#0b1c2c] px-4 py-2.5 text-sm font-semibold text-[#0b1c2c]"
+                >
+                  Book a 15-minute call
+                </a>
+                <a
+                  href="tel:702-919-7292"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-[#c4a35a] px-4 py-2.5 text-sm font-semibold text-[#0b1c2c]"
+                >
+                  Call Now
+                </a>
               </div>
             </div>
           </div>
         </div>
-      )}
+      ) : null}
     </>
   )
 }
-

@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { Heart, Home, DollarSign, TrendingDown, Calendar, Shield, CheckCircle, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 const loanOptions = [
   {
@@ -71,27 +72,6 @@ const steps = [
 ]
 
 export default function SpecialOffersPage() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    phone: '',
-    email: '',
-    comments: '',
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you! We will contact you shortly about our special offers.')
-  }
-
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
@@ -177,6 +157,8 @@ export default function SpecialOffersPage() {
           </div>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       {/* Main Offer Section */}
       <section className="py-20 bg-gray-50">
@@ -274,110 +256,11 @@ export default function SpecialOffersPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Sign up to speak with Dr. Jan Duffy & learn about offers in your area
-              </h2>
-              <p className="text-gray-600">
-                Get personalized information about current promotions and financing options
-              </p>
-            </div>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="comments" className="block text-sm font-medium text-gray-700 mb-2">
-                  Any comments you'd like to share with us?
-                </label>
-                <textarea
-                  id="comments"
-                  name="comments"
-                  rows={4}
-                  value={formData.comments}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div className="text-xs text-gray-500">
-                By providing your information, you agree to be contacted about this offer. 
-                Standard text message rates apply. You can opt out at any time by texting STOP.
-              </div>
-
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg font-semibold"
-              >
-                Submit
-              </Button>
-            </form>
-          </div>
-        </div>
-      </section>
+      <CalendlySection
+        event="consult"
+        heading="Book a call to review current offers"
+        description="Dr. Jan Duffy will walk through financing, closing credits, and Terra inventory. Pick a 30-minute slot below."
+      />
 
       {/* How It Works Section */}
       <section className="py-20 bg-white">

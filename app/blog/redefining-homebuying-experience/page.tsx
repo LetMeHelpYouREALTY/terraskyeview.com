@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, User, Tag, ArrowLeft, CheckCircle, Home, Shield, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 export default function RedefinigHomebuyingArticle() {
   return (
@@ -89,6 +91,8 @@ export default function RedefinigHomebuyingArticle() {
               sizes="(max-width: 768px) 100vw, 896px"
             />
           </div>
+
+          <OfficeListingsBand />
 
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
@@ -280,6 +284,8 @@ export default function RedefinigHomebuyingArticle() {
               </Button>
             </div>
           </div>
+
+          <CalendlySection event="consult" />
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-200">

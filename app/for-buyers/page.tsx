@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { Home, Users, DollarSign, Shield, CheckCircle, FileText, Calendar, Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 const benefits = [
   {
@@ -157,6 +159,8 @@ export default function ForBuyersPage() {
         </div>
       </section>
 
+      <OfficeListingsBand />
+
       {/* Benefits Grid */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -285,6 +289,8 @@ export default function ForBuyersPage() {
           </div>
         </div>
       </section>
+
+      <CalendlySection event="consult" />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, User, Tag, ArrowLeft, CheckCircle, Users, MapPin, Award, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 export default function ShouldIUseRealtorArticle() {
   return (
@@ -106,6 +108,8 @@ export default function ShouldIUseRealtorArticle() {
               sizes="(max-width: 768px) 100vw, 896px"
             />
           </div>
+
+          <OfficeListingsBand />
 
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
@@ -305,7 +309,7 @@ export default function ShouldIUseRealtorArticle() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              With life's modern conveniences much more accessible than in other neighborhoods, a master-planned community like Skye Canyon can take a lot of pressure off homebuyers. Enjoy less traffic, more green space, top-rated schools, and a stronger sense of community when you invest your homebuying dollars here.
+              With life's modern conveniences much more accessible than in other neighborhoods, a master-planned community like Skye Canyon can take a lot of pressure off homebuyers. Enjoy parks, trail miles, and shorter commutes to the northwest employment corridor when you buy at Terra at Skyeview.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -342,6 +346,8 @@ export default function ShouldIUseRealtorArticle() {
               </Button>
             </div>
           </div>
+
+          <CalendlySection event="strategy" />
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-200">

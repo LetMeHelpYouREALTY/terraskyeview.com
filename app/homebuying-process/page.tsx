@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { CheckCircle, Home, FileText, Key, Search, Calculator, Heart, Shield, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import AgentPortrait from '@/app/components/agent-portrait'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 const processSteps = [
   {
@@ -196,6 +198,8 @@ export default function HomebuyingProcessPage() {
         </div>
       </section>
 
+      <OfficeListingsBand />
+
       {/* Process Steps */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -342,6 +346,8 @@ export default function HomebuyingProcessPage() {
           </div>
         </div>
       </section>
+
+      <CalendlySection event="consult" />
 
       {/* Resources Section */}
       <section className="py-20 bg-white">

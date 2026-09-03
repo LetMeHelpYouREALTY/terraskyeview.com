@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, User, Tag, ArrowLeft, DollarSign, Shield, Calculator, Home } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import OfficeListingsBand from '@/app/components/office-listings-band'
+import CalendlySection from '@/app/components/calendly-section'
 
 export default function WhatAreClosingCostsArticle() {
   return (
@@ -90,6 +92,8 @@ export default function WhatAreClosingCostsArticle() {
               sizes="(max-width: 768px) 100vw, 896px"
             />
           </div>
+
+          <OfficeListingsBand />
 
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
@@ -351,6 +355,8 @@ export default function WhatAreClosingCostsArticle() {
               </Button>
             </div>
           </div>
+
+          <CalendlySection event="consult" />
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-200">
