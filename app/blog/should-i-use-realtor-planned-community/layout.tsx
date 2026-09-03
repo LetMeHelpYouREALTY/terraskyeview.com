@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     'Discover why using Dr. Jan Duffy as your buyer\'s agent at Terra at Skyeview by Century Communities ensures the best price, expert negotiation, and $5,000 closing cost assistance. FREE to buyers!',
   keywords:
     'buyer\'s agent, Terra at Skyeview, Century Communities, realtor for new construction, Skye Canyon, Dr. Jan Duffy, planned community expert, Las Vegas realtor, best price negotiation',
+  alternates: {
+    canonical: 'https://www.terraskyeview.com/blog/should-i-use-realtor-planned-community',
+  },
   openGraph: {
     title: 'Should I Use a Realtor in a Planned Community? 5 Reasons Why',
     description:

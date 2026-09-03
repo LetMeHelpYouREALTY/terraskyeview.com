@@ -1,8 +1,5 @@
-'use client'
-
-import { useState } from 'react'
-import Image from 'next/image'
-import { ChevronLeft, ChevronRight, Phone, Mail, MapPin } from 'lucide-react'
+import Link from 'next/link'
+import { Phone, Mail, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import MobileMenu from '@/app/components/mobile-menu'
 import HeroCarousel from './components/hero-carousel'
@@ -13,6 +10,7 @@ import AreaInformation from './components/area-information'
 import SimilarCommunities from './components/similar-communities'
 import ContactForm from './components/contact-form'
 import LocationMap from './components/location-map'
+import RealScoutSearch from '@/app/components/realscout-search'
 
 export default function SkyeviewPage() {
   return (
@@ -122,22 +120,7 @@ export default function SkyeviewPage() {
               Dr. Jan Duffy will help you get the best price with exclusive buyer representation
             </p>
           </div>
-          <div className="flex justify-center">
-            <div dangerouslySetInnerHTML={{
-              __html: `
-                <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
-                <style>
-                  realscout-advanced-search {
-                    --rs-as-button-text-color: #ffffff;
-                    --rs-as-background-color: #ffffff;
-                    --rs-as-button-color: #F26419;
-                    --rs-as-widget-width: 500px !important;
-                  }
-                </style>
-                <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
-              `
-            }} />
-          </div>
+          <RealScoutSearch />
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
-import DeployBanner from '../components/deploy-banner'
 import { OrganizationStructuredData, RealEstateAgentStructuredData } from './components/structured-data'
 import { FAQSchema } from './components/faq-schema'
 import { GoogleAnalytics } from './google-analytics'
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: 'Terra at Skyeview by Century Communities | New Homes Las Vegas | Dr. Jan Duffy',
   description: 'Discover new two-story homes at Terra at Skyeview in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990 by Century Communities. Expert buyer representation from Dr. Jan Duffy. Call 702-919-7292.',
   keywords: 'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, Dr. Jan Duffy, Northwest Las Vegas, new construction homes, buyer agent Las Vegas, new homes Las Vegas 89166',
-  authors: [{ name: 'Dr. Jan Duffy', url: 'https://terraskyeview.com/about-dr-janet-duffy' }],
+  authors: [{ name: 'Dr. Jan Duffy', url: 'https://www.terraskyeview.com/about-dr-janet-duffy' }],
   creator: 'Dr. Jan Duffy',
   publisher: 'Terra at Skyeview',
   robots: {
@@ -86,14 +86,18 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         )}
+        <Script
+          src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+          strategy="lazyOnload"
+          type="module"
+        />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
           storageKey="theme"
         >
-          <DeployBanner />
           {children}
         </ThemeProvider>
       </body>
