@@ -13,7 +13,7 @@ export default function SiteFooter() {
         <div>
           <p className="font-serif text-2xl">Terra at Skyeview</p>
           <p className="mt-1 text-sm text-[#c4a35a]">
-            by Century Communities · Preferred buyer&apos;s agent Dr. Jan Duffy
+            Homes By Dr. Jan Duffy
           </p>
           <address className="mt-6 not-italic text-sm leading-7 text-white/80">
             Dr. Jan Duffy | BHHS Nevada Properties | S.0197614

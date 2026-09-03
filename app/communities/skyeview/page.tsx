@@ -22,7 +22,7 @@ export default function SkyeviewPage() {
           <div className="flex items-center justify-between h-16">
             <a href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold text-gray-900">Terra at Skyeview</span>
-              <span className="text-sm text-gray-500 ml-2">by Century Communities</span>
+              <span className="text-sm text-gray-500 ml-2">Homes By Dr. Jan Duffy</span>
             </a>
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
@@ -78,7 +78,7 @@ export default function SkyeviewPage() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-gray-900">Terra at Skyeview</h1>
-              <p className="text-sm text-gray-600 mb-1">by Century Communities</p>
+              <p className="text-sm text-gray-600 mb-1">Homes By Dr. Jan Duffy</p>
               <p className="text-lg text-gray-600 mt-1">
                 8592 Vanhoy Creek Street, Las Vegas, NV 89166
               </p>
@@ -263,7 +263,7 @@ export default function SkyeviewPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4">Terra at Skyeview</h3>
-              <p className="text-sm text-gray-500 mb-2">by Century Communities</p>
+              <p className="text-sm text-gray-500 mb-2">Homes By Dr. Jan Duffy</p>
               <p className="text-gray-400 text-sm mb-4">
                 Two-story new homes in Skye Canyon, Las Vegas.
               </p>

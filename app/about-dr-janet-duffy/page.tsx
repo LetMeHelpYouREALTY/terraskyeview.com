@@ -35,7 +35,7 @@ export default function AboutDrJanetDuffyPage() {
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-bold text-gray-900">Terra at Skyeview</span>
-              <span className="text-xs text-gray-500 ml-2">by Century Communities</span>
+              <span className="text-xs text-gray-500 ml-2">Homes By Dr. Jan Duffy</span>
             </Link>
             <nav className="hidden md:flex items-center gap-8">
               <Link href="/" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">

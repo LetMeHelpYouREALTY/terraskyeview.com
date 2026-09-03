@@ -51,8 +51,8 @@ export default function MobileMenu() {
                   <p className="font-serif text-xl text-[#0b1c2c]">
                     Terra at Skyeview
                   </p>
-                  <p className="text-xs tracking-widest text-[#c4a35a] uppercase">
-                    by Century Communities
+                  <p className="text-xs tracking-wide text-[#c4a35a]">
+                    Homes By Dr. Jan Duffy
                   </p>
                 </div>
                 <button

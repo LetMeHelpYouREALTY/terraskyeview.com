@@ -24,8 +24,8 @@ export default function SiteHeader({ current = 'home' }: SiteHeaderProps) {
               <span className="block font-serif text-xl text-white">
                 Terra at Skyeview
               </span>
-              <span className="block text-[11px] tracking-widest text-[#c4a35a] uppercase">
-                by Century Communities
+              <span className="block text-[11px] tracking-wide text-[#c4a35a]">
+                Homes By Dr. Jan Duffy
               </span>
             </span>
           </Link>
