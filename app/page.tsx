@@ -9,6 +9,18 @@ import CalendlySection from '@/app/components/calendly-section'
 import SiteFaq from '@/app/components/site-faq'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import { mediaUrl } from '@/lib/media'
+import { pageMetadata } from '@/lib/seo'
+
+export const metadata = pageMetadata({
+  title: 'Homebuying with Dr. Jan Duffy | Terra at Skyeview Las Vegas NV 89166',
+  description:
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon. New two-story homes from $479,990. Call (702) 919-7292 before you tour. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+  path: '/',
+  keywords:
+    'homebuying with Dr. Jan Duffy, Terra at Skyeview, Skye Canyon, Las Vegas NV 89166, Century Communities, buyer agent Las Vegas, new construction homes',
+  imageAlt:
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon, Las Vegas',
+})
 
 const residences = [
   {

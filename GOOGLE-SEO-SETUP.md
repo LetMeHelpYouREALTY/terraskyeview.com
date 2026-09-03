@@ -115,23 +115,15 @@
 
 ### **1. Set Up Google Search Console**
 
-**Step 1:** Go to [Google Search Console](https://search.google.com/search-console)
+Follow `GOOGLE-QUICKSTART.md` Step 1. Summary:
 
-**Step 2:** Add property
-- Enter: `https://terraskyeview.com`
+**Step 1:** Open [Google Search Console](https://search.google.com/search-console)
 
-**Step 3:** Choose verification method:
-- **Option A: HTML Tag** (Recommended)
-  - Google will give you a code like: `<meta name="google-site-verification" content="ABC123..." />`
-  - Add this code to `app/layout.tsx` in the metadata verification field
-  - **I've already prepared the field - just replace `YOUR_GOOGLE_VERIFICATION_CODE_HERE`**
+**Step 2:** Add a **Domain** property for `terraskyeview.com` and verify with the DNS TXT record Google shows you. That covers www and apex.
 
-- **Option B: DNS Record**
-  - Add TXT record to your domain DNS
+**Step 3:** URL-prefix fallback: add `https://www.terraskyeview.com`, then set `GOOGLE_SITE_VERIFICATION` in Vercel (content value only) and redeploy. Do not hardcode a placeholder token in `app/layout.tsx`.
 
-**Step 4:** Submit sitemap
-- URL: `https://terraskyeview.com/sitemap.xml`
-- Google will start indexing within 24-48 hours
+**Step 4:** Submit sitemap `https://www.terraskyeview.com/sitemap.xml`
 
 ---
 
@@ -705,21 +697,18 @@ Settings → Environment Variables → Add:
 NEXT_PUBLIC_GA_MEASUREMENT_ID = G-XXXXXXXXXX
 ```
 
-### **2. In app/layout.tsx:**
-Replace:
-```typescript
-verification: {
-  google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
-}
+### **2. In Vercel (HTML-tag verification only):**
 ```
-
-With your actual Google verification code.
+Settings → Environment Variables → Add:
+GOOGLE_SITE_VERIFICATION = <content value from the GSC meta tag>
+```
+Redeploy, then click Verify. Prefer Domain DNS verification instead — it does not need this variable.
 
 ### **3. Redeploy:**
-Vercel will automatically redeploy with Google Analytics active.
+Vercel will automatically redeploy after the env var is saved if you trigger a redeploy.
 
 ### **4. Verify in Google Search Console:**
-Submit your sitemap and request indexing.
+Submit `https://www.terraskyeview.com/sitemap.xml` and inspect the homepage URL.
 
 ---
 
