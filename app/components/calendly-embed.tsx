@@ -18,7 +18,7 @@ export default function CalendlyEmbed({ event }: CalendlyEmbedProps) {
       title = 'Calendly scheduler for a 15-minute market strategy call with Dr. Jan Duffy'
       break
     case 'consult':
-      title = 'Calendly scheduler for a 30-minute buyer consultation with Dr. Jan Duffy'
+      title = 'Calendly scheduler for a 15-minute call with Dr. Jan Duffy'
       break
     default:
       assertNever(event)

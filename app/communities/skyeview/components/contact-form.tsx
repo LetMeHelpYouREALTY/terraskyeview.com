@@ -10,8 +10,8 @@ export default function ContactForm() {
           Book a Terra at Skyeview consultation
         </h2>
         <p className="mb-6 text-gray-600">
-          Pick a 30-minute slot to register with Century Communities before you
-          tour. Dr. Jan Duffy will confirm next steps by phone at (702) 919-7292.
+          Book a 15-minute strategy call so Dr. Jan can register you with Century
+          Communities before you tour. Or call (702) 919-7292.
         </p>
         <CalendlyEmbed event="consult" />
       </div>

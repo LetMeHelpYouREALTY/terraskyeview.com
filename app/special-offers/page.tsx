@@ -259,7 +259,7 @@ export default function SpecialOffersPage() {
       <CalendlySection
         event="consult"
         heading="Book a call to review current offers"
-        description="Dr. Jan Duffy will walk through financing, closing credits, and Terra inventory. Pick a 30-minute slot below."
+        description="Dr. Jan Duffy will walk through financing, closing credits, and Terra inventory on a 15-minute strategy call."
       />
 
       {/* How It Works Section */}
