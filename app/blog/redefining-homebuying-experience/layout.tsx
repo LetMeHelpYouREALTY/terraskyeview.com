@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     'Discover the modern approach to buying new construction at Skyeview at Skye Canyon. Browse online, streamlined process, and expert guidance from Dr. Jan Duffy. Say goodbye to bidding wars.',
   keywords:
     'homebuying experience, online home shopping, new construction Las Vegas, streamlined homebuying, Dr. Jan Duffy, Skye Canyon homes',
+  alternates: {
+    canonical: 'https://www.terraskyeview.com/blog/redefining-homebuying-experience',
+  },
   openGraph: {
     title: 'How We\'re Redefining the Homebuying Experience at Skyeview',
     description:

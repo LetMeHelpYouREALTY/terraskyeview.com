@@ -203,6 +203,13 @@
   }
 }
 
+realscout-advanced-search {
+  --rs-as-button-text-color: #ffffff;
+  --rs-as-background-color: #ffffff;
+  --rs-as-button-color: #F26419;
+  --rs-as-widget-width: 500px !important;
+}
+
 /* Stack mobile deploy buttons vertically on very small screens */
 @media (max-width: 360px) {
   .mobile-deploy-buttons {

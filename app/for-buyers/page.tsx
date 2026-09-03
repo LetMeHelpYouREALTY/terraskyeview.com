@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Home, Users, DollarSign, Shield, CheckCircle, FileText, Calendar, Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import RealScoutSearch from '@/app/components/realscout-search'
 
 const benefits = [
   {
@@ -202,22 +203,7 @@ export default function ForBuyersPage() {
               Let Dr. Jan Duffy guide you to your dream home with expert buyer representation
             </p>
           </div>
-          <div className="flex justify-center">
-            <div dangerouslySetInnerHTML={{
-              __html: `
-                <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
-                <style>
-                  realscout-advanced-search {
-                    --rs-as-button-text-color: #ffffff;
-                    --rs-as-background-color: #ffffff;
-                    --rs-as-button-color: #F26419;
-                    --rs-as-widget-width: 500px !important;
-                  }
-                </style>
-                <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
-              `
-            }} />
-          </div>
+          <RealScoutSearch />
         </div>
       </section>
 
