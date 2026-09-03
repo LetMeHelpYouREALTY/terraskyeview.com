@@ -24,9 +24,8 @@ export default function CalendlySection({
   let sectionId: string
   switch (event) {
     case 'strategy':
-      sectionId = 'schedule-strategy-call'
-      break
     case 'consult':
+      // SiteHeader "Book a call" always targets this id.
       sectionId = 'schedule-consultation'
       break
     default:

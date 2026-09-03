@@ -181,7 +181,7 @@ export default function MapPage() {
       </section>
 
       <SiteFaq faqs={MAP_FAQS} />
-      <CalendlySection event="strategy" />
+      <CalendlySection event="consult" />
       <SiteFooter />
     </div>
   )
