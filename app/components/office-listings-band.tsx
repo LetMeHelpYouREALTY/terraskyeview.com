@@ -23,7 +23,7 @@ export default function OfficeListingsBand() {
           (702) 919-7292 before you tour so she can register you with the
           builder at 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 min-h-[320px]">
           <RealScoutOfficeListings />
         </div>
       </div>

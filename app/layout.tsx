@@ -9,6 +9,8 @@ import './globals.css'
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
+  display: 'swap',
+  preload: false,
 })
 
 const playfair = Playfair_Display({
@@ -97,7 +99,7 @@ export default function RootLayout({
         )}
         <Script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           type="module"
         />
         {children}

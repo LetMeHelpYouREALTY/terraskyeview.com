@@ -84,7 +84,9 @@ export default function HomePage() {
           alt="Two-story Terra at Skyeview home exterior at dusk in Skye Canyon, Las Vegas"
           fill
           priority
-          sizes="100vw"
+          fetchPriority="high"
+          quality={70}
+          sizes="(max-width: 768px) 100vw, 1400px"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b1c2c]/85 via-[#0b1c2c]/55 to-[#0b1c2c]/25" />
@@ -179,6 +181,7 @@ export default function HomePage() {
                   src={home.image}
                   alt={home.alt}
                   fill
+                  quality={70}
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
@@ -211,6 +214,7 @@ export default function HomePage() {
                   src={shot.src}
                   alt={shot.alt}
                   fill
+                  quality={70}
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />

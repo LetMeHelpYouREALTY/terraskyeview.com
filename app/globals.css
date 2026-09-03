@@ -221,6 +221,7 @@ realscout-office-listings {
   --rs-listing-divider-color: #c4a35a;
   width: 100%;
   display: block;
+  min-height: 320px;
 }
 
 .calendly-inline-widget {
