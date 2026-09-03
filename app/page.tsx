@@ -6,6 +6,8 @@ import RealScoutSearch from '@/app/components/realscout-search'
 import AgentPortrait from '@/app/components/agent-portrait'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import SiteFaq from '@/app/components/site-faq'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import { mediaUrl } from '@/lib/media'
 
 const residences = [
@@ -71,21 +73,6 @@ const interiors = [
   },
 ]
 
-const faqs = [
-  {
-    q: 'Do I need a buyer’s agent at Terra at Skyeview?',
-    a: 'Dr. Jan Duffy registers you with Century Communities, negotiates price and upgrades, and represents you at no cost to the buyer. The on-site agent represents the builder.',
-  },
-  {
-    q: 'What do Terra homes cost?',
-    a: 'Two-story Terra collection homes start at $479,990. Floor plans run 1,792–2,119 square feet with 3–5 bedrooms.',
-  },
-  {
-    q: 'Should I call before touring the models?',
-    a: 'Yes. Call (702) 919-7292 before the first visit so Dr. Jan can register you. Unregistered tours can lock you to the builder’s agent.',
-  },
-]
-
 export default function HomePage() {
   return (
     <div className="min-h-dvh bg-[#f7f3eb] text-[#0b1c2c]">
@@ -102,6 +89,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b1c2c]/85 via-[#0b1c2c]/55 to-[#0b1c2c]/25" />
         <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 lg:px-8">
+          <HomebuyingKicker className="mb-3" />
           <p className="mb-3 text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
             Skye Canyon · Las Vegas NV 89166
           </p>
@@ -109,8 +97,8 @@ export default function HomePage() {
             Terra at Skyeview
           </h1>
           <p className="mt-3 max-w-xl text-lg text-white/85 md:text-xl">
-            New two-story homes by Century Communities from $479,990. Preferred
-            buyer&apos;s agent: Dr. Jan Duffy.
+            Homebuying with Dr. Jan Duffy for new two-story Century Communities
+            homes from $479,990. Call (702) 919-7292 before you tour.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
@@ -132,7 +120,8 @@ export default function HomePage() {
       <OfficeListingsBand />
 
       <div className="bg-[#c4a35a] px-4 py-3 text-center text-sm font-semibold text-[#0b1c2c]">
-        Limited-time financing: rates from 3.875% · up to $5,000 toward closing.{' '}
+        Homebuying with Dr. Jan Duffy: rates from 3.875% · up to $5,000 toward
+        closing.{' '}
         <Link href="/special-offers" className="underline underline-offset-4">
           View offers
         </Link>
@@ -142,20 +131,29 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-4 py-10 text-center sm:flex-row sm:text-left sm:px-6">
           <AgentPortrait size={112} className="shrink-0 shadow-md" />
           <div>
-            <p className="font-serif text-2xl">Register before you tour</p>
+            <HomebuyingKicker />
+            <p className="mt-2 font-serif text-2xl">Register before you tour</p>
             <p className="mt-2 text-base text-[#0b1c2c]/75">
-              Contact Dr. Jan Duffy first so she can register you with Century
-              Communities. That keeps the best price on the table and lets her
-              represent you. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV
-              89166.
+              Homebuying with Dr. Jan Duffy starts with a call so she can
+              register you with Century Communities. That keeps the best price
+              on the table and lets her represent you. Model home: 8592 Vanhoy
+              Creek Street, Las Vegas, NV 89166.
             </p>
             <p className="mt-3 text-sm">
               <Link href="/about-dr-janet-duffy" className="font-semibold text-[#0b1c2c] underline">
                 Meet Dr. Jan
               </Link>
               {' · '}
-              <Link href="/for-buyers" className="underline">
-                Why work with a buyer&apos;s agent?
+              <Link href="/map" className="underline">
+                Map of 89166
+              </Link>
+              {' · '}
+              <Link href="/realtor-services" className="underline">
+                Realtor services
+              </Link>
+              {' · '}
+              <Link href="/skye-canyon" className="underline">
+                Skye Canyon
               </Link>
             </p>
           </div>
@@ -163,12 +161,14 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
+        <HomebuyingKicker />
+        <p className="mt-2 text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
           The Terra collection
         </p>
         <h2 className="mt-2 font-serif text-4xl">Three two-story floor plans</h2>
         <p className="mt-3 max-w-2xl text-[#0b1c2c]/70">
-          Open living levels, 2-car garages, and 1,792 to 2,119 square feet in
+          Homebuying with Dr. Jan Duffy covers Residence 1792, 1943, and 2119:
+          open living levels, 2-car garages, and 1,792 to 2,119 square feet in
           Northwest Las Vegas.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -197,10 +197,12 @@ export default function HomePage() {
 
       <section className="bg-[#0b1c2c] py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-4xl">Interiors and outdoor living</h2>
+          <HomebuyingKicker className="text-[#c4a35a]" />
+          <h2 className="mt-2 font-serif text-4xl">Interiors and outdoor living</h2>
           <p className="mt-3 max-w-2xl text-white/70">
-            Quartz kitchens, primary suites, and covered patios oriented toward
-            the desert horizon at Skye Canyon.
+            Homebuying with Dr. Jan Duffy includes quartz kitchens, primary
+            suites, and covered patios oriented toward the desert horizon at
+            Skye Canyon.
           </p>
           <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
             {interiors.map((shot) => (
@@ -222,17 +224,19 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-center font-serif text-4xl">How representation works</h2>
+        <HomebuyingKicker className="text-center" />
+        <h2 className="mt-2 text-center font-serif text-4xl">How representation works</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-[#0b1c2c]/70">
-          Three steps to a new Terra home. Call before the first model-home visit.
+          Three steps for homebuying with Dr. Jan Duffy. Call (702) 919-7292
+          before the first model-home visit.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-[#c4a35a]/40 bg-white p-8">
             <p className="font-serif text-5xl text-[#c4a35a]">01</p>
             <h3 className="mt-4 font-serif text-2xl">Call Dr. Jan first</h3>
             <p className="mt-2 text-sm text-[#0b1c2c]/70">
-              Register with the builder before visiting. Required for pricing and
-              representation.{' '}
+              Homebuying with Dr. Jan Duffy requires builder registration before
+              you visit. Required for pricing and representation.{' '}
               <Link
                 href="/blog/should-i-use-realtor-planned-community"
                 className="underline"
@@ -251,16 +255,16 @@ export default function HomePage() {
             <p className="font-serif text-5xl text-[#c4a35a]">02</p>
             <h3 className="mt-4 font-serif text-2xl">Tour the models</h3>
             <p className="mt-2 text-sm text-[#0b1c2c]/70">
-              8592 Vanhoy Creek Street, Las Vegas, NV 89166. With Dr. Jan
-              registered, you keep representation.
+              8592 Vanhoy Creek Street, Las Vegas, NV 89166. Homebuying with Dr.
+              Jan Duffy keeps representation after you walk the models.
             </p>
           </div>
           <div className="rounded-2xl bg-white p-8 shadow-sm">
             <p className="font-serif text-5xl text-[#c4a35a]">03</p>
             <h3 className="mt-4 font-serif text-2xl">Lock the best price</h3>
             <p className="mt-2 text-sm text-[#0b1c2c]/70">
-              Dr. Jan negotiates upgrades, credits, and contract terms with
-              Century Communities.
+              Homebuying with Dr. Jan Duffy means she negotiates upgrades,
+              credits, and contract terms with Century Communities.
             </p>
           </div>
         </div>
@@ -269,27 +273,18 @@ export default function HomePage() {
       <section className="border-y border-[#0b1c2c]/10 bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 text-center">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="font-serif text-4xl">Search available homes in Las Vegas</h2>
             <p className="mt-3 text-[#0b1c2c]/70">
-              Compare Terra at Skyeview inventory with exclusive representation
-              from Dr. Jan Duffy.
+              Homebuying with Dr. Jan Duffy: compare Terra at Skyeview inventory
+              with exclusive buyer representation.
             </p>
           </div>
           <RealScoutSearch />
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-        <h2 className="font-serif text-4xl">Questions buyers ask</h2>
-        <div className="mt-8 space-y-6">
-          {faqs.map((item) => (
-            <div key={item.q} className="border-b border-[#0b1c2c]/10 pb-6">
-              <h3 className="font-serif text-xl">{item.q}</h3>
-              <p className="mt-2 text-sm leading-6 text-[#0b1c2c]/70">{item.a}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <SiteFaq />
 
       <CalendlySection event="consult" />
 

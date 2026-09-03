@@ -1,32 +1,32 @@
 import type { Metadata } from 'next'
+import { BreadcrumbStructuredData } from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Special Offers & Financing | Limited Time Deals | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'Special Offers & Financing | Terra at Skyeview Las Vegas',
   description:
-    'Take advantage of special financing offers at Skyeview at Skye Canyon. Low rates starting at 3.875% plus up to $5,000 toward closing costs. Contact Dr. Jan Duffy at 702-919-7292.',
+    'Homebuying with Dr. Jan Duffy includes rates from 3.875% and up to $5,000 toward closing on select Terra at Skyeview homes. Call (702) 919-7292. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+  path: '/special-offers',
+  image: '/images/special-offers.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy special offers at Terra at Skyeview, Las Vegas NV 89166',
   keywords:
-    'Las Vegas home financing, special offers, low interest rates, closing cost assistance, new home deals, FHA loans, VA loans, conventional loans, Dr. Jan Duffy',
-  openGraph: {
-    title: 'Special Offers & Financing | Terra Skyeview',
-    description:
-      'Low rates starting at 3.875% plus up to $5,000 toward closing costs on select homes.',
-    images: ['/og-offers.jpg'],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Special Offers & Financing | Terra Skyeview',
-    description:
-      'Low rates starting at 3.875% plus up to $5,000 toward closing costs.',
-    images: ['/og-offers.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, Terra at Skyeview financing, 3.875% rate, $5000 closing costs, Skye Canyon Las Vegas NV 89166',
+})
 
 export default function SpecialOffersLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Special Offers', href: '/special-offers' },
+        ]}
+      />
+      {children}
+    </>
+  )
 }
-

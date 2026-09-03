@@ -12,6 +12,8 @@ import ContactForm from './components/contact-form'
 import LocationMap from './components/location-map'
 import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function SkyeviewPage() {
   return (
@@ -77,6 +79,7 @@ export default function SkyeviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
+              <HomebuyingKicker />
               <h1 className="text-3xl font-bold text-gray-900">Terra at Skyeview</h1>
               <p className="text-sm text-gray-600 mb-1">Homes By Dr. Jan Duffy</p>
               <p className="text-lg text-gray-600 mt-1">
@@ -113,14 +116,15 @@ export default function SkyeviewPage() {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Find Your Perfect Home at Terra at Skyeview
             </h2>
             <p className="text-xl text-gray-700 mb-2">
-              Search all available homes and floor plans
+              Homebuying with Dr. Jan Duffy: search floor plans at 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
             <p className="text-lg text-gray-600">
-              Dr. Jan Duffy will help you get the best price with exclusive buyer representation
+              Call (702) 919-7292 before you tour so she can register you with Century Communities.
             </p>
           </div>
           <RealScoutSearch />
@@ -131,11 +135,12 @@ export default function SkyeviewPage() {
       <section id="homes" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Available Homes & Quick Move-Ins
             </h2>
             <p className="text-xl text-gray-600">
-              Browse our current inventory at Terra at Skyeview
+              Homebuying with Dr. Jan Duffy covers current Terra at Skyeview inventory in Skye Canyon ZIP 89166.
             </p>
           </div>
           <AvailableHomes />
@@ -146,11 +151,12 @@ export default function SkyeviewPage() {
       <section id="floor-plans" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Terra Collection Floor Plans
             </h2>
             <p className="text-xl text-gray-600">
-              Explore our inspired two-story home designs
+              Homebuying with Dr. Jan Duffy for Residence 1792, 1943, and 2119 — 1,792 to 2,119 sq ft.
             </p>
           </div>
           <FloorPlans />
@@ -161,11 +167,12 @@ export default function SkyeviewPage() {
       <section id="amenities" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Discover the Skye Canyon Lifestyle
             </h2>
             <p className="text-xl text-gray-600">
-              Experience the perfect blend of modern living and natural beauty
+              Homebuying with Dr. Jan Duffy in northwest Las Vegas NV 89166: parks, trails, and the Marketplace.
             </p>
           </div>
           <CommunityOverview />
@@ -217,7 +224,7 @@ export default function SkyeviewPage() {
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p>
-                    <span className="font-semibold">Top-Rated Schools:</span> Excellent education options including Divich Elementary, Escobedo Middle, and Arbor View High
+                    <span className="font-semibold">Nearby schools:</span> Kenneth Divich Elementary, Escobedo Middle, and Arbor View High
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -238,12 +245,9 @@ export default function SkyeviewPage() {
                 </div>
               </div>
               <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl">
-                <p className="text-sm text-gray-700 mb-2">
-                  <span className="font-semibold text-blue-900">Working with Dr. Jan Duffy</span>
-                </p>
-                <p className="text-sm text-gray-600">
-                  Get expert guidance through every step of your home buying journey with a trusted local real estate professional who knows Skye Canyon inside and out.
-                </p>
+                  <p>
+                    <span className="font-semibold">Working with Dr. Jan Duffy:</span> Homebuying with Dr. Jan Duffy at 8592 Vanhoy Creek Street, Las Vegas, NV 89166. Call (702) 919-7292 before you tour.
+                  </p>
               </div>
             </div>
           </div>
@@ -256,6 +260,8 @@ export default function SkyeviewPage() {
           <ContactForm />
         </div>
       </section>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

@@ -8,6 +8,9 @@ import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
+import { BreadcrumbStructuredData } from '@/app/components/structured-data'
 
 const categories = [
   'All Posts',
@@ -140,6 +143,12 @@ export default function BlogPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/blog' },
+        ]}
+      />
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,14 +185,15 @@ export default function BlogPage() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
+            <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               The Front Porch
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              Your Resource for Las Vegas Real Estate Insights
+              Homebuying with Dr. Jan Duffy: guides for Terra at Skyeview and Skye Canyon, Las Vegas NV 89166.
             </p>
             <p className="text-lg text-blue-100">
-              Expert advice, market trends, and neighborhood guides from Dr. Jan Duffy
+              Call (702) 919-7292. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
           </div>
         </div>
@@ -383,19 +393,22 @@ export default function BlogPage() {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ready to Find Your Dream Home?
+              Search Homes for Homebuying with Dr. Jan Duffy
             </h2>
             <p className="text-xl text-gray-700 mb-2">
-              Search all available properties in Las Vegas
+              Las Vegas and Skye Canyon inventory with buyer representation.
             </p>
             <p className="text-lg text-gray-600">
-              Work with Dr. Jan Duffy to discover homes that match your lifestyle and budget
+              Call (702) 919-7292 · 8592 Vanhoy Creek Street, Las Vegas, NV 89166
             </p>
           </div>
           <RealScoutSearch />
         </div>
       </section>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

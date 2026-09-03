@@ -34,13 +34,10 @@ export default function AreaInformation() {
           Everything you need is right around the corner
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Terra at Skyeview's location in Northwest Las Vegas provides the perfect balance of suburban 
-          tranquility and urban convenience. The Skye Canyon master-planned community is strategically 
-          positioned near major highways, top-rated schools, shopping centers, and dining destinations.
+          Terra at Skyeview's location in Northwest Las Vegas sits near US-95, Skye Canyon Park Drive, shopping centers, and dining. Nearby schools include Kenneth Divich Elementary, Escobedo Middle School, and Arbor View High School.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Families will appreciate the proximity to award-winning schools including Divich Elementary, 
-          Escobedo Middle School, and Arbor View High School. Shopping is convenient with Sprouts Farmers 
+          Homebuying with Dr. Jan Duffy uses these named places for lot-to-errand drive times from Terra at Skyeview. Shopping includes Sprouts Farmers 
           Market, Smith's Food & Drug, and Montecito Marketplace all within minutes. From casual dining 
           at Buffalo Wild Wings and Baby Stacks Cafe to international flavors at Michocan Mexican and 
           Thai Spoon, you'll find diverse culinary options nearby.

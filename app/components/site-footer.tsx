@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import FooterMap from '@/app/components/footer-map'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
 
 const MAPS_PLACE =
   'https://www.google.com/maps/place/Terra+at+Skyeview+by+Homes+Dr.+Jan+Duffy/@36.316134,-115.32963,17z'
@@ -11,7 +12,8 @@ export default function SiteFooter() {
     <footer className="bg-[#0b1c2c] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
-          <p className="font-serif text-2xl">Terra at Skyeview</p>
+          <HomebuyingKicker />
+          <p className="mt-2 font-serif text-2xl">Terra at Skyeview</p>
           <p className="mt-1 text-sm text-[#c4a35a]">
             Homes By Dr. Jan Duffy
           </p>
@@ -32,7 +34,8 @@ export default function SiteFooter() {
             </a>
           </address>
           <p className="mt-4 text-sm text-white/70">
-            Model hours: Monday–Saturday 10:00 AM–6:00 PM · Sunday 11:00 AM–6:00 PM
+            Homebuying with Dr. Jan Duffy. Model hours: Monday–Saturday 10:00 AM–6:00
+            PM · Sunday 11:00 AM–6:00 PM
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -58,6 +61,26 @@ export default function SiteFooter() {
               View Google Reviews
             </a>
           </div>
+          <nav className="mt-8 grid grid-cols-2 gap-2 text-sm text-white/70">
+            <Link href="/map" className="hover:text-[#c4a35a]">
+              89166 map
+            </Link>
+            <Link href="/realtor-services" className="hover:text-[#c4a35a]">
+              Realtor services
+            </Link>
+            <Link href="/skye-canyon" className="hover:text-[#c4a35a]">
+              Skye Canyon
+            </Link>
+            <Link href="/communities/skyeview" className="hover:text-[#c4a35a]">
+              Terra homes
+            </Link>
+            <Link href="/for-buyers" className="hover:text-[#c4a35a]">
+              For buyers
+            </Link>
+            <Link href="/homebuying-process" className="hover:text-[#c4a35a]">
+              Process
+            </Link>
+          </nav>
         </div>
         <div className="overflow-hidden rounded-xl border border-white/10">
           <FooterMap />

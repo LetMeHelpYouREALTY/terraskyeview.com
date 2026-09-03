@@ -3,6 +3,8 @@ import { Home, Search, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function NotFound() {
   return (
@@ -10,14 +12,27 @@ export default function NotFound() {
       <div className="flex items-center justify-center px-4 py-16">
         <div className="max-w-2xl text-center">
           <div className="mb-8">
+            <HomebuyingKicker className="mb-4" />
             <h1 className="mb-4 text-9xl font-bold text-blue-600">404</h1>
             <h2 className="mb-4 text-4xl font-bold text-gray-900">
               Page Not Found
             </h2>
             <p className="mb-8 text-xl text-gray-600">
-              That page does not exist. Terra at Skyeview homes in Skye Canyon
-              still do. Call Dr. Jan Duffy at (702) 919-7292 before you tour.
+              Homebuying with Dr. Jan Duffy still starts at Terra at Skyeview,
+              8592 Vanhoy Creek Street, Las Vegas, NV 89166. Call (702) 919-7292
+              before you tour.
             </p>
+            <div className="mb-6 flex flex-wrap justify-center gap-3 text-sm">
+              <Link href="/map" className="underline">
+                89166 map
+              </Link>
+              <Link href="/realtor-services" className="underline">
+                Realtor services
+              </Link>
+              <Link href="/skye-canyon" className="underline">
+                Skye Canyon
+              </Link>
+            </div>
           </div>
 
           <div className="mb-8 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -55,6 +70,7 @@ export default function NotFound() {
       </div>
 
       <OfficeListingsBand />
+      <SiteFaq />
       <CalendlySection event="strategy" />
     </div>
   )

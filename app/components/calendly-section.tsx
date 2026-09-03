@@ -1,4 +1,5 @@
 import CalendlyEmbed from '@/app/components/calendly-embed'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import {
   CALENDLY_EVENTS,
   type CalendlyEvent,
@@ -39,14 +40,16 @@ export default function CalendlySection({
       className="border-y border-[#0b1c2c]/10 bg-[#f7f3eb] py-16"
     >
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <HomebuyingKicker className="text-center" />
         <h2
           id={`${sectionId}-heading`}
-          className="text-center font-serif text-3xl text-[#0b1c2c] md:text-4xl"
+          className="mt-2 text-center font-serif text-3xl text-[#0b1c2c] md:text-4xl"
         >
           {heading ?? meta.title}
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-[#0b1c2c]/70">
-          {description ?? meta.description} Or call{' '}
+          {description ?? meta.description} Homebuying with Dr. Jan Duffy. Or
+          call{' '}
           <a href="tel:702-919-7292" className="font-semibold underline">
             (702) 919-7292
           </a>

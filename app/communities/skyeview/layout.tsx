@@ -1,27 +1,20 @@
 import type { Metadata } from 'next'
-import { RealEstateListingStructuredData } from '@/app/components/structured-data'
+import {
+  BreadcrumbStructuredData,
+  RealEstateListingStructuredData,
+} from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Terra at Skyeview by Century Communities | New Homes Skye Canyon Las Vegas | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'Terra at Skyeview Homes | Skye Canyon Las Vegas NV 89166',
   description:
-    'Discover new two-story homes at Terra at Skyeview by Century Communities in Skye Canyon, Las Vegas. 3-5 bedroom homes from $479,990. Models open daily. Expert buyer representation from Dr. Jan Duffy at 702-919-7292.',
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview by Century Communities. Two-story homes from $479,990 in Skye Canyon. Call (702) 919-7292. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+  path: '/communities/skyeview',
+  image: '/og-image.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy at Terra at Skyeview, Skye Canyon, Las Vegas NV 89166',
   keywords:
-    'Terra at Skyeview, Century Communities, Las Vegas new homes, Skye Canyon, two-story homes, Northwest Las Vegas, Dr. Jan Duffy, buyer\'s agent, new construction',
-  openGraph: {
-    title: 'Terra at Skyeview by Century Communities | Skye Canyon Las Vegas',
-    description:
-      'New two-story homes from $479,990 in Skye Canyon master-planned community. Expert buyer representation from Dr. Jan Duffy.',
-    images: ['/og-skyeview.jpg'],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Terra at Skyeview by Century Communities',
-    description:
-      'Two-story homes from $479,990 in Skye Canyon, Las Vegas.',
-    images: ['/og-skyeview.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, Terra at Skyeview, Century Communities, Skye Canyon, Las Vegas NV 89166, new two-story homes',
+})
 
 export default function SkyeviewLayout({
   children,
@@ -31,8 +24,13 @@ export default function SkyeviewLayout({
   return (
     <>
       <RealEstateListingStructuredData />
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Terra at Skyeview', href: '/communities/skyeview' },
+        ]}
+      />
       {children}
     </>
   )
 }
-

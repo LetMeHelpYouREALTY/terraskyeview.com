@@ -15,8 +15,8 @@ const amenities = [
   },
   {
     icon: School,
-    title: 'Top-Rated Schools',
-    description: 'Quality education within the community',
+    title: 'Nearby schools',
+    description: 'Kenneth Divich Elementary, Escobedo Middle, and Arbor View High',
   },
   {
     icon: ShoppingBag,

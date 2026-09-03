@@ -6,6 +6,8 @@ import { Calendar, User, Tag, ArrowLeft, CheckCircle, Users, MapPin, Award, Shie
 import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function ShouldIUseRealtorArticle() {
   return (
@@ -72,12 +74,13 @@ export default function ShouldIUseRealtorArticle() {
               </span>
             </div>
 
+            <HomebuyingKicker className="mb-3" />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Should I Use a Realtor to Buy a Home in a Planned Community?
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Discover why having Dr. Jan Duffy as your buyer's agent at Terra at Skyeview by Century Communities ensures you get the best price, expert guidance, and exclusive benefits throughout your homebuying journey.
+              Homebuying with Dr. Jan Duffy at Terra at Skyeview by Century Communities: why buyers register a buyer&apos;s agent before touring Skye Canyon, Las Vegas NV 89166.
             </p>
           </div>
 
@@ -378,6 +381,8 @@ export default function ShouldIUseRealtorArticle() {
           </div>
         </div>
       </article>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

@@ -1,35 +1,48 @@
 import type { Metadata } from 'next'
+import {
+  ArticleStructuredData,
+  BreadcrumbStructuredData,
+} from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
+import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Should I Use a Realtor to Buy in a Planned Community? | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'Should I Use a Realtor in a Planned Community?',
   description:
-    'Discover why using Dr. Jan Duffy as your buyer\'s agent at Terra at Skyeview by Century Communities ensures the best price, expert negotiation, and $5,000 closing cost assistance. FREE to buyers!',
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview: why buyers register a buyer’s agent before touring Century Communities in Skye Canyon. Call (702) 919-7292.',
+  path: '/blog/should-i-use-realtor-planned-community',
+  image: '/images/blog-use-realtor.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon, Las Vegas',
   keywords:
-    'buyer\'s agent, Terra at Skyeview, Century Communities, realtor for new construction, Skye Canyon, Dr. Jan Duffy, planned community expert, Las Vegas realtor, best price negotiation',
-  alternates: {
-    canonical: 'https://www.terraskyeview.com/blog/should-i-use-realtor-planned-community',
-  },
-  openGraph: {
-    title: 'Should I Use a Realtor in a Planned Community? 5 Reasons Why',
-    description:
-      'Learn why Dr. Jan Duffy is the preferred buyer\'s agent at Skyeview. Get the best price and expert guidance at NO COST to you.',
-    images: ['/blog/buyers-agent.jpg'],
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Should I Use a Realtor in a Planned Community?',
-    description:
-      'Dr. Jan Duffy: Your preferred buyer\'s agent at Skyeview at Skye Canyon.',
-    images: ['/blog/buyers-agent.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, buyer agent planned community, Terra at Skyeview, Century Communities, Skye Canyon Las Vegas NV 89166',
+  type: 'article',
+})
 
 export default function ArticleLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <ArticleStructuredData
+        headline="Should I Use a Realtor to Buy a Home in a Planned Community?"
+        description="Homebuying with Dr. Jan Duffy at Terra at Skyeview: why buyers register a buyer’s agent before touring Century Communities in Skye Canyon."
+        url={`${SITE_URL}/blog/should-i-use-realtor-planned-community`}
+        image={`${SITE_URL}/images/blog-use-realtor.jpg`}
+        datePublished="2025-02-25"
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/blog' },
+          {
+            name: 'Should I Use a Realtor in a Planned Community?',
+            href: '/blog/should-i-use-realtor-planned-community',
+          },
+        ]}
+      />
+      {children}
+    </>
+  )
 }
-

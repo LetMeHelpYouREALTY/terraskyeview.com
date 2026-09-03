@@ -1,35 +1,45 @@
 import type { Metadata } from 'next'
+import {
+  ArticleStructuredData,
+  BreadcrumbStructuredData,
+} from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
+import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'What Are Closing Costs? Complete Guide for Homebuyers | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'What Are Closing Costs? Homebuyer Guide',
   description:
-    'Learn about closing costs when buying a home at Skyeview at Skye Canyon. Get up to $5,000 in assistance with preferred lenders. Expert guidance from Dr. Jan Duffy at 702-919-7292.',
+    'Homebuying with Dr. Jan Duffy: closing-cost guide for Terra at Skyeview in Skye Canyon, including up to $5,000 in lender assistance. Call (702) 919-7292.',
+  path: '/blog/what-are-closing-costs',
+  image: '/images/blog-closing-costs.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy closing-cost guide for Terra at Skyeview, Las Vegas',
   keywords:
-    'closing costs, homebuying costs, Las Vegas closing costs, mortgage fees, down payment, title insurance, Dr. Jan Duffy, Skye Canyon',
-  alternates: {
-    canonical: 'https://www.terraskyeview.com/blog/what-are-closing-costs',
-  },
-  openGraph: {
-    title: 'What Are Closing Costs? Complete Homebuyer Guide',
-    description:
-      'Understand closing costs and how to reduce them. Up to $5,000 assistance available with preferred lenders at Skyeview.',
-    images: ['/blog/closing-costs.jpg'],
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'What Are Closing Costs? Complete Guide',
-    description:
-      'Learn about closing costs and get up to $5,000 in assistance at Skyeview at Skye Canyon.',
-    images: ['/blog/closing-costs.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, closing costs Las Vegas, Terra at Skyeview, Skye Canyon, $5000 closing assistance',
+  type: 'article',
+})
 
 export default function ArticleLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <ArticleStructuredData
+        headline="What Are Closing Costs? Complete Homebuyer Guide"
+        description="Homebuying with Dr. Jan Duffy: closing-cost guide for Terra at Skyeview in Skye Canyon, including up to $5,000 in lender assistance."
+        url={`${SITE_URL}/blog/what-are-closing-costs`}
+        image={`${SITE_URL}/images/blog-closing-costs.jpg`}
+        datePublished="2025-01-20"
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/blog' },
+          { name: 'What Are Closing Costs?', href: '/blog/what-are-closing-costs' },
+        ]}
+      />
+      {children}
+    </>
+  )
 }
-

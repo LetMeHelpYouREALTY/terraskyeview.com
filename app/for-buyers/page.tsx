@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button'
 import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 const benefits = [
   {
@@ -129,19 +131,15 @@ export default function ForBuyersPage() {
           </div>
 
           <div className="max-w-3xl">
+            <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Everything You Need to Buy Your Dream Home
+              Homebuying with Dr. Jan Duffy
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-6">
-              From online browsing to expert representation, we make homebuying simple, 
-              transparent, and exciting at Terra at Skyeview by Century Communities.
+              Buyer representation, financing, and Century Communities registration at Terra at Skyeview in Skye Canyon, Las Vegas NV 89166.
             </p>
             <p className="text-lg text-blue-200 mb-8">
-              This comprehensive guide explains everything you need to know about buying a new construction 
-              home at Terra at Skyeview. Learn about the benefits of working with Dr. Jan Duffy as your 
-              buyer's agent, understand available financing options, and discover why having your own representation 
-              ensures you get the best price and terms. Century Communities is a top 10 national homebuilder, 
-              and with Dr. Jan in your corner, you'll have the expertise needed to navigate the process with confidence.
+              Homebuying with Dr. Jan Duffy starts with a call at (702) 919-7292 so she can register you before the first model-home visit. The on-site agent represents the builder. Dr. Jan represents you. Seller pays the commission. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -165,11 +163,12 @@ export default function ForBuyersPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Buy at Terra at Skyeview?
             </h2>
             <p className="text-xl text-gray-600">
-              Century Communities + Dr. Jan Duffy = The best homebuying experience
+              Homebuying with Dr. Jan Duffy plus Century Communities inventory in Skye Canyon.
             </p>
           </div>
 
@@ -197,14 +196,15 @@ export default function ForBuyersPage() {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Start Your Home Search Today
             </h2>
             <p className="text-xl text-gray-700 mb-2">
-              Browse available homes in Las Vegas and Skye Canyon
+              Homebuying with Dr. Jan Duffy: browse Las Vegas and Skye Canyon listings.
             </p>
             <p className="text-lg text-gray-600">
-              Let Dr. Jan Duffy guide you to your dream home with expert buyer representation
+              Call (702) 919-7292 before you tour 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
           </div>
           <RealScoutSearch />
@@ -215,11 +215,12 @@ export default function ForBuyersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Your Journey to Homeownership
             </h2>
             <p className="text-xl text-gray-600">
-              Three key steps to owning your dream home
+              Three steps for homebuying with Dr. Jan Duffy at Terra at Skyeview.
             </p>
           </div>
 
@@ -263,12 +264,12 @@ export default function ForBuyersPage() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heart className="w-20 h-20 mx-auto mb-6" />
+          <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Start Your Homebuying Journey?
+            Ready to Start Homebuying with Dr. Jan Duffy?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact Dr. Jan Duffy today to explore your options at Terra at Skyeview by Century Communities. 
-            Your dream home is waiting!
+            Call (702) 919-7292. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -289,6 +290,8 @@ export default function ForBuyersPage() {
           </div>
         </div>
       </section>
+
+      <SiteFaq />
 
       <CalendlySection event="consult" />
 

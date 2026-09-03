@@ -1,4 +1,5 @@
 import RealScoutOfficeListings from '@/app/components/realscout-office-listings'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
 
 export default function OfficeListingsBand() {
   return (
@@ -7,7 +8,8 @@ export default function OfficeListingsBand() {
       className="border-b border-[#0b1c2c]/10 bg-white py-12"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
+        <HomebuyingKicker />
+        <p className="mt-2 text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
           BHHS Nevada Properties
         </p>
         <h2
@@ -17,8 +19,9 @@ export default function OfficeListingsBand() {
           Current office listings
         </h2>
         <p className="mt-3 max-w-2xl text-[#0b1c2c]/70">
-          Homes listed through Dr. Jan Duffy&apos;s office. Call (702) 919-7292
-          before you tour so she can register you with the builder.
+          Homebuying with Dr. Jan Duffy starts with live office inventory. Call
+          (702) 919-7292 before you tour so she can register you with the
+          builder at 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
         </p>
         <div className="mt-8">
           <RealScoutOfficeListings />

@@ -6,6 +6,8 @@ import { Calendar, User, Tag, ArrowLeft, DollarSign, Shield, Calculator, Home } 
 import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function WhatAreClosingCostsArticle() {
   return (
@@ -72,13 +74,13 @@ export default function WhatAreClosingCostsArticle() {
               </span>
             </div>
 
+            <HomebuyingKicker className="mb-3" />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               What Are Closing Costs?
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Understanding closing costs and how to prepare for them is essential for every homebuyer. 
-              Learn what fees to expect and how working with Dr. Jan Duffy can help you navigate these expenses.
+              Homebuying with Dr. Jan Duffy includes a closing-cost review for Terra at Skyeview in Skye Canyon, Las Vegas NV 89166, including up to $5,000 in lender assistance on select homes.
             </p>
           </div>
 
@@ -387,6 +389,8 @@ export default function WhatAreClosingCostsArticle() {
           </div>
         </div>
       </article>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

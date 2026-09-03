@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button'
 import AgentPortrait from '@/app/components/agent-portrait'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 const processSteps = [
   {
@@ -184,15 +186,15 @@ export default function HomebuyingProcessPage() {
             <div className="flex items-center gap-3 mb-6">
               <Home className="w-12 h-12" />
               <div>
+                <HomebuyingKicker className="mb-1 text-[#c4a35a]" />
                 <p className="text-sm uppercase tracking-wider text-blue-200 mb-1">Step by Step</p>
                 <h1 className="text-5xl md:text-6xl font-bold">
-                  Explore the Homebuying Process
+                  Homebuying with Dr. Jan Duffy
                 </h1>
               </div>
             </div>
             <p className="text-xl md:text-2xl text-blue-100 mt-6">
-              Whether it's your first time buying a new home or you're in need of a refresher for the next home purchase, 
-              we're here to walk you through the process—ensuring that you'll be prepared and informed every step of the way.
+              Register, tour, contract, and close at Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas, NV 89166. Call (702) 919-7292 before the first visit.
             </p>
           </div>
         </div>
@@ -287,19 +289,15 @@ export default function HomebuyingProcessPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               How We Make It Easy
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
-              Work with Dr. Jan Duffy for expert guidance and personalized service throughout your 
-              entire homebuying journey at Terra at Skyeview by Century Communities.
+              Homebuying with Dr. Jan Duffy covers registration, tours, and contract review at Terra at Skyeview by Century Communities.
             </p>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Unlike working directly with the builder's agent, having Dr. Jan Duffy as your dedicated 
-              buyer's agent means you have someone who is contractually obligated to represent YOUR interests, 
-              not the builder's. She brings market expertise, negotiation skills, and access to preferred 
-              financing options that can save you thousands of dollars on your home purchase—all at no cost 
-              to you since the seller pays her commission.
+              The builder&apos;s agent represents Century Communities. Homebuying with Dr. Jan Duffy means she represents you on price, upgrades, and terms—at no cost to the buyer. Call (702) 919-7292. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
           </div>
 
@@ -347,17 +345,20 @@ export default function HomebuyingProcessPage() {
         </div>
       </section>
 
+      <SiteFaq />
+
       <CalendlySection event="consult" />
 
       {/* Resources Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Homebuyer Resources
             </h2>
             <p className="text-xl text-gray-600">
-              Explore our helpful guides and articles
+              Guides for homebuying with Dr. Jan Duffy at Terra at Skyeview.
             </p>
           </div>
 

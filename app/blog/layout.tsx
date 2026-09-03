@@ -1,29 +1,16 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'The Front Porch Blog | Las Vegas Real Estate Insights | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'Blog | Terra at Skyeview Las Vegas NV 89166',
   description:
-    'Expert advice on Las Vegas real estate, home buying tips, neighborhood guides, and market trends from Dr. Jan Duffy. Your trusted resource for Skye Canyon and Las Vegas homes.',
+    'Homebuying with Dr. Jan Duffy: Las Vegas new-construction guides for Terra at Skyeview and Skye Canyon. Call (702) 919-7292. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+  path: '/blog',
+  image: '/images/front-porch.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy blog for Terra at Skyeview in Las Vegas',
   keywords:
-    'Las Vegas real estate blog, home buying tips, Skye Canyon guide, Las Vegas market trends, Dr. Jan Duffy blog, real estate advice',
-  alternates: {
-    canonical: 'https://www.terraskyeview.com/blog',
-  },
-  openGraph: {
-    title: 'The Front Porch Blog | Las Vegas Real Estate Insights',
-    description:
-      'Expert advice on Las Vegas real estate, home buying tips, and neighborhood guides from Dr. Jan Duffy.',
-    images: ['/og-blog.jpg'],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'The Front Porch Blog | Las Vegas Real Estate Insights',
-    description:
-      'Expert advice on Las Vegas real estate and home buying from Dr. Jan Duffy.',
-    images: ['/og-blog.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, Las Vegas real estate blog, Terra at Skyeview, Skye Canyon, Century Communities',
+})
 
 export default function BlogLayout({
   children,
@@ -32,4 +19,3 @@ export default function BlogLayout({
 }) {
   return children
 }
-

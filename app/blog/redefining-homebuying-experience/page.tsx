@@ -6,6 +6,8 @@ import { Calendar, User, Tag, ArrowLeft, CheckCircle, Home, Shield, TrendingUp }
 import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function RedefinigHomebuyingArticle() {
   return (
@@ -72,12 +74,13 @@ export default function RedefinigHomebuyingArticle() {
               </span>
             </div>
 
+            <HomebuyingKicker className="mb-3" />
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              How We're Redefining the Homebuying Experience at Skyeview
+              How We&apos;re Redefining the Homebuying Experience at Skyeview
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Say goodbye to stress and bidding wars and find your perfect home with a modern, streamlined approach to buying new construction.
+              Homebuying with Dr. Jan Duffy at Terra at Skyeview: buyer representation for Century Communities new construction in Skye Canyon, Las Vegas NV 89166.
             </p>
           </div>
 
@@ -359,6 +362,8 @@ export default function RedefinigHomebuyingArticle() {
           </div>
         </div>
       </section>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

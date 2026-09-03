@@ -7,6 +7,8 @@ import RealScoutSearch from '@/app/components/realscout-search'
 import AgentPortrait from '@/app/components/agent-portrait'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 const testimonials = [
   {
@@ -74,6 +76,7 @@ export default function AboutDrJanetDuffyPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
+              <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
               <div className="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
                 Preferred Buyer's Agent at Terra at Skyeview
               </div>
@@ -81,7 +84,7 @@ export default function AboutDrJanetDuffyPage() {
                 Meet Dr. Jan Duffy
               </h1>
               <p className="text-2xl text-blue-100 mb-8">
-                Your advocate for getting the best price and deal on new construction homes at Terra at Skyeview by Century Communities
+                Homebuying with Dr. Jan Duffy means a buyer&apos;s advocate on price, upgrades, and contract terms at Terra at Skyeview by Century Communities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -120,11 +123,12 @@ export default function AboutDrJanetDuffyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Get to Know Dr. Jan Duffy
             </h2>
             <p className="text-xl text-gray-600">
-              Your trusted partner in navigating the new home buying process
+              Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon, Las Vegas NV 89166.
             </p>
           </div>
 
@@ -188,7 +192,7 @@ export default function AboutDrJanetDuffyPage() {
                 What is your favorite thing about Skye Canyon?
               </h3>
               <p className="text-gray-700 text-lg leading-relaxed">
-                The master-planned design! With 1,700 acres of parks, trails, recreation centers, and top-rated schools all within the community, Skye Canyon offers a lifestyle that's hard to beat in Las Vegas. The attention to creating a true sense of community with splash pads, sports courts, and gathering spaces makes it perfect for families. Plus, the location in Northwest Las Vegas provides easy access to the 215 Beltway while feeling like a peaceful retreat.
+                The master-planned design. Skye Canyon covers 1,700 acres of parks, trails, recreation centers, splash pads, sports courts, and gathering spaces. Nearby schools include Divich Elementary, Escobedo Middle, and Arbor View High. Northwest Las Vegas sits near the 215 Beltway. Homebuying with Dr. Jan Duffy covers Terra at Skyeview inside that community.
               </p>
             </div>
 
@@ -198,7 +202,7 @@ export default function AboutDrJanetDuffyPage() {
                 What is your favorite floor plan at Skyeview?
               </h3>
               <p className="text-gray-700 text-lg leading-relaxed">
-                <strong>The Residence 2119!</strong> This spacious home offers plenty of room with up to 5 bedrooms, 3 bathrooms, and a beautiful open living/dining/kitchen area. It's perfect for entertaining and growing families. The layout maximizes space efficiency while maintaining that open, airy feel that modern buyers love. And with the right upgrades that I can help you select, it becomes truly spectacular!
+                <strong>The Residence 2119.</strong> This plan offers up to 5 bedrooms, 3 bathrooms, and an open living, dining, and kitchen level at 2,119 square feet. Homebuying with Dr. Jan Duffy includes upgrade selection so you pay for what adds value, not what the model stages.
               </p>
             </div>
 
@@ -245,11 +249,12 @@ export default function AboutDrJanetDuffyPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Dr. Jan Duffy as Your Buyer's Agent?
             </h2>
             <p className="text-xl text-gray-600">
-              The difference between a good deal and a great deal
+              Homebuying with Dr. Jan Duffy is the difference between list price and a negotiated contract.
             </p>
           </div>
 
@@ -293,11 +298,12 @@ export default function AboutDrJanetDuffyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               What Clients Say
             </h2>
             <p className="text-xl text-gray-600">
-              Real reviews from real buyers who worked with Dr. Jan Duffy
+              Comments from buyers who used homebuying with Dr. Jan Duffy at Terra at Skyeview.
             </p>
           </div>
 
@@ -321,8 +327,9 @@ export default function AboutDrJanetDuffyPage() {
       {/* Value Proposition */}
       <section className="py-20 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
           <h2 className="text-4xl font-bold mb-8">
-            Here's What Dr. Jan Duffy Does For You
+            Here&apos;s What Homebuying with Dr. Jan Duffy Includes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -371,11 +378,12 @@ export default function AboutDrJanetDuffyPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl p-12 text-center">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Ready to Find Your Dream Home?
+              Start Homebuying with Dr. Jan Duffy
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Contact Dr. Jan Duffy today and let's get started on finding your perfect home at Skyeview at Skye Canyon. Remember: better pricing, expert guidance, and NO COST to you!
+              Call (702) 919-7292 before you tour Terra at Skyeview at 8592 Vanhoy Creek Street, Las Vegas, NV 89166. Homebuying with Dr. Jan Duffy is no cost to the buyer—the seller pays the commission.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -411,20 +419,23 @@ export default function AboutDrJanetDuffyPage() {
         </div>
       </section>
 
+      <SiteFaq />
+
       <CalendlySection event="strategy" />
 
       {/* Advanced Property Search Widget */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Let's Find Your Perfect Home Together
+              Search Homes for Homebuying with Dr. Jan Duffy
             </h2>
             <p className="text-xl text-gray-700 mb-2">
-              Search available properties with Dr. Jan's expert guidance
+              Compare Terra at Skyeview inventory with buyer representation.
             </p>
             <p className="text-lg text-gray-600">
-              Get started now and benefit from exclusive buyer representation
+              8592 Vanhoy Creek Street, Las Vegas, NV 89166 · (702) 919-7292
             </p>
           </div>
           <RealScoutSearch />

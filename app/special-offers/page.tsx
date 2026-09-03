@@ -5,6 +5,8 @@ import { Heart, Home, DollarSign, TrendingDown, Calendar, Shield, CheckCircle, A
 import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 const loanOptions = [
   {
@@ -122,6 +124,7 @@ export default function SpecialOffersPage() {
           </div>
 
           <div className="text-center max-w-4xl mx-auto">
+            <HomebuyingKicker className="mb-4 text-[#c4a35a]" />
             <div className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
               <TrendingDown className="w-4 h-4" />
               LIMITED TIME OFFER
@@ -132,7 +135,7 @@ export default function SpecialOffersPage() {
             </h1>
             
             <p className="text-2xl text-blue-100 mb-4">
-              At Terra Skyeview, we believe a home should be more than just walls and windows.
+              Homebuying with Dr. Jan Duffy at Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
             
             <p className="text-xl text-blue-200 mb-12">
@@ -164,8 +167,9 @@ export default function SpecialOffersPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Let's get you started with a
+              Let&apos;s get you started with a
             </h2>
             <div className="inline-block bg-blue-600 text-white px-8 py-4 rounded-2xl mb-6">
               <p className="text-5xl md:text-6xl font-bold">30-YEAR FIXED-RATE LOAN</p>
@@ -220,18 +224,15 @@ export default function SpecialOffersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Save Big and Achieve Your Dream Home Goals!
+              Save on a Terra at Skyeview Contract
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
-              At Terra at Skyeview by Century Communities, we've partnered with preferred lenders to 
-              bring you exceptional financing opportunities that make homeownership more affordable than ever.
+              Homebuying with Dr. Jan Duffy includes preferred-lender rates at Terra at Skyeview by Century Communities.
             </p>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Work with Dr. Jan Duffy to access these exclusive benefits and ensure you're getting the 
-              absolute best deal available. As your buyer's agent, she'll connect you with lenders offering 
-              the most competitive rates and maximum closing cost assistance—benefits you might miss if you 
-              work only with the builder's representative.
+              Call (702) 919-7292 before you tour so she can register you and review which credits apply. Model home: 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
           </div>
 
@@ -266,15 +267,13 @@ export default function SpecialOffersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Start Your New Home Journey Today
+              Start Homebuying with Dr. Jan Duffy
             </h2>
-            <p className="text-xl text-gray-700 mb-6">In just three easy steps with expert guidance</p>
+            <p className="text-xl text-gray-700 mb-6">Three steps. Call (702) 919-7292 first.</p>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              The homebuying process at Terra at Skyeview has been streamlined to make your experience 
-              as smooth as possible. When you work with Dr. Jan Duffy, you'll have expert representation 
-              at every stage, ensuring you don't miss any opportunities for savings or incentives. Here's 
-              how the process works from start to finish.
+              Homebuying with Dr. Jan Duffy at Terra at Skyeview starts with builder registration, then tours and contract. She represents you, not Century Communities.
             </p>
           </div>
 
@@ -310,11 +309,12 @@ export default function SpecialOffersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Home className="w-20 h-20 mx-auto mb-6" />
+            <HomebuyingKicker className="mb-3 text-[#c4a35a]" />
             <h2 className="text-4xl font-bold mb-6">
-              Ready to Find Your Dream Home?
+              Ready to Find Your Terra at Skyeview Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Explore available homes at Skyeview at Skye Canyon — they won't last long!
+              Homebuying with Dr. Jan Duffy. Call (702) 919-7292. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -336,8 +336,9 @@ export default function SpecialOffersPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            <HomebuyingKicker className="mb-2" />
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Why Work with Dr. Jan Duffy for Special Offers?
+              Why Homebuying with Dr. Jan Duffy Unlocks These Offers
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -414,6 +415,8 @@ export default function SpecialOffersPage() {
           </div>
         </div>
       </section>
+
+      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

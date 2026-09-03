@@ -6,6 +6,9 @@ import Link from 'next/link'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/communities/skyeview', label: 'Available Homes' },
+  { href: '/map', label: 'Map · 89166' },
+  { href: '/skye-canyon', label: 'Skye Canyon' },
+  { href: '/realtor-services', label: 'Realtor Services' },
   { href: '/about-dr-janet-duffy', label: 'About Dr. Jan Duffy' },
   { href: '/special-offers', label: 'Special Offers' },
   { href: '/homebuying-process', label: 'Homebuying Process' },

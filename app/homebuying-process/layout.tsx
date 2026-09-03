@@ -1,32 +1,32 @@
 import type { Metadata } from 'next'
+import { BreadcrumbStructuredData } from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Homebuying Process Guide | Step-by-Step Guide | Dr. Jan Duffy',
+export const metadata: Metadata = pageMetadata({
+  title: 'Homebuying Process | Terra at Skyeview Las Vegas NV 89166',
   description:
-    'Learn the complete homebuying process from prequalification to closing. Expert guidance from Dr. Jan Duffy for buying your new home at Skyeview at Skye Canyon in Las Vegas.',
+    'Homebuying with Dr. Jan Duffy from registration through closing at Terra at Skyeview in Skye Canyon. Call (702) 919-7292 before you tour. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+  path: '/homebuying-process',
+  image: '/images/homebuying.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy process at Terra at Skyeview in Skye Canyon',
   keywords:
-    'homebuying process, how to buy a home, Las Vegas home buying, prequalification, house hunting, home contract, closing process, Dr. Jan Duffy',
-  openGraph: {
-    title: 'Homebuying Process Guide | Dr. Jan Duffy',
-    description:
-      'Step-by-step guide to buying your dream home in Las Vegas. Expert guidance from prequalification to closing.',
-    images: ['/og-process.jpg'],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Homebuying Process Guide | Dr. Jan Duffy',
-    description:
-      'Step-by-step guide to buying your dream home in Las Vegas.',
-    images: ['/og-process.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, homebuying process Las Vegas, Terra at Skyeview, Skye Canyon, Century Communities, NV 89166',
+})
 
 export default function HomebuyingProcessLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Homebuying Process', href: '/homebuying-process' },
+        ]}
+      />
+      {children}
+    </>
+  )
 }
-

@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button'
 import MobileMenu from '@/app/components/mobile-menu'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
+import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import SiteFaq from '@/app/components/site-faq'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -43,8 +45,9 @@ export default function PrivacyPolicyPage() {
 
       {/* Privacy Policy Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <HomebuyingKicker />
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-        <p className="text-gray-600 mb-8">Effective Date: January 10, 2025 | Last Updated: January 10, 2025</p>
+        <p className="text-gray-600 mb-8">Effective Date: January 10, 2025 | Last Updated: January 10, 2025. Homebuying with Dr. Jan Duffy at Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas, NV 89166.</p>
 
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}
@@ -316,6 +319,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <CalendlySection event="strategy" />
+        <SiteFaq />
 
         {/* Back Button */}
         <div className="mt-12 text-center">

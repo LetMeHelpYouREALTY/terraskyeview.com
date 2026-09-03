@@ -1,35 +1,48 @@
 import type { Metadata } from 'next'
+import {
+  ArticleStructuredData,
+  BreadcrumbStructuredData,
+} from '@/app/components/structured-data'
+import { pageMetadata } from '@/lib/seo'
+import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'How We\'re Redefining the Homebuying Experience | Terra Skyeview Blog',
+export const metadata: Metadata = pageMetadata({
+  title: 'Redefining Homebuying at Terra at Skyeview',
   description:
-    'Discover the modern approach to buying new construction at Skyeview at Skye Canyon. Browse online, streamlined process, and expert guidance from Dr. Jan Duffy. Say goodbye to bidding wars.',
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview: how buyer representation works for Century Communities new construction in Skye Canyon. Call (702) 919-7292.',
+  path: '/blog/redefining-homebuying-experience',
+  image: '/images/blog-redefining.jpg',
+  imageAlt: 'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon, Las Vegas',
   keywords:
-    'homebuying experience, online home shopping, new construction Las Vegas, streamlined homebuying, Dr. Jan Duffy, Skye Canyon homes',
-  alternates: {
-    canonical: 'https://www.terraskyeview.com/blog/redefining-homebuying-experience',
-  },
-  openGraph: {
-    title: 'How We\'re Redefining the Homebuying Experience at Skyeview',
-    description:
-      'Say goodbye to stress and bidding wars. Discover a modern, streamlined approach to buying new construction in Las Vegas.',
-    images: ['/blog/redefining-experience.jpg'],
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'How We\'re Redefining the Homebuying Experience',
-    description:
-      'Modern approach to buying new construction at Skyeview at Skye Canyon.',
-    images: ['/blog/redefining-experience.jpg'],
-  },
-}
+    'homebuying with Dr. Jan Duffy, redefining homebuying, Terra at Skyeview, Skye Canyon, Century Communities Las Vegas NV 89166',
+  type: 'article',
+})
 
 export default function ArticleLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <>
+      <ArticleStructuredData
+        headline="How We're Redefining the Homebuying Experience at Skyeview"
+        description="Homebuying with Dr. Jan Duffy at Terra at Skyeview: how buyer representation works for Century Communities new construction in Skye Canyon."
+        url={`${SITE_URL}/blog/redefining-homebuying-experience`}
+        image={`${SITE_URL}/images/blog-redefining.jpg`}
+        datePublished="2025-01-15"
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/blog' },
+          {
+            name: 'Redefining the Homebuying Experience',
+            href: '/blog/redefining-homebuying-experience',
+          },
+        ]}
+      />
+      {children}
+    </>
+  )
 }
-
