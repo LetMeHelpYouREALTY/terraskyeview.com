@@ -8,6 +8,7 @@ import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import SiteFaq from '@/app/components/site-faq'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import NearbyAmenitiesSection from '@/app/components/nearby-amenities-section'
 import { BreadcrumbStructuredData } from '@/app/components/structured-data'
 import { mediaUrl } from '@/lib/media'
 
@@ -275,6 +276,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection compact />
 
       <section className="border-y border-[#0b1c2c]/10 bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

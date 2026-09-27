@@ -65,6 +65,9 @@ export default function SiteFooter() {
             <Link href="/map" className="hover:text-[#c4a35a]">
               89166 map
             </Link>
+            <Link href="/amenities" className="hover:text-[#c4a35a]">
+              Nearby amenities
+            </Link>
             <Link href="/realtor-services" className="hover:text-[#c4a35a]">
               Realtor services
             </Link>
