@@ -8,6 +8,7 @@ import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import SiteFaq from '@/app/components/site-faq'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
+import { BreadcrumbStructuredData } from '@/app/components/structured-data'
 import { mediaUrl } from '@/lib/media'
 
 const residences = [
@@ -76,6 +77,7 @@ const interiors = [
 export default function HomePage() {
   return (
     <div className="min-h-dvh bg-[#f7f3eb] text-[#0b1c2c]">
+      <BreadcrumbStructuredData items={[{ name: 'Home', href: '/' }]} />
       <SiteHeader current="home" />
 
       <section className="relative isolate min-h-[88vh] overflow-hidden">
