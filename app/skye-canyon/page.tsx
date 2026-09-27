@@ -8,6 +8,7 @@ import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import { LANDMARKS } from '@/lib/places'
 import { mediaUrl } from '@/lib/media'
+import NearbyAmenitiesSection from '@/app/components/nearby-amenities-section'
 
 const CANYON_FAQS = [
   {
@@ -105,6 +106,11 @@ export default function SkyeCanyonPage() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection
+        heading="What's nearby in Skye Canyon"
+        compact
+      />
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

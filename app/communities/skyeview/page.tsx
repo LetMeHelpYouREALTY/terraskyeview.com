@@ -14,6 +14,7 @@ import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import SiteFaq from '@/app/components/site-faq'
+import NearbyAmenitiesSection from '@/app/components/nearby-amenities-section'
 
 export default function SkyeviewPage() {
   return (
@@ -185,6 +186,8 @@ export default function SkyeviewPage() {
           <AreaInformation />
         </div>
       </section>
+
+      <NearbyAmenitiesSection heading="What's nearby Terra at Skyeview" compact />
 
       {/* Similar Communities */}
       <section className="py-16 bg-white">

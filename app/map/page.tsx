@@ -6,6 +6,7 @@ import SiteFaq from '@/app/components/site-faq'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import ModelHomeMap from '@/app/components/model-home-map'
+import NearbyAmenitiesSection from '@/app/components/nearby-amenities-section'
 import { LANDMARKS, ACCESS_NOTES, MAPS_DIRECTIONS, MAPS_PLACE } from '@/lib/places'
 
 const MAP_FAQS = [
@@ -96,6 +97,12 @@ export default function MapPage() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection
+        variant="light"
+        heading="What's nearby from this pin"
+        compact
+      />
 
       <section className="border-y border-[#0b1c2c]/10 bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

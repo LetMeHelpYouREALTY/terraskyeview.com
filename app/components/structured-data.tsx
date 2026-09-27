@@ -11,6 +11,7 @@ import {
   SITE_SERVICE,
   SITE_URL,
 } from '@/lib/site'
+import { COMMUNITY_NAME, CURATED_PLACES } from '@/lib/amenities'
 
 const NAP_ADDRESS = {
   '@type': 'PostalAddress',
@@ -51,6 +52,7 @@ export function SiteGraphStructuredData() {
           { '@type': 'City', name: 'Las Vegas' },
           { '@type': 'City', name: 'North Las Vegas' },
           { '@type': 'Place', name: 'Skye Canyon' },
+          { '@type': 'Place', name: COMMUNITY_NAME },
           { '@type': 'PostalAddress', postalCode: '89166', addressLocality: 'Las Vegas', addressRegion: 'NV' },
         ],
         knowsAbout: [
@@ -281,6 +283,66 @@ export function PlaceStructuredData() {
         addressCountry: 'US',
       },
     },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
+export function AmenitiesPlaceStructuredData() {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    '@id': `${SITE_URL}/amenities#community`,
+    name: `${COMMUNITY_NAME} | Skye Canyon`,
+    description:
+      'Century Communities new homes at Terra at Skyeview in Skye Canyon, northwest Las Vegas NV 89166.',
+    url: `${SITE_URL}/amenities`,
+    address: NAP_ADDRESS,
+    geo: {
+      '@type': 'GeoCoordinates',
+      ...SITE_GEO,
+    },
+    containedInPlace: {
+      '@type': 'Place',
+      name: 'Skye Canyon',
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
+export function AmenitiesItemListStructuredData() {
+  const items = CURATED_PLACES.filter((p) => p.name !== COMMUNITY_NAME)
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `Nearby amenities near ${COMMUNITY_NAME}`,
+    itemListElement: items.map((place, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': place.schemaType,
+        name: place.name,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: place.address,
+          addressLocality: SITE_ADDRESS.addressLocality,
+          addressRegion: SITE_ADDRESS.addressRegion,
+          postalCode: SITE_ADDRESS.postalCode,
+          addressCountry: SITE_ADDRESS.addressCountry,
+        },
+      },
+    })),
   }
 
   return (

@@ -7,6 +7,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/communities/skyeview', label: 'Available Homes' },
   { href: '/map', label: 'Map · 89166' },
+  { href: '/amenities', label: 'Nearby Amenities' },
   { href: '/skye-canyon', label: 'Skye Canyon' },
   { href: '/realtor-services', label: 'Realtor Services' },
   { href: '/about-dr-janet-duffy', label: 'About Dr. Jan Duffy' },
