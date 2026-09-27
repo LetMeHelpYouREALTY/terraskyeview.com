@@ -11,7 +11,11 @@ import {
   SITE_SERVICE,
   SITE_URL,
 } from '@/lib/site'
-import { COMMUNITY_NAME, CURATED_PLACES } from '@/lib/amenities'
+import {
+  COMMUNITY_NAME,
+  CURATED_PLACES,
+  parseVerifiedAddressLine,
+} from '@/lib/amenities'
 
 const NAP_ADDRESS = {
   '@type': 'PostalAddress',
@@ -327,22 +331,32 @@ export function AmenitiesItemListStructuredData() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: `Nearby amenities near ${COMMUNITY_NAME}`,
-    itemListElement: items.map((place, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': place.schemaType,
-        name: place.name,
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: place.address,
-          addressLocality: SITE_ADDRESS.addressLocality,
-          addressRegion: SITE_ADDRESS.addressRegion,
-          postalCode: SITE_ADDRESS.postalCode,
-          addressCountry: SITE_ADDRESS.addressCountry,
+    itemListElement: items.map((place, index) => {
+      const parsed = place.address
+        ? parseVerifiedAddressLine(place.address)
+        : null
+      return {
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': place.schemaType,
+          name: place.name,
+          url: place.sourceUrl,
+          ...(parsed
+            ? {
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: parsed.streetAddress,
+                  addressLocality: parsed.addressLocality,
+                  addressRegion: parsed.addressRegion,
+                  postalCode: parsed.postalCode,
+                  addressCountry: SITE_ADDRESS.addressCountry,
+                },
+              }
+            : {}),
         },
-      },
-    })),
+      }
+    }),
   }
 
   return (

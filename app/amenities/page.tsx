@@ -25,7 +25,7 @@ const WRITTEN_SECTIONS = [
   {
     id: 'dining',
     title: 'Dining near Terra at Skyeview',
-    body: `Northwest Las Vegas ZIP 89166 clusters casual dining along Skye Canyon Park Drive and the Skye Canyon Marketplace corridor. Names already used on this site for the Terra at Skyeview area include Buffalo Wild Wings, Baby Stacks Cafe, Cafe Rio, Michocan Mexican, and Thai Spoon — plus Starbucks for coffee runs. Homebuying with Dr. Jan Duffy includes comparing your lot to these everyday meal stops, not guessing from a brochure.`,
+    body: `Northwest Las Vegas ZIP 89166 clusters casual dining along Skye Canyon Park Drive and the Skye Canyon Marketplace corridor. Use the Restaurants and Cafes map filters for current options near 8592 Vanhoy Creek Street, then compare drive routes to your preferred floor plan with Dr. Jan Duffy.`,
   },
   {
     id: 'parks',
@@ -35,12 +35,12 @@ const WRITTEN_SECTIONS = [
   {
     id: 'grocery',
     title: 'Grocery and errands',
-    body: `Smith's Food & Drug at Skye Canyon Marketplace (9700 W Skye Canyon Park Drive) is the anchor grocery with pharmacy access on the same corridor. Sprouts Farmers Market, Montecito Marketplace, Lowe's, and other retail names appear in the Terra at Skyeview area information on this site — all within northwest Las Vegas 89166.`,
+    body: `Smith's Food & Drug at Skye Canyon Marketplace (9710 W Skye Canyon Park Drive, verified on Smith's store locator) is the anchor grocery with pharmacy access on the same corridor. Montecito Marketplace and other retail names appear in the Terra at Skyeview area information on this site within northwest Las Vegas 89166.`,
   },
   {
     id: 'golf',
     title: 'Golf and outdoor clubs',
-    body: `Skye Canyon is not a golf-course village, but northwest Las Vegas and Summerlin host multiple public and private courses within a wider valley drive. Use the map’s Golf filter with a Google Maps API key to see current courses by distance from 8592 Vanhoy Creek Street; Dr. Jan Duffy can pair map results with your commute preferences during buyer consults.`,
+    body: `Skye Canyon is not a golf-course village, but northwest Las Vegas and Summerlin host multiple public and private courses within a wider valley drive. Use the map’s Golf filter to see current courses by distance from 8592 Vanhoy Creek Street; Dr. Jan Duffy can pair those results with your commute preferences during buyer consults.`,
   },
   {
     id: 'healthcare',
@@ -97,10 +97,9 @@ export default function AmenitiesPage() {
           </h2>
           <p className="mt-3 max-w-2xl text-[#0b1c2c]/70">
             Filter restaurants, grocery, parks, healthcare, fitness, schools, and
-            more around the Terra at Skyeview model pin. Set{' '}
-            <code className="text-sm">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> in
-            Vercel for live Google Places results; without it, you still get the
-            embedded map and curated list below.
+            more around the Terra at Skyeview model pin. When live search is
+            unavailable, the map shows featured places near {COMMUNITY_NAME} with
+            a keyless embed and curated list.
           </p>
           <div className="mt-8">
             <NearbyAmenityMap height={520} />
@@ -138,8 +137,8 @@ export default function AmenitiesPage() {
             Featured places on this map
           </h2>
           <p className="mt-3 max-w-2xl text-[#0b1c2c]/70">
-            Verified names and addresses reused from this site’s map and community
-            pages (not invented ratings or drive times).
+            Featured places near {COMMUNITY_NAME} — each linked to a primary source
+            (Skye Canyon, CCSD schools, hospital, or grocer).
           </p>
           <ul className="mt-8 grid gap-4 md:grid-cols-2">
             {CURATED_PLACES.filter((p) => p.name !== COMMUNITY_NAME).map(
@@ -149,7 +148,19 @@ export default function AmenitiesPage() {
                   className="rounded-xl border border-[#0b1c2c]/10 bg-white p-4 text-sm"
                 >
                   <p className="font-semibold">{place.name}</p>
-                  <p className="mt-1 text-[#0b1c2c]/70">{place.address}</p>
+                  {place.address ? (
+                    <p className="mt-1 text-[#0b1c2c]/70">{place.address}</p>
+                  ) : null}
+                  <p className="mt-2">
+                    <a
+                      href={place.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#0b1c2c] underline"
+                    >
+                      Primary source
+                    </a>
+                  </p>
                   {place.note ? (
                     <p className="mt-2 text-[#0b1c2c]/60">{place.note}</p>
                   ) : null}

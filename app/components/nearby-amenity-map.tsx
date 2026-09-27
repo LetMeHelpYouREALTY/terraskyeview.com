@@ -3,18 +3,20 @@
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import {
   AMENITY_CATEGORIES,
-  AMENITIES_MAP_EMBED,
   COMMUNITY_CENTER,
   COMMUNITY_NAME,
   type AmenityCategoryId,
   curatedPlacesForCategory,
   getCategoryById,
 } from '@/lib/amenities'
+import { searchCategory } from '@/lib/amenity-places-search'
 import {
   directionsUrlForAddress,
   getGoogleMapsApiKey,
   getGoogleMapsMapId,
-  loadGoogleMapsApi,
+  keylessMapEmbedUrl,
+  loadGoogleMaps,
+  mapsAuthFailed,
 } from '@/lib/google-maps-loader'
 import { SITE_ADDRESS } from '@/lib/site'
 
@@ -43,14 +45,13 @@ type MapPlace = {
   id: string
   name: string
   address: string
-  rating?: number
   lat: number
   lng: number
   isCommunity?: boolean
+  mapsUri?: string
 }
 
 const DEFAULT_CATEGORY: AmenityCategoryId = 'grocery'
-const SEARCH_RADIUS_METERS = 8000
 
 function useInView(rootMargin = '200px') {
   const ref = useRef<HTMLDivElement>(null)
@@ -76,13 +77,15 @@ function useInView(rootMargin = '200px') {
   return { ref, inView }
 }
 
-function curatedToMapPlaces(categoryId: AmenityCategoryId): MapPlace[] {
-  const communityAddress = `${SITE_ADDRESS.streetAddress}, ${SITE_ADDRESS.addressLocality}, ${SITE_ADDRESS.addressRegion} ${SITE_ADDRESS.postalCode}`
+function communityAddressLine(): string {
+  return `${SITE_ADDRESS.streetAddress}, ${SITE_ADDRESS.addressLocality}, ${SITE_ADDRESS.addressRegion} ${SITE_ADDRESS.postalCode}`
+}
 
+function curatedToMapPlaces(categoryId: AmenityCategoryId): MapPlace[] {
   const community: MapPlace = {
     id: 'community',
     name: COMMUNITY_NAME,
-    address: communityAddress,
+    address: communityAddressLine(),
     lat: COMMUNITY_CENTER.latitude,
     lng: COMMUNITY_CENTER.longitude,
     isCommunity: true,
@@ -91,12 +94,48 @@ function curatedToMapPlaces(categoryId: AmenityCategoryId): MapPlace[] {
   const curated = curatedPlacesForCategory(categoryId).map((place, index) => ({
     id: `curated-${categoryId}-${index}`,
     name: place.name,
-    address: place.address,
+    address: place.address ?? `${SITE_ADDRESS.addressLocality}, ${SITE_ADDRESS.addressRegion} ${SITE_ADDRESS.postalCode}`,
     lat: COMMUNITY_CENTER.latitude,
     lng: COMMUNITY_CENTER.longitude,
   }))
 
   return [community, ...curated]
+}
+
+function buildInfoWindowElement(place: MapPlace): HTMLElement {
+  const root = document.createElement('div')
+  root.style.maxWidth = '240px'
+  root.style.fontFamily = 'system-ui, sans-serif'
+
+  const title = document.createElement('strong')
+  title.textContent = place.name
+  root.appendChild(title)
+
+  if (place.isCommunity) {
+    const tag = document.createElement('p')
+    tag.style.margin = '4px 0'
+    tag.style.fontSize = '12px'
+    tag.style.color = '#6b7280'
+    tag.textContent = 'Your community'
+    root.appendChild(tag)
+  }
+
+  const addr = document.createElement('p')
+  addr.style.margin = '4px 0'
+  addr.style.fontSize = '13px'
+  addr.textContent = place.address
+  root.appendChild(addr)
+
+  const link = document.createElement('a')
+  link.href = place.mapsUri ?? directionsUrlForAddress(place.address)
+  link.target = '_blank'
+  link.rel = 'noopener noreferrer'
+  link.style.fontSize = '13px'
+  link.style.color = '#2563eb'
+  link.textContent = 'Directions'
+  root.appendChild(link)
+
+  return root
 }
 
 export default function NearbyAmenityMap({
@@ -116,12 +155,27 @@ export default function NearbyAmenityMap({
   const [listPlaces, setListPlaces] = useState<MapPlace[]>(() =>
     curatedToMapPlaces(defaultCategory),
   )
-  const [statusMessage, setStatusMessage] = useState<string | null>(null)
   const filtersId = useId()
 
+  const embedUrl = keylessMapEmbedUrl(
+    COMMUNITY_CENTER.latitude,
+    COMMUNITY_CENTER.longitude,
+  )
+
+  const enterFallback = useCallback((categoryId: AmenityCategoryId) => {
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current = null
+    }
+    clearMarkersRef(markersRef)
+    if (mapContainerRef.current) {
+      mapContainerRef.current.replaceChildren()
+    }
+    setUseFallback(true)
+    setListPlaces(curatedToMapPlaces(categoryId))
+  }, [])
+
   const clearMarkers = useCallback(() => {
-    markersRef.current.forEach((m) => m.setMap(null))
-    markersRef.current = []
+    clearMarkersRef(markersRef)
   }, [])
 
   const renderMarkers = useCallback(
@@ -148,23 +202,8 @@ export default function NearbyAmenityMap({
           zIndex: place.isCommunity ? 1000 : 1,
         })
 
-        const ratingLine =
-          place.rating != null
-            ? `<p style="margin:4px 0;font-size:13px">Rating: ${place.rating.toFixed(1)}</p>`
-            : ''
-
-        const content = `
-          <div style="max-width:240px;font-family:system-ui,sans-serif">
-            <strong>${place.name}</strong>
-            ${place.isCommunity ? '<p style="margin:4px 0;font-size:12px;color:#6b7280">Your community</p>' : ''}
-            ${ratingLine}
-            <p style="margin:4px 0;font-size:13px">${place.address}</p>
-            <a href="${directionsUrlForAddress(place.address)}" target="_blank" rel="noopener noreferrer" style="font-size:13px;color:#2563eb">Directions</a>
-          </div>
-        `
-
         marker.addListener('click', () => {
-          infoWindow.setContent(content)
+          infoWindow.setContent(buildInfoWindowElement(place))
           infoWindow.open({ map, anchor: marker })
         })
 
@@ -184,123 +223,110 @@ export default function NearbyAmenityMap({
     [clearMarkers],
   )
 
-  const fetchPlacesForCategory = useCallback(
-    async (categoryId: AmenityCategoryId): Promise<MapPlace[]> => {
-      const apiKey = getGoogleMapsApiKey()
-      if (!apiKey) {
-        throw new Error('missing key')
-      }
-
-      await loadGoogleMapsApi(apiKey)
-      const mapsLib = (await google.maps.importLibrary(
-        'maps',
-      )) as google.maps.MapsLibrary
-      const placesLib = (await google.maps.importLibrary(
-        'places',
-      )) as google.maps.PlacesLibrary
-
-      if (!mapInstanceRef.current && mapContainerRef.current) {
-        const mapId = getGoogleMapsMapId()
-        mapInstanceRef.current = new mapsLib.Map(mapContainerRef.current, {
-          center: {
-            lat: COMMUNITY_CENTER.latitude,
-            lng: COMMUNITY_CENTER.longitude,
-          },
-          zoom: 14,
-          mapId: mapId || undefined,
-          mapTypeControl: false,
-          streetViewControl: false,
-          fullscreenControl: true,
-        })
-      }
-
-      const category = getCategoryById(categoryId)
-      const { Place } = placesLib
-
-      const request = {
-        fields: [
-          'displayName',
-          'location',
-          'formattedAddress',
-          'rating',
-          'id',
-        ],
-        locationRestriction: {
-          center: {
-            lat: COMMUNITY_CENTER.latitude,
-            lng: COMMUNITY_CENTER.longitude,
-          },
-          radius: SEARCH_RADIUS_METERS,
+  const ensureMap = useCallback(async () => {
+    const mapsLib = (await google.maps.importLibrary(
+      'maps',
+    )) as google.maps.MapsLibrary
+    if (!mapInstanceRef.current && mapContainerRef.current) {
+      const mapId = getGoogleMapsMapId()
+      mapInstanceRef.current = new mapsLib.Map(mapContainerRef.current, {
+        center: {
+          lat: COMMUNITY_CENTER.latitude,
+          lng: COMMUNITY_CENTER.longitude,
         },
-        includedPrimaryTypes: category.googlePrimaryTypes,
-        maxResultCount: 15,
-      }
+        zoom: 14,
+        mapId: mapId || undefined,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: true,
+      })
+    }
+    return mapInstanceRef.current
+  }, [])
 
-      const { places } = await Place.searchNearby(request)
-
-      const communityAddress = `${SITE_ADDRESS.streetAddress}, ${SITE_ADDRESS.addressLocality}, ${SITE_ADDRESS.addressRegion} ${SITE_ADDRESS.postalCode}`
-
+  const loadCategoryPlaces = useCallback(
+    async (categoryId: AmenityCategoryId): Promise<MapPlace[]> => {
       const community: MapPlace = {
         id: 'community',
         name: COMMUNITY_NAME,
-        address: communityAddress,
+        address: communityAddressLine(),
         lat: COMMUNITY_CENTER.latitude,
         lng: COMMUNITY_CENTER.longitude,
         isCommunity: true,
       }
 
-      const nearby = (places ?? []).flatMap((place, index) => {
-        const loc = place.location
-        if (!loc) return []
-        const item: MapPlace = {
-          id: place.id ?? `place-${index}`,
-          name: placeDisplayName(place.displayName),
-          address: place.formattedAddress ?? '',
-          rating: place.rating ?? undefined,
-          lat: loc.lat(),
-          lng: loc.lng(),
-        }
-        return [item]
-      })
+      const center = {
+        lat: COMMUNITY_CENTER.latitude,
+        lng: COMMUNITY_CENTER.longitude,
+      }
 
-      return [community, ...nearby]
+      try {
+        const places = await searchCategory(center, categoryId)
+        const nearby = places.flatMap((place, index) => {
+          const loc = place.location
+          if (!loc) return []
+          const json = loc.toJSON()
+          const item: MapPlace = {
+            id: place.id ?? `place-${index}`,
+            name: placeDisplayName(place.displayName),
+            address: place.formattedAddress ?? '',
+            lat: json.lat,
+            lng: json.lng,
+            mapsUri: place.googleMapsURI ?? undefined,
+          }
+          return [item]
+        })
+        return [community, ...nearby]
+      } catch {
+        return curatedToMapPlaces(categoryId)
+      }
     },
     [],
   )
 
   useEffect(() => {
+    const onAuthFailure = () => {
+      enterFallback(activeCategory)
+    }
+    window.addEventListener('gmaps:auth-failure', onAuthFailure)
+    return () => window.removeEventListener('gmaps:auth-failure', onAuthFailure)
+  }, [activeCategory, enterFallback])
+
+  useEffect(() => {
     if (!inView) return
+
+    if (mapsAuthFailed) {
+      enterFallback(activeCategory)
+      return
+    }
 
     const apiKey = getGoogleMapsApiKey()
     if (!apiKey) {
-      setUseFallback(true)
-      setListPlaces(curatedToMapPlaces(activeCategory))
-      setStatusMessage(
-        'Map preview mode — add NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in Vercel for live nearby search.',
-      )
+      enterFallback(activeCategory)
       return
     }
 
     let cancelled = false
 
+    const resolvedKey = apiKey
+
     async function run() {
       try {
-        setStatusMessage('Loading nearby places…')
-        const places = await fetchPlacesForCategory(activeCategory)
-        if (cancelled) return
-        setUseFallback(false)
-        setListPlaces(places)
-        setStatusMessage(null)
-        if (mapInstanceRef.current) {
-          renderMarkers(mapInstanceRef.current, places)
+        await loadGoogleMaps(resolvedKey)
+        if (cancelled || mapsAuthFailed) {
+          enterFallback(activeCategory)
+          return
         }
+        setUseFallback(false)
+        const places = await loadCategoryPlaces(activeCategory)
+        if (cancelled) return
+        setListPlaces(places)
+        const map = await ensureMap()
+        if (cancelled || !map) return
+        renderMarkers(map, places)
       } catch {
         if (cancelled) return
-        setUseFallback(true)
-        setListPlaces(curatedToMapPlaces(activeCategory))
-        setStatusMessage(
-          'Showing curated Skye Canyon places while the interactive map is unavailable.',
-        )
+        enterFallback(activeCategory)
       }
     }
 
@@ -308,7 +334,14 @@ export default function NearbyAmenityMap({
     return () => {
       cancelled = true
     }
-  }, [inView, activeCategory, fetchPlacesForCategory, renderMarkers])
+  }, [
+    inView,
+    activeCategory,
+    loadCategoryPlaces,
+    renderMarkers,
+    ensureMap,
+    enterFallback,
+  ])
 
   useEffect(() => {
     if (useFallback || !mapInstanceRef.current) return
@@ -318,6 +351,56 @@ export default function NearbyAmenityMap({
   const onCategoryChange = (id: AmenityCategoryId) => {
     setActiveCategory(id)
   }
+
+  const fallbackPanel = (
+    <div className="grid lg:grid-cols-2" style={{ minHeight: height }}>
+      <iframe
+        src={embedUrl}
+        title="Map centered on Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas NV 89166"
+        width="100%"
+        height={height}
+        className="border-0 lg:min-h-full"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        allowFullScreen
+      />
+      <div
+        className="max-h-[520px] overflow-y-auto p-4 lg:max-h-none"
+        style={{ minHeight: height }}
+      >
+        <h3 className="font-serif text-lg text-[#0b1c2c]">
+          Featured places near {COMMUNITY_NAME} (
+          {getCategoryById(activeCategory).label})
+        </h3>
+        <ul className="mt-3 space-y-3">
+          {listPlaces.map((place) => (
+            <li
+              key={place.id}
+              className="rounded-lg border border-[#0b1c2c]/10 p-3 text-sm"
+            >
+              <p className="font-semibold text-[#0b1c2c]">
+                {place.name}
+                {place.isCommunity ? (
+                  <span className="ml-2 text-xs font-normal text-[#c4a35a]">
+                    Community
+                  </span>
+                ) : null}
+              </p>
+              <p className="mt-1 text-[#0b1c2c]/70">{place.address}</p>
+              <a
+                href={directionsUrlForAddress(place.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-[#0b1c2c] underline"
+              >
+                Directions
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
 
   return (
     <div ref={lazyRootRef} className="space-y-4">
@@ -352,10 +435,6 @@ export default function NearbyAmenityMap({
         </div>
       ) : null}
 
-      {statusMessage ? (
-        <p className="text-sm text-[#0b1c2c]/70" role="status">{statusMessage}</p>
-      ) : null}
-
       <div
         id={`${filtersId}-panel`}
         role="tabpanel"
@@ -364,49 +443,7 @@ export default function NearbyAmenityMap({
         style={{ minHeight: height }}
       >
         {useFallback ? (
-          <div className="grid lg:grid-cols-2">
-            <iframe
-              src={AMENITIES_MAP_EMBED}
-              title="Map centered on Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas NV 89166"
-              width="100%"
-              height={height}
-              className="border-0 lg:min-h-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-            <div className="max-h-[520px] overflow-y-auto p-4 lg:max-h-none">
-              <h3 className="font-serif text-lg text-[#0b1c2c]">
-                Curated places ({getCategoryById(activeCategory).label})
-              </h3>
-              <ul className="mt-3 space-y-3">
-                {listPlaces.map((place) => (
-                  <li
-                    key={place.id}
-                    className="rounded-lg border border-[#0b1c2c]/10 p-3 text-sm"
-                  >
-                    <p className="font-semibold text-[#0b1c2c]">
-                      {place.name}
-                      {place.isCommunity ? (
-                        <span className="ml-2 text-xs font-normal text-[#c4a35a]">
-                          Community
-                        </span>
-                      ) : null}
-                    </p>
-                    <p className="mt-1 text-[#0b1c2c]/70">{place.address}</p>
-                    <a
-                      href={directionsUrlForAddress(place.address)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-[#0b1c2c] underline"
-                    >
-                      Directions
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          fallbackPanel
         ) : (
           <div
             ref={mapContainerRef}
@@ -417,4 +454,9 @@ export default function NearbyAmenityMap({
       </div>
     </div>
   )
+}
+
+function clearMarkersRef(markersRef: { current: google.maps.Marker[] }) {
+  markersRef.current.forEach((m) => m.setMap(null))
+  markersRef.current = []
 }
