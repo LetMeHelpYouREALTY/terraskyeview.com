@@ -3,6 +3,21 @@ export const CALENDLY_PROFILE_URL = 'https://calendly.com/drjanduffy'
 /** Only public event type currently published on calendly.com/drjanduffy */
 export const CALENDLY_LIVE_EVENT_URL = 'https://calendly.com/drjanduffy/15min'
 
+export const CALENDLY_LISTING_CONSULTATION_URL =
+  'https://calendly.com/drjanduffy/listing-consultation'
+
+const CALENDLY_UTM_SOURCE = 'terraskyeview.com'
+
+/** Seller-side listing consultation links with site UTM parameters. */
+export function listingConsultationUrl(utmContent: string): string {
+  const params = new URLSearchParams({
+    utm_source: CALENDLY_UTM_SOURCE,
+    utm_medium: 'website',
+    utm_content: utmContent,
+  })
+  return `${CALENDLY_LISTING_CONSULTATION_URL}?${params.toString()}`
+}
+
 export const CALENDLY_EVENTS = {
   strategy: {
     slug: '15min',

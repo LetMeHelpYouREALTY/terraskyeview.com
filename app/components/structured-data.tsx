@@ -1,5 +1,3 @@
-'use client'
-
 import {
   SITE_ADDRESS,
   SITE_BROKERAGE,
@@ -48,10 +46,34 @@ export function SiteGraphStructuredData() {
         currenciesAccepted: 'USD',
         paymentAccepted: 'Cash, Conventional, FHA, VA',
         areaServed: [
-          { '@type': 'City', name: 'Las Vegas' },
-          { '@type': 'City', name: 'North Las Vegas' },
-          { '@type': 'Place', name: 'Skye Canyon' },
-          { '@type': 'PostalAddress', postalCode: '89166', addressLocality: 'Las Vegas', addressRegion: 'NV' },
+          {
+            '@type': 'Place',
+            name: 'Terra at Skyeview',
+            address: NAP_ADDRESS,
+            containedInPlace: {
+              '@type': 'City',
+              name: 'Las Vegas',
+              addressRegion: 'NV',
+              addressCountry: 'US',
+            },
+          },
+          {
+            '@type': 'Place',
+            name: 'Skye Canyon',
+            containedInPlace: {
+              '@type': 'City',
+              name: 'Las Vegas',
+              addressRegion: 'NV',
+              addressCountry: 'US',
+            },
+          },
+          {
+            '@type': 'PostalAddress',
+            postalCode: '89166',
+            addressLocality: 'Las Vegas',
+            addressRegion: 'NV',
+            addressCountry: 'US',
+          },
         ],
         knowsAbout: [
           SITE_SERVICE,
@@ -300,14 +322,33 @@ export function RealtorServiceStructuredData() {
     serviceType: 'Residential buyer representation',
     provider: { '@id': `${SITE_URL}/#agent` },
     areaServed: [
-      { '@type': 'Place', name: 'Skye Canyon' },
-      { '@type': 'Place', name: 'Northwest Las Vegas' },
-      { '@type': 'City', name: 'Las Vegas' },
+      {
+        '@type': 'Place',
+        name: 'Terra at Skyeview',
+        address: NAP_ADDRESS,
+        containedInPlace: {
+          '@type': 'City',
+          name: 'Las Vegas',
+          addressRegion: 'NV',
+          addressCountry: 'US',
+        },
+      },
+      {
+        '@type': 'Place',
+        name: 'Skye Canyon',
+        containedInPlace: {
+          '@type': 'City',
+          name: 'Las Vegas',
+          addressRegion: 'NV',
+          addressCountry: 'US',
+        },
+      },
       {
         '@type': 'PostalAddress',
         postalCode: '89166',
         addressLocality: 'Las Vegas',
         addressRegion: 'NV',
+        addressCountry: 'US',
       },
     ],
     description:

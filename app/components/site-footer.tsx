@@ -77,6 +77,9 @@ export default function SiteFooter() {
             <Link href="/for-buyers" className="hover:text-[#c4a35a]">
               For buyers
             </Link>
+            <Link href="/for-sellers" className="hover:text-[#c4a35a]">
+              For sellers
+            </Link>
             <Link href="/homebuying-process" className="hover:text-[#c4a35a]">
               Process
             </Link>

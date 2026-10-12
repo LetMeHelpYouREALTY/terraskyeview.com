@@ -13,6 +13,7 @@ const links = [
   { href: '/special-offers', label: 'Special Offers' },
   { href: '/homebuying-process', label: 'Homebuying Process' },
   { href: '/for-buyers', label: 'For Buyers' },
+  { href: '/for-sellers', label: 'For Sellers' },
   { href: '/blog', label: 'Blog' },
 ] as const
 
