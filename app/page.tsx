@@ -290,7 +290,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SiteFaq />
+      <SiteFaq emitSchema />
 
       <CalendlySection event="consult" />
 

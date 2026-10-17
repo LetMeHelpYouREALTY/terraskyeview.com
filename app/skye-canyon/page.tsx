@@ -158,7 +158,7 @@ export default function SkyeCanyonPage() {
         </div>
       </section>
 
-      <SiteFaq faqs={CANYON_FAQS} />
+      <SiteFaq faqs={CANYON_FAQS} emitSchema />
       <CalendlySection event="consult" />
       <SiteFooter />
     </div>

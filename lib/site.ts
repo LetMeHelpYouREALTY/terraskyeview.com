@@ -20,7 +20,7 @@ export const SITE_GEO = {
 
 /** ISO date (YYYY-MM-DD) per public route; update when page content changes. */
 export const PAGE_LAST_MODIFIED: Record<string, string> = {
-  '/': '2026-09-27',
+  '/': '2026-10-17',
   '/communities/skyeview': '2026-09-03',
   '/special-offers': '2026-09-03',
   '/about-dr-janet-duffy': '2026-09-03',

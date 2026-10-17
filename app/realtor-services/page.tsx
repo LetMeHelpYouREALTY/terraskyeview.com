@@ -178,7 +178,7 @@ export default function RealtorServicesPage() {
         </div>
       </section>
 
-      <SiteFaq faqs={SERVICE_FAQS} />
+      <SiteFaq faqs={SERVICE_FAQS} emitSchema />
       <CalendlySection event="consult" />
       <SiteFooter />
     </div>

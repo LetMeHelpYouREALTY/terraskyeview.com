@@ -180,7 +180,7 @@ export default function MapPage() {
         </div>
       </section>
 
-      <SiteFaq faqs={MAP_FAQS} />
+      <SiteFaq faqs={MAP_FAQS} emitSchema />
       <CalendlySection event="consult" />
       <SiteFooter />
     </div>

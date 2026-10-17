@@ -109,6 +109,7 @@ export function SiteGraphStructuredData() {
           '@type': 'RealEstateAgent',
           name: SITE_BROKERAGE,
         },
+        worksFor: { '@id': `${SITE_URL}/#business` },
         knowsLanguage: 'English',
         sameAs: [
           'https://calendly.com/drjanduffy',
@@ -137,6 +138,59 @@ export function SiteGraphStructuredData() {
         },
       },
       {
+        '@type': 'LocalBusiness',
+        '@id': `${SITE_URL}/#business`,
+        name: 'Terra at Skyeview Model Home | Homes By Dr. Jan Duffy',
+        description:
+          'Century Communities model home for Terra at Skyeview in Skye Canyon. Homebuying with Dr. Jan Duffy at 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+        url: `${SITE_URL}/map`,
+        image: `${SITE_URL}/og-image.jpg`,
+        telephone: SITE_PHONE_E164,
+        email: SITE_EMAIL,
+        address: NAP_ADDRESS,
+        geo: {
+          '@type': 'GeoCoordinates',
+          ...SITE_GEO,
+        },
+        hasMap: `https://www.google.com/maps?q=${SITE_ADDRESS.streetAddress},+${SITE_ADDRESS.addressLocality},+${SITE_ADDRESS.addressRegion}+${SITE_ADDRESS.postalCode}`,
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: [
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+            opens: '10:00',
+            closes: '18:00',
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: 'Sunday',
+            opens: '11:00',
+            closes: '18:00',
+          },
+        ],
+        parentOrganization: {
+          '@type': 'Organization',
+          name: SITE_BROKERAGE,
+        },
+        containedInPlace: {
+          '@type': 'Place',
+          name: 'Skye Canyon',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Las Vegas',
+            addressRegion: 'NV',
+            postalCode: '89166',
+            addressCountry: 'US',
+          },
+        },
+      },
+      {
         '@type': 'WebSite',
         '@id': `${SITE_URL}/#website`,
         url: SITE_URL,
@@ -145,6 +199,7 @@ export function SiteGraphStructuredData() {
           'Homebuying with Dr. Jan Duffy for new two-story homes at Terra at Skyeview, 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
         inLanguage: 'en-US',
         publisher: { '@id': `${SITE_URL}/#agent` },
+        about: { '@id': `${SITE_URL}/#business` },
       },
     ],
   }

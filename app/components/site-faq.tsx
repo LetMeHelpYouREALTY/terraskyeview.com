@@ -24,9 +24,14 @@ export const DEFAULT_FAQS = [
 
 type SiteFaqProps = {
   faqs?: { q: string; a: string }[]
+  /** Emit FAQPage JSON-LD only on pages with unique FAQs (avoid duplicate graph). */
+  emitSchema?: boolean
 }
 
-export default function SiteFaq({ faqs = DEFAULT_FAQS }: SiteFaqProps) {
+export default function SiteFaq({
+  faqs = DEFAULT_FAQS,
+  emitSchema = false,
+}: SiteFaqProps) {
   return (
     <section
       aria-labelledby="homebuying-faq-heading"
@@ -53,7 +58,7 @@ export default function SiteFaq({ faqs = DEFAULT_FAQS }: SiteFaqProps) {
           8592 Vanhoy Creek Street, Las Vegas, NV 89166
         </p>
       </div>
-      <FaqStructuredData faqs={faqs} />
+      {emitSchema ? <FaqStructuredData faqs={faqs} /> : null}
     </section>
   )
 }

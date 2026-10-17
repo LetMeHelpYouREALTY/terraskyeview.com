@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
-import SiteFaq from '@/app/components/site-faq'
 
 export default function ShouldIUseRealtorArticle() {
   return (
@@ -382,7 +381,6 @@ export default function ShouldIUseRealtorArticle() {
         </div>
       </article>
 
-      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

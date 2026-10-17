@@ -9,7 +9,6 @@ import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
-import SiteFaq from '@/app/components/site-faq'
 import { BreadcrumbStructuredData } from '@/app/components/structured-data'
 
 const categories = [
@@ -408,7 +407,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <SiteFaq />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

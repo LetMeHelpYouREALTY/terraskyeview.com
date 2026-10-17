@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
-import SiteFaq from '@/app/components/site-faq'
 
 export default function NotFound() {
   return (
@@ -70,7 +69,6 @@ export default function NotFound() {
       </div>
 
       <OfficeListingsBand />
-      <SiteFaq />
       <CalendlySection event="strategy" />
     </div>
   )
