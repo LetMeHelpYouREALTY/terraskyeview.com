@@ -120,7 +120,7 @@ export default function ShouldIUseRealtorArticle() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Jan Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Jan Duffy is an expert not only in real estate, but also specializes in <Link href="/communities/skyeview" className="text-blue-600 hover:underline font-medium">Terra at Skyeview</Link> and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal. <Link href="/about-dr-janet-duffy" className="text-blue-600 hover:underline font-medium">Learn more about Dr. Jan Duffy's expertise</Link>.
+              When you decide to buy a home at <strong>Terra at Skyeview by Century Communities</strong>, the perks of working with <strong>Dr. Jan Duffy as your buyer's agent</strong> are numerous and may even surprise you. Dr. Jan Duffy is an expert not only in real estate, but also specializes in <Link href="/communities/skyeview" className="text-blue-600 hover:underline font-medium">Terra at Skyeview</Link> and the Skye Canyon master-planned community. As a local expert and preferred buyer's agent, she is the perfect choice when you're seeking a trusted professional to get you the best price and deal. <Link href="/about-dr-jan-duffy" className="text-blue-600 hover:underline font-medium">Learn more about Dr. Jan Duffy's expertise</Link>.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8 rounded-r-lg">

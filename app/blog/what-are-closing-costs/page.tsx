@@ -271,7 +271,7 @@ export default function WhatAreClosingCostsArticle() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. Negotiate with the Seller</h3>
                 <p className="text-gray-700">
                   If the seller is motivated, they may be willing to cover some of your closing costs. As your buyer's 
-                  agent, Dr. Jan Duffy has extensive experience negotiating these terms to get you the best deal possible. <Link href="/about-dr-janet-duffy" className="text-blue-600 hover:underline font-semibold">Learn more about Dr. Jan's negotiation expertise</Link>.
+                  agent, Dr. Jan Duffy has extensive experience negotiating these terms to get you the best deal possible. <Link href="/about-dr-jan-duffy" className="text-blue-600 hover:underline font-semibold">Learn more about Dr. Jan's negotiation expertise</Link>.
                 </p>
               </div>
 

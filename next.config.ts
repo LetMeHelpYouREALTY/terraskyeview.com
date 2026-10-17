@@ -27,6 +27,16 @@ const nextConfig: NextConfig = {
         destination: 'https://www.terraskyeview.com/:path*',
         statusCode: 308,
       },
+      {
+        source: '/about-dr-janet-duffy',
+        destination: '/about-dr-jan-duffy',
+        permanent: true,
+      },
+      {
+        source: '/about-dr-janet-duffy/:path*',
+        destination: '/about-dr-jan-duffy',
+        permanent: true,
+      },
     ]
   },
 }

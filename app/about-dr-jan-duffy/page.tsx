@@ -46,7 +46,7 @@ export default function AboutDrJanetDuffyPage() {
               <Link href="/communities/skyeview" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Available Homes
               </Link>
-              <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-blue-600">
+              <Link href="/about-dr-jan-duffy" className="text-base font-semibold text-blue-600">
                 About Dr. Jan
               </Link>
               <Link href="/blog" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
@@ -471,7 +471,7 @@ export default function AboutDrJanetDuffyPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about-dr-janet-duffy" className="text-gray-400 hover:text-white transition">
+                  <Link href="/about-dr-jan-duffy" className="text-gray-400 hover:text-white transition">
                     About Dr. Jan
                   </Link>
                 </li>

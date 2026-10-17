@@ -40,7 +40,7 @@ export default function SiteHeader({ current = 'home' }: SiteHeaderProps) {
               Available Homes
             </Link>
             <Link
-              href="/about-dr-janet-duffy"
+              href="/about-dr-jan-duffy"
               className={navClass(current === 'about')}
             >
               About Dr. Jan

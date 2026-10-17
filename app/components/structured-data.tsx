@@ -32,7 +32,7 @@ export function SiteGraphStructuredData() {
         jobTitle: SITE_SERVICE,
         description:
           'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon, Las Vegas NV 89166. Preferred buyer’s agent for Century Communities new construction. Call 702-919-7292 before you tour.',
-        url: `${SITE_URL}/about-dr-janet-duffy`,
+        url: `${SITE_URL}/about-dr-jan-duffy`,
         image: `${SITE_URL}/images/dr-jan-duffy.png`,
         logo: `${SITE_URL}/images/dr-jan-duffy.png`,
         telephone: SITE_PHONE_E164,

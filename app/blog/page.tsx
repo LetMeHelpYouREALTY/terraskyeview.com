@@ -163,7 +163,7 @@ export default function BlogPage() {
               <Link href="/communities/skyeview" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Available Homes
               </Link>
-              <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
+              <Link href="/about-dr-jan-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 About Dr. Jan
               </Link>
               <Link href="/special-offers" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">

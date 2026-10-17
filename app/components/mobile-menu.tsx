@@ -9,7 +9,7 @@ const links = [
   { href: '/map', label: 'Map · 89166' },
   { href: '/skye-canyon', label: 'Skye Canyon' },
   { href: '/realtor-services', label: 'Realtor Services' },
-  { href: '/about-dr-janet-duffy', label: 'About Dr. Jan Duffy' },
+  { href: '/about-dr-jan-duffy', label: 'About Dr. Jan Duffy' },
   { href: '/special-offers', label: 'Special Offers' },
   { href: '/homebuying-process', label: 'Homebuying Process' },
   { href: '/for-buyers', label: 'For Buyers' },

@@ -144,7 +144,7 @@ export default function HomePage() {
               Creek Street, Las Vegas, NV 89166.
             </p>
             <p className="mt-3 text-sm">
-              <Link href="/about-dr-janet-duffy" className="font-semibold text-[#0b1c2c] underline">
+              <Link href="/about-dr-jan-duffy" className="font-semibold text-[#0b1c2c] underline">
                 Meet Dr. Jan
               </Link>
               {' · '}

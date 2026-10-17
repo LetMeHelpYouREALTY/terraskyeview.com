@@ -14,6 +14,7 @@ import RealScoutSearch from '@/app/components/realscout-search'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import SiteFaq from '@/app/components/site-faq'
+import { TERRA_COMMUNITY_FAQS } from '@/lib/page-faqs'
 
 export default function SkyeviewPage() {
   return (
@@ -33,7 +34,7 @@ export default function SkyeviewPage() {
               <a href="#homes" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Available Homes
               </a>
-              <a href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
+              <a href="/about-dr-jan-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 About Dr. Jan
               </a>
               <a href="/special-offers" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
@@ -95,7 +96,7 @@ export default function SkyeviewPage() {
                 </span>
               </div>
               <p className="text-sm text-gray-700 mt-2">
-                Your Local Expert: <Link href="/about-dr-janet-duffy" className="font-semibold text-blue-600 hover:underline">Dr. Jan Duffy</Link> | 
+                Your Local Expert: <Link href="/about-dr-jan-duffy" className="font-semibold text-blue-600 hover:underline">Dr. Jan Duffy</Link> | 
                 <Link href="/for-buyers" className="text-blue-600 hover:underline ml-2">Why use a buyer's agent?</Link>
               </p>
             </div>
@@ -261,7 +262,7 @@ export default function SkyeviewPage() {
         </div>
       </section>
 
-      <SiteFaq />
+      <SiteFaq faqs={[...TERRA_COMMUNITY_FAQS]} emitSchema />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

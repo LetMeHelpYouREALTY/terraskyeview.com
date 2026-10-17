@@ -13,7 +13,7 @@ const ROUTES: SitemapEntry[] = [
   { path: '/', changeFrequency: 'daily', priority: 1 },
   { path: '/communities/skyeview', changeFrequency: 'daily', priority: 0.9 },
   { path: '/special-offers', changeFrequency: 'weekly', priority: 0.8 },
-  { path: '/about-dr-janet-duffy', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/about-dr-jan-duffy', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/blog', changeFrequency: 'weekly', priority: 0.7 },
   { path: '/homebuying-process', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/for-buyers', changeFrequency: 'monthly', priority: 0.7 },

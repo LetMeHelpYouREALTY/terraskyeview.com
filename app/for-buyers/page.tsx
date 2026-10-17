@@ -8,6 +8,7 @@ import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
 import SiteFaq from '@/app/components/site-faq'
+import { FOR_BUYERS_FAQS } from '@/lib/page-faqs'
 
 const benefits = [
   {
@@ -102,7 +103,7 @@ export default function ForBuyersPage() {
               <Link href="/communities/skyeview" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 Available Homes
               </Link>
-              <Link href="/about-dr-janet-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
+              <Link href="/about-dr-jan-duffy" className="text-base font-semibold text-gray-900 hover:text-blue-600 transition">
                 About Dr. Jan
               </Link>
               <Link href="/for-buyers" className="text-base font-semibold text-blue-600">
@@ -291,7 +292,7 @@ export default function ForBuyersPage() {
         </div>
       </section>
 
-      <SiteFaq />
+      <SiteFaq faqs={[...FOR_BUYERS_FAQS]} emitSchema />
 
       <CalendlySection event="consult" />
 
