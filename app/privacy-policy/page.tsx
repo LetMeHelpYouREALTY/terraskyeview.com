@@ -6,7 +6,6 @@ import MobileMenu from '@/app/components/mobile-menu'
 import OfficeListingsBand from '@/app/components/office-listings-band'
 import CalendlySection from '@/app/components/calendly-section'
 import HomebuyingKicker from '@/app/components/homebuying-kicker'
-import SiteFaq from '@/app/components/site-faq'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -319,7 +318,6 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <CalendlySection event="strategy" />
-        <SiteFaq />
 
         {/* Back Button */}
         <div className="mt-12 text-center">

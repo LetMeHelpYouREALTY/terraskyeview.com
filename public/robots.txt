@@ -1,8 +1,0 @@
-# robots.txt for Terra at Skyeview
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /projects/
-
-Sitemap: https://www.terraskyeview.com/sitemap.xml
-Host: https://www.terraskyeview.com

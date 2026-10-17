@@ -8,6 +8,7 @@ import {
   SITE_PHONE_E164,
   SITE_SERVICE,
   SITE_URL,
+  PAGE_LAST_MODIFIED,
 } from '@/lib/site'
 
 const NAP_ADDRESS = {
@@ -243,13 +244,19 @@ export function ArticleStructuredData({
   url,
   image,
   datePublished,
+  dateModified,
 }: {
   headline: string
   description: string
   url: string
   image: string
   datePublished: string
+  dateModified?: string
 }) {
+  const pathname = new URL(url).pathname
+  const modified =
+    dateModified ?? PAGE_LAST_MODIFIED[pathname] ?? datePublished
+
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -257,13 +264,10 @@ export function ArticleStructuredData({
     description,
     image,
     datePublished,
-    dateModified: datePublished,
+    dateModified: modified,
     mainEntityOfPage: url,
-    author: {
-      '@type': 'Person',
-      name: 'Dr. Jan Duffy',
-      url: `${SITE_URL}/about-dr-janet-duffy`,
-    },
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    author: { '@id': `${SITE_URL}/#agent` },
     publisher: { '@id': `${SITE_URL}/#agent` },
     about: SITE_SERVICE,
   }

@@ -1,97 +1,49 @@
 import type { MetadataRoute } from 'next'
-import { SITE_URL } from '@/lib/site'
+import { PAGE_LAST_MODIFIED, SITE_URL } from '@/lib/site'
+
+type SitemapPath = keyof typeof PAGE_LAST_MODIFIED
+
+type SitemapEntry = {
+  path: SitemapPath
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']
+  priority: number
+}
+
+const ROUTES: SitemapEntry[] = [
+  { path: '/', changeFrequency: 'daily', priority: 1 },
+  { path: '/communities/skyeview', changeFrequency: 'daily', priority: 0.9 },
+  { path: '/special-offers', changeFrequency: 'weekly', priority: 0.8 },
+  { path: '/about-dr-janet-duffy', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/blog', changeFrequency: 'weekly', priority: 0.7 },
+  { path: '/homebuying-process', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/for-buyers', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/for-sellers', changeFrequency: 'monthly', priority: 0.75 },
+  { path: '/map', changeFrequency: 'weekly', priority: 0.85 },
+  { path: '/realtor-services', changeFrequency: 'monthly', priority: 0.85 },
+  { path: '/skye-canyon', changeFrequency: 'monthly', priority: 0.8 },
+  {
+    path: '/blog/should-i-use-realtor-planned-community',
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  },
+  {
+    path: '/blog/what-are-closing-costs',
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  },
+  {
+    path: '/blog/redefining-homebuying-experience',
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  },
+  { path: '/privacy-policy', changeFrequency: 'yearly', priority: 0.3 },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: SITE_URL,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-    {
-      url: `${SITE_URL}/communities/skyeview`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/special-offers`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/about-dr-janet-duffy`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/homebuying-process`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/for-buyers`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/for-sellers`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: `${SITE_URL}/map`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/realtor-services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/skye-canyon`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog/should-i-use-realtor-planned-community`,
-      lastModified: new Date('2025-02-25'),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/blog/what-are-closing-costs`,
-      lastModified: new Date('2025-01-20'),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/blog/redefining-homebuying-experience`,
-      lastModified: new Date('2025-01-15'),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-  ]
+  return ROUTES.map(({ path, changeFrequency, priority }) => ({
+    url: `${SITE_URL}${path === '/' ? '' : path}`,
+    lastModified: new Date(PAGE_LAST_MODIFIED[path]),
+    changeFrequency,
+    priority,
+  }))
 }
