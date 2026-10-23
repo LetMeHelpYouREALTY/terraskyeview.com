@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'About Dr. Jan Duffy | Terra at Skyeview Las Vegas NV 89166',
   description:
-    'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon. Licensed Nevada REALTOR® S.0197614, BHHS Nevada Properties. Call (702) 919-7292 before you tour. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+    'Homebuying with Dr. Jan Duffy at Terra at Skyeview in Skye Canyon. Licensed Nevada REALTOR® in real estate since 1983. Call (702) 919-7292 before you tour. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
   path: '/about-dr-jan-duffy',
   image: '/images/dr-jan-duffy.png',
   imageAlt: 'Dr. Jan Duffy, homebuying specialist at Terra at Skyeview in Las Vegas NV 89166',

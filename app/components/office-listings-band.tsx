@@ -9,9 +9,6 @@ export default function OfficeListingsBand() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <HomebuyingKicker />
-        <p className="mt-2 text-xs font-semibold tracking-[0.28em] text-[#c4a35a] uppercase">
-          BHHS Nevada Properties
-        </p>
         <h2
           id="office-listings-heading"
           className="mt-2 font-serif text-3xl text-[#0b1c2c] md:text-4xl"

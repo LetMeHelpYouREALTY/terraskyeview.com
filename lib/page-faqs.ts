@@ -34,6 +34,6 @@ export const TERRA_COMMUNITY_FAQS = [
   },
   {
     q: 'What ZIP code and city is Terra at Skyeview in?',
-    a: 'Terra at Skyeview uses Las Vegas, NV 89166 in Skye Canyon. Dr. Jan Duffy | BHHS Nevada Properties | S.0197614.',
+    a: 'Terra at Skyeview uses Las Vegas, NV 89166 in Skye Canyon.',
   },
 ] as const

@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Privacy Policy | Terra at Skyeview',
   description:
-    'Privacy policy for homebuying with Dr. Jan Duffy at Terra at Skyeview. Dr. Jan Duffy | BHHS Nevada Properties | S.0197614. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
+    'Privacy policy for homebuying with Dr. Jan Duffy at Terra at Skyeview. 8592 Vanhoy Creek Street, Las Vegas, NV 89166.',
   path: '/privacy-policy',
   keywords:
     'homebuying with Dr. Jan Duffy, Terra at Skyeview privacy policy, Dr. Jan Duffy S.0197614',

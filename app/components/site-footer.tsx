@@ -18,7 +18,7 @@ export default function SiteFooter() {
             Homes By Dr. Jan Duffy
           </p>
           <address className="mt-6 not-italic text-sm leading-7 text-white/80">
-            Dr. Jan Duffy | BHHS Nevada Properties | S.0197614
+            Dr. Jan Duffy
             <br />
             8592 Vanhoy Creek Street, Las Vegas, NV 89166
             <br />
@@ -93,6 +93,8 @@ export default function SiteFooter() {
         <p>
           &copy; 2026 Terra Skyeview | Homes By Dr. Jan Duffy. All rights reserved. |
           Equal Housing Opportunity
+          <br />
+          Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
         </p>
         <Link href="/privacy-policy" className="mt-2 inline-block hover:text-white">
           Privacy Policy

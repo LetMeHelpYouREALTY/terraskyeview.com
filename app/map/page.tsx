@@ -19,7 +19,7 @@ const MAP_FAQS = [
   },
   {
     q: 'What ZIP code is Skye Canyon and Terra at Skyeview?',
-    a: 'Terra at Skyeview and Skye Canyon use Las Vegas NV 89166. Dr. Jan Duffy | BHHS Nevada Properties | S.0197614. Hours: Monday–Saturday 10:00 AM–6:00 PM, Sunday 11:00 AM–6:00 PM.',
+    a: 'Terra at Skyeview and Skye Canyon use Las Vegas NV 89166. Hours: Monday–Saturday 10:00 AM–6:00 PM, Sunday 11:00 AM–6:00 PM.',
   },
   {
     q: 'Should I use the map and go to the models without calling?',
@@ -47,7 +47,7 @@ export default function MapPage() {
             before you drive over so she can register you.
           </p>
           <address className="mt-6 not-italic text-white/80">
-            Dr. Jan Duffy | BHHS Nevada Properties | S.0197614
+            Dr. Jan Duffy
             <br />
             8592 Vanhoy Creek Street, Las Vegas, NV 89166
           </address>

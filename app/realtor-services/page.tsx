@@ -31,7 +31,7 @@ const SERVICES = [
   },
   {
     title: 'Walkthroughs through closing',
-    body: 'She coordinates inspections, construction walkthroughs, and closing at BHHS Nevada Properties standards. License S.0197614.',
+    body: 'She coordinates inspections, construction walkthroughs, and closing.',
   },
 ]
 
@@ -42,7 +42,7 @@ const SERVICE_FAQS = [
   },
   {
     q: 'Is Dr. Jan Duffy a Century Communities employee?',
-    a: 'No. She is an independent REALTOR® with BHHS Nevada Properties, license S.0197614. The on-site agent represents the builder. She represents you.',
+    a: 'No. She is an independent REALTOR®, in real estate since 1983. The on-site agent represents the builder. She represents you.',
   },
   {
     q: 'What does a buyer\'s agent cost at Terra at Skyeview?',
@@ -72,7 +72,7 @@ export default function RealtorServicesPage() {
               Street, Las Vegas, NV 89166. Call (702) 919-7292 before you tour.
             </p>
             <p className="mt-4 text-sm text-white/70">
-              Dr. Jan Duffy | BHHS Nevada Properties | S.0197614
+              Dr. Jan Duffy, REALTOR®, in real estate since 1983
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a

@@ -54,7 +54,7 @@ export default function SiteFaq({
           ))}
         </div>
         <p className="mt-6 text-sm text-[#0b1c2c]/70">
-          Dr. Jan Duffy | BHHS Nevada Properties | S.0197614 · (702) 919-7292 ·
+          Dr. Jan Duffy · (702) 919-7292 ·
           8592 Vanhoy Creek Street, Las Vegas, NV 89166
         </p>
       </div>

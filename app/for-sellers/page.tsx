@@ -45,8 +45,8 @@ export default function ForSellersPage() {
             two-story single-family homes inside Skye Canyon at{' '}
             {SITE_ADDRESS.streetAddress}, {SITE_ADDRESS.addressLocality},{' '}
             {SITE_ADDRESS.addressRegion} {SITE_ADDRESS.postalCode}. If you own
-            elsewhere in the valley, Dr. Jan Duffy can price your resale, list it
-            with BHHS Nevada Properties, and keep your purchase contract at Terra
+            elsewhere in the valley, Dr. Jan Duffy can price your resale, list it,
+            and keep your purchase contract at Terra
             on track.
           </p>
           <p className="mt-4 max-w-3xl text-base text-white/75">
@@ -78,7 +78,7 @@ export default function ForSellersPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-white/60">
-            Dr. Jan Duffy | BHHS Nevada Properties | S.0197614
+            Dr. Jan Duffy, REALTOR®, in real estate since 1983
           </p>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function ForSellersPage() {
             ))}
           </div>
           <p className="mt-6 text-sm text-[#0b1c2c]/70">
-            Dr. Jan Duffy | BHHS Nevada Properties | S.0197614 · (702) 919-7292 ·
+            Dr. Jan Duffy · (702) 919-7292 ·
             8592 Vanhoy Creek Street, Las Vegas, NV 89166
           </p>
         </div>

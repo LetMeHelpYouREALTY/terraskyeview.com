@@ -24,7 +24,7 @@ const CANYON_FAQS = [
   },
   {
     q: 'Who represents buyers in Skye Canyon new construction?',
-    a: 'Dr. Jan Duffy, BHHS Nevada Properties, S.0197614. Homebuying with Dr. Jan Duffy is independent buyer representation. The builder’s agent represents Century Communities.',
+    a: 'Dr. Jan Duffy, a REALTOR® in real estate since 1983. Homebuying with Dr. Jan Duffy is independent buyer representation. The builder’s agent represents Century Communities.',
   },
 ]
 
@@ -78,7 +78,7 @@ export default function SkyeCanyonPage() {
           <p className="mt-4 max-w-3xl text-[#0b1c2c]/70">
             Terra at Skyeview is the Century Communities two-story collection
             inside the master plan. Floor plans run 1,792 to 2,119 square feet,
-            from $479,990. Dr. Jan Duffy | BHHS Nevada Properties | S.0197614.
+            from $479,990.
           </p>
         </div>
       </section>
