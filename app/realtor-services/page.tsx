@@ -42,7 +42,7 @@ const SERVICE_FAQS = [
   },
   {
     q: 'Is Dr. Jan Duffy a Century Communities employee?',
-    a: 'No. She is an independent REALTOR®, in real estate since 1983. The on-site agent represents the builder. She represents you.',
+    a: 'No. She is an independent REALTOR®, licensed since 2008 · 35 years in Las Vegas. The on-site agent represents the builder. She represents you.',
   },
   {
     q: 'What does a buyer\'s agent cost at Terra at Skyeview?',
@@ -72,7 +72,7 @@ export default function RealtorServicesPage() {
               Street, Las Vegas, NV 89166. Call (702) 919-7292 before you tour.
             </p>
             <p className="mt-4 text-sm text-white/70">
-              Dr. Jan Duffy, REALTOR®, in real estate since 1983
+              Dr. Jan Duffy, REALTOR®, licensed since 2008 · 35 years in Las Vegas
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
