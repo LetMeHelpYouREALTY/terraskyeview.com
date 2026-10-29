@@ -78,7 +78,7 @@ export default function ForSellersPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-white/60">
-            Dr. Jan Duffy, REALTOR®, in real estate since 1983
+            Dr. Jan Duffy, REALTOR®, licensed since 2008 · 35 years in Las Vegas
           </p>
         </div>
       </section>

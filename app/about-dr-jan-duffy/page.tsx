@@ -84,7 +84,7 @@ export default function AboutDrJanetDuffyPage() {
                 Meet Dr. Jan Duffy
               </h1>
               <p className="text-xl text-blue-100 mb-4">
-                Top 1% Las Vegas REALTOR® · In real estate since 1983
+                Las Vegas REALTOR® · Licensed since 2008 · 35 years in Las Vegas
               </p>
               <p className="text-2xl text-blue-100 mb-8">
                 Homebuying with Dr. Jan Duffy means a buyer&apos;s advocate on price, upgrades, and contract terms at Terra at Skyeview by Century Communities.

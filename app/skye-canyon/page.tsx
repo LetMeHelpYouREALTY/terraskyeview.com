@@ -24,7 +24,7 @@ const CANYON_FAQS = [
   },
   {
     q: 'Who represents buyers in Skye Canyon new construction?',
-    a: 'Dr. Jan Duffy, a REALTOR® in real estate since 1983. Homebuying with Dr. Jan Duffy is independent buyer representation. The builder’s agent represents Century Communities.',
+    a: 'Dr. Jan Duffy, a REALTOR® licensed since 2008 · 35 years in Las Vegas. Homebuying with Dr. Jan Duffy is independent buyer representation. The builder’s agent represents Century Communities.',
   },
 ]
 
