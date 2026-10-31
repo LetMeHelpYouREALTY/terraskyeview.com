@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { SiteGraphStructuredData } from './components/structured-data'
 import { GoogleAnalytics } from './google-analytics'
 import './globals.css'
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -104,6 +105,7 @@ export default function RootLayout({
         />
         {children}
         <SpeedInsights />
+        <VercelAnalytics />
       </body>
     </html>
   )
